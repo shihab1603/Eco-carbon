@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Career</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* =========================
+           CAREER PAGE
+        ========================== */
+
+        .career-hero {
+            background:
+                linear-gradient(135deg, rgba(12, 58, 40, .95), rgba(29, 112, 78, .88));
+            padding: 85px 0 95px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .career-hero::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border: 65px solid rgba(255, 255, 255, .05);
+            border-radius: 50%;
+            right: -160px;
+            top: -160px;
+        }
+
+        .career-hero::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .04);
+            left: -100px;
+            bottom: -100px;
+        }
+
+        .career-hero h1 {
+            color: #fff;
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .career-hero p {
+            color: rgba(255, 255, 255, .87);
+            font-size: 18px;
+            max-width: 720px;
+            margin: auto;
+        }
+
+        .career-breadcrumb {
+            margin-top: 25px;
+            color: rgba(255, 255, 255, .85);
+        }
+
+        .career-breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .career-intro {
+            padding: 75px 0 35px;
+        }
+
+        .career-intro-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 42px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, .08);
+            border: 1px solid #e9efeb;
+        }
+
+        .career-tag {
+            color: #1d704e;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .career-intro h2 {
+            color: #173f2e;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .career-intro p {
+            color: #68736d;
+            line-height: 1.8;
+        }
+
+        .career-highlight {
+            background: #eef7f2;
+            border-radius: 14px;
+            padding: 25px;
+            height: 100%;
+        }
+
+        .career-highlight i {
+            color: #1d704e;
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .career-highlight h5 {
+            color: #173f2e;
+            font-weight: 700;
+        }
+
+        .career-highlight p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .department-section {
+            background: #f5f8f6;
+            padding: 75px 0;
+            margin-top: 35px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading span {
+            color: #1d704e;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13px;
+        }
+
+        .section-heading h2 {
+            color: #173f2e;
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+        .section-heading p {
+            color: #6c756f;
+        }
+
+        .department-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px 25px;
+            height: 100%;
+            border: 1px solid #e6ede8;
+            transition: .3s;
+        }
+
+        .department-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 14px 35px rgba(0, 0, 0, .08);
+        }
+
+        .department-icon {
+            width: 58px;
+            height: 58px;
+            background: #eaf5ef;
+            color: #1d704e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .department-card h5 {
+            color: #173f2e;
+            font-weight: 700;
+        }
+
+        .department-card p {
+            color: #727c76;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .jobs-section {
+            padding: 80px 0 55px;
+        }
+
+        .job-card {
+            background: #fff;
+            border: 1px solid #e4ebe6;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            transition: .3s;
+        }
+
+        .job-card:hover {
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+            transform: translateY(-3px);
+        }
+
+        .job-title {
+            color: #173f2e;
+            font-weight: 700;
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .job-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 14px 0;
+        }
+
+        .job-meta span {
+            background: #eef7f2;
+            color: #1d704e;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .job-description {
+            color: #6d7771;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .job-btn {
+            background: #1d704e;
+            color: #fff;
+            border: none;
+            padding: 11px 22px;
+            border-radius: 7px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .job-btn:hover {
+            background: #145438;
+            color: #fff;
+        }
+
+        .job-empty {
+            text-align: center;
+            background: #f4f8f5;
+            border-radius: 15px;
+            padding: 45px 25px;
+        }
+
+        .job-empty i {
+            font-size: 42px;
+            color: #1d704e;
+            margin-bottom: 18px;
+        }
+
+        .job-empty h4 {
+            color: #173f2e;
+            font-weight: 700;
+        }
+
+        .job-empty p {
+            color: #727b75;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .process-section {
+            background: #173f2e;
+            padding: 75px 0;
+        }
+
+        .process-section .section-heading h2 {
+            color: #fff;
+        }
+
+        .process-section .section-heading p {
+            color: rgba(255, 255, 255, .72);
+        }
+
+        .process-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .process-number {
+            width: 62px;
+            height: 62px;
+            background: #fff;
+            color: #1d704e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .process-card h5 {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .process-card p {
+            color: rgba(255, 255, 255, .68);
+            font-size: 14px;
+        }
+
+        .application-section {
+            padding: 80px 0;
+        }
+
+        .application-box {
+            background: #f5f8f6;
+            border-radius: 18px;
+            padding: 40px;
+        }
+
+        .application-box h2 {
+            color: #173f2e;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .application-box > p {
+            color: #6c756f;
+            margin-bottom: 30px;
+        }
+
+        .career-label {
+            color: #3e4b44;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .career-input {
+            height: 48px;
+            border: 1px solid #dce5df;
+            border-radius: 8px;
+        }
+
+        textarea.career-input {
+            height: 130px;
+            resize: none;
+        }
+
+        .career-input:focus {
+            border-color: #1d704e;
+            box-shadow: 0 0 0 .2rem rgba(29, 112, 78, .10);
+        }
+
+        .application-btn {
+            background: #1d704e;
+            color: #fff;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .application-btn:hover {
+            background: #145438;
+            color: #fff;
+        }
+
+        .career-cta {
+            padding: 20px 0 80px;
+        }
+
+        .career-cta-box {
+            background:
+                linear-gradient(135deg, #1d704e, #123f2d);
+            border-radius: 18px;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .career-cta-box h3 {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .career-cta-box p {
+            color: rgba(255, 255, 255, .78);
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 991px) {
+            .career-hero h1 {
+                font-size: 42px;
+            }
+
+            .career-intro-card {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .career-hero {
+                padding: 60px 0 75px;
+            }
+
+            .career-hero h1 {
+                font-size: 34px;
+            }
+
+            .career-intro h2,
+            .section-heading h2 {
+                font-size: 29px;
+            }
+
+            .application-box,
+            .career-cta-box {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html"
+            class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-item nav-link">
+                    About
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+
+                        Services
+
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">
+                            Buyer
+                        </a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html" class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html" class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html" class="nav-item nav-link">
+                    Calculator
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+
+                        Resources
+
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html" class="dropdown-item">
+                            Training
+                        </a>
+
+                        <a href="news.html" class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html" class="dropdown-item">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html" class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html" class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="career.html"
+                    class="nav-item nav-link active">
+                    Career
+                </a>
+
+                <a href="contact.html"
+                    class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <section class="career-hero">
+
+        <div class="container text-center">
+
+            <h1>Build Your Career with Eco-Carbon</h1>
+
+            <p>
+                Join a growing team working across carbon markets,
+                climate solutions, technology and sustainable development.
+            </p>
+
+            <div class="career-breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span class="mx-2">/</span>
+
+                <strong>Career</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Intro Start -->
+    <section class="career-intro">
+
+        <div class="container">
+
+            <div class="career-intro-card">
+
+                <div class="row g-4 align-items-center">
+
+                    <div class="col-lg-7">
+
+                        <span class="career-tag">
+                            Work With Purpose
+                        </span>
+
+                        <h2>
+                            Make an Impact Through Your Work
+                        </h2>
+
+                        <p>
+                            At Eco-Carbon, we bring together people,
+                            technology, data and climate-focused solutions
+                            to support the development of a more sustainable
+                            future.
+                        </p>
+
+                        <p>
+                            We welcome people who are curious, responsible,
+                            collaborative and interested in solving real-world
+                            environmental and business challenges.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <div class="row g-3">
+
+                            <div class="col-6">
+
+                                <div class="career-highlight">
+
+                                    <i class="fas fa-globe"></i>
+
+                                    <h5>
+                                        Climate Focus
+                                    </h5>
+
+                                    <p>
+                                        Work on sustainability and
+                                        carbon-related initiatives.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <div class="career-highlight">
+
+                                    <i class="fas fa-lightbulb"></i>
+
+                                    <h5>
+                                        Innovation
+                                    </h5>
+
+                                    <p>
+                                        Explore technology and
+                                        data-driven solutions.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <div class="career-highlight">
+
+                                    <i class="fas fa-users"></i>
+
+                                    <h5>
+                                        Teamwork
+                                    </h5>
+
+                                    <p>
+                                        Collaborate across different
+                                        skills and disciplines.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <div class="career-highlight">
+
+                                    <i class="fas fa-chart-line"></i>
+
+                                    <h5>
+                                        Growth
+                                    </h5>
+
+                                    <p>
+                                        Learn, develop and grow with
+                                        meaningful projects.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Intro End -->
+
+
+    <!-- Departments Start -->
+    <section class="department-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>Explore Opportunities</span>
+
+                <h2>
+                    Areas You Can Grow In
+                </h2>
+
+                <p>
+                    Our work connects multiple disciplines. Explore areas
+                    where your skills and interests can contribute.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="department-card">
+
+                        <div class="department-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+
+                        <h5>
+                            Climate &amp; Carbon
+                        </h5>
+
+                        <p>
+                            Carbon projects, sustainability, climate
+                            solutions, carbon markets and environmental
+                            initiatives.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="department-card">
+
+                        <div class="department-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+
+                        <h5>
+                            Technology
+                        </h5>
+
+                        <p>
+                            Software development, digital platforms,
+                            databases, automation, AI and technology
+                            solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="department-card">
+
+                        <div class="department-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+
+                        <h5>
+                            Data &amp; MRV
+                        </h5>
+
+                        <p>
+                            Data management, monitoring, reporting,
+                            verification support and analytical work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="department-card">
+
+                        <div class="department-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+
+                        <h5>
+                            Business Development
+                        </h5>
+
+                        <p>
+                            Client relationships, partnerships, market
+                            development and business opportunities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="department-card">
+
+                        <div class="department-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+
+                        <h5>
+                            Marketing &amp; Communication
+                        </h5>
+
+                        <p>
+                            Digital marketing, content, branding, social
+                            media and communication activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="department-card">
+
+                        <div class="department-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+
+                        <h5>
+                            Operations
+                        </h5>
+
+                        <p>
+                            Administration, project coordination,
+                            documentation and organizational support.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Departments End -->
+
+
+    <!-- Jobs Start -->
+    <section class="jobs-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>Current Opportunities</span>
+
+                <h2>
+                    Open Positions
+                </h2>
+
+                <p>
+                    Explore current opportunities and find a role that
+                    matches your skills and interests.
+                </p>
+
+            </div>
+
+
+            <!-- Sample Job 1 -->
+            <div class="job-card">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8">
+
+                        <div class="job-title">
+                            Carbon &amp; Sustainability Associate
+                        </div>
+
+                        <div class="job-meta">
+
+                            <span>
+                                Climate &amp; Carbon
+                            </span>
+
+                            <span>
+                                Full Time
+                            </span>
+
+                            <span>
+                                Dhaka
+                            </span>
+
+                        </div>
+
+                        <p class="job-description">
+                            Support carbon project research, sustainability
+                            activities, documentation, market analysis and
+                            coordination with project stakeholders.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+
+                        <a href="#application"
+                            class="job-btn btn">
+
+                            Apply Now
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sample Job 2 -->
+            <div class="job-card">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8">
+
+                        <div class="job-title">
+                            Software &amp; Technology Executive
+                        </div>
+
+                        <div class="job-meta">
+
+                            <span>
+                                Technology
+                            </span>
+
+                            <span>
+                                Full Time
+                            </span>
+
+                            <span>
+                                Dhaka
+                            </span>
+
+                        </div>
+
+                        <p class="job-description">
+                            Work on digital platforms, web applications,
+                            data systems and technology solutions supporting
+                            Eco-Carbon's business operations.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+
+                        <a href="#application"
+                            class="job-btn btn">
+
+                            Apply Now
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sample Job 3 -->
+            <div class="job-card">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8">
+
+                        <div class="job-title">
+                            Business Development Executive
+                        </div>
+
+                        <div class="job-meta">
+
+                            <span>
+                                Business Development
+                            </span>
+
+                            <span>
+                                Full Time
+                            </span>
+
+                            <span>
+                                Dhaka
+                            </span>
+
+                        </div>
+
+                        <p class="job-description">
+                            Support client communication, partnerships,
+                            market development and business growth
+                            activities.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+
+                        <a href="#application"
+                            class="job-btn btn">
+
+                            Apply Now
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Internship -->
+            <div class="job-card">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8">
+
+                        <div class="job-title">
+                            Internship Opportunities
+                        </div>
+
+                        <div class="job-meta">
+
+                            <span>
+                                Internship
+                            </span>
+
+                            <span>
+                                Multiple Areas
+                            </span>
+
+                            <span>
+                                Dhaka
+                            </span>
+
+                        </div>
+
+                        <p class="job-description">
+                            Students and early-career professionals can
+                            explore internship opportunities across
+                            technology, sustainability, research,
+                            marketing and operations.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+
+                        <a href="#application"
+                            class="job-btn btn">
+
+                            Apply Now
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Jobs End -->
+
+
+    <!-- Process Start -->
+    <section class="process-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>Application Process</span>
+
+                <h2>
+                    How to Join Us
+                </h2>
+
+                <p>
+                    Our application journey is designed to understand
+                    your skills, interests and potential contribution.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            01
+                        </div>
+
+                        <h5>
+                            Apply
+                        </h5>
+
+                        <p>
+                            Submit your application with relevant
+                            information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            02
+                        </div>
+
+                        <h5>
+                            Review
+                        </h5>
+
+                        <p>
+                            Our team reviews your application and
+                            experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            03
+                        </div>
+
+                        <h5>
+                            Interview
+                        </h5>
+
+                        <p>
+                            Selected candidates may be invited for
+                            discussion or interview.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="process-card">
+
+                        <div class="process-number">
+                            04
+                        </div>
+
+                        <h5>
+                            Join
+                        </h5>
+
+                        <p>
+                            Successful candidates move forward to
+                            the next stage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Process End -->
+
+
+    <!-- Application Start -->
+    <section class="application-section" id="application">
+
+        <div class="container">
+
+            <div class="application-box">
+
+                <div class="section-heading text-start mx-0 mb-4">
+
+                    <span>
+                        Career Application
+                    </span>
+
+                    <h2>
+                        Submit Your Profile
+                    </h2>
+
+                    <p>
+                        Don't see a suitable position? You can still
+                        share your profile for future opportunities.
+                    </p>
+
+                </div>
+
+
+                <form onsubmit="submitApplication(event)">
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+
+                            <label class="career-label">
+                                Full Name
+                            </label>
+
+                            <input type="text"
+                                class="form-control career-input"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="career-label">
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                class="form-control career-input"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="career-label">
+                                Phone Number
+                            </label>
+
+                            <input type="tel"
+                                class="form-control career-input"
+                                placeholder="Enter your phone number"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="career-label">
+                                Area of Interest
+                            </label>
+
+                            <select class="form-select career-input" required>
+
+                                <option value="">
+                                    Select an area
+                                </option>
+
+                                <option>
+                                    Climate &amp; Carbon
+                                </option>
+
+                                <option>
+                                    Technology
+                                </option>
+
+                                <option>
+                                    Data &amp; MRV
+                                </option>
+
+                                <option>
+                                    Business Development
+                                </option>
+
+                                <option>
+                                    Marketing &amp; Communication
+                                </option>
+
+                                <option>
+                                    Operations
+                                </option>
+
+                                <option>
+                                    Internship
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="career-label">
+                                Experience Level
+                            </label>
+
+                            <select class="form-select career-input" required>
+
+                                <option value="">
+                                    Select experience
+                                </option>
+
+                                <option>
+                                    Entry Level
+                                </option>
+
+                                <option>
+                                    1–2 Years
+                                </option>
+
+                                <option>
+                                    3–5 Years
+                                </option>
+
+                                <option>
+                                    5+ Years
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="career-label">
+                                CV / Resume
+                            </label>
+
+                            <input type="file"
+                                class="form-control career-input"
+                                accept=".pdf,.doc,.docx">
+
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <label class="career-label">
+                                Cover Message
+                            </label>
+
+                            <textarea
+                                class="form-control career-input"
+                                placeholder="Tell us briefly about your skills, experience and why you are interested in Eco-Carbon"></textarea>
+
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <button type="submit"
+                                class="application-btn">
+
+                                Submit Application
+                                <i class="fa fa-arrow-right ms-2"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Application End -->
+
+
+    <!-- CTA Start -->
+    <section class="career-cta">
+
+        <div class="container">
+
+            <div class="career-cta-box">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8">
+
+                        <h3>
+                            Don't See the Right Opportunity?
+                        </h3>
+
+                        <p>
+                            We are always interested in connecting with
+                            talented people who are passionate about
+                            climate, technology and sustainable development.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                        <a href="#application"
+                            class="btn btn-light px-4 py-3">
+
+                            Share Your Profile
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- CTA End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input
+                            class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button
+                            type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+                    All Right Reserved.
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+                    <a class="border-bottom"
+                        href="https://safetaka.com">
+                        Safetaka.com Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+
+        function submitApplication(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you for your interest in Eco-Carbon. " +
+                "Your application form has been prepared for submission."
+            );
+
+        }
+    </script>
+
+</body>
+
+</html>

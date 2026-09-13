@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Credit Certification</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Eco-Carbon carbon credit certification, documentation, verification and certification support"
+        name="keywords">
+    <meta content="Eco-Carbon provides carbon credit certification support, documentation, quality review and verification readiness services."
+        name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* =========================================================
+           CREDIT CERTIFICATION PAGE
+        ========================================================= */
+
+        .cert-hero {
+            background:
+                linear-gradient(rgba(11, 78, 48, .78), rgba(5, 48, 31, .82)),
+                url("img/certification-banner.jpg") center center/cover no-repeat;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .cert-hero-content {
+            max-width: 780px;
+        }
+
+        .cert-hero h1 {
+            font-size: 58px;
+            line-height: 1.15;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 22px;
+        }
+
+        .cert-hero p {
+            font-size: 19px;
+            line-height: 1.8;
+            color: #f1f8f4;
+            max-width: 720px;
+        }
+
+        .cert-section {
+            padding: 80px 0;
+        }
+
+        .cert-section-light {
+            background: #f7fbf8;
+        }
+
+        .cert-title {
+            color: #164c35;
+            font-weight: 700;
+        }
+
+        .cert-subtitle {
+            color: #6b7771;
+            line-height: 1.8;
+        }
+
+        .cert-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 32px 26px;
+            height: 100%;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, .07);
+            border: 1px solid #e7eee9;
+            transition: .35s;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .12);
+        }
+
+        .cert-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e9f6ee;
+            color: #198754;
+            border-radius: 50%;
+            font-size: 27px;
+            margin-bottom: 22px;
+        }
+
+        .cert-card h5 {
+            color: #164c35;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .cert-card p {
+            color: #68736e;
+            line-height: 1.75;
+            margin-bottom: 0;
+        }
+
+        .cert-intro-img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, .12);
+        }
+
+        .cert-check-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0;
+        }
+
+        .cert-check-list li {
+            margin-bottom: 16px;
+            color: #53605a;
+            line-height: 1.6;
+        }
+
+        .cert-check-list i {
+            color: #198754;
+            margin-right: 10px;
+        }
+
+        .cert-process {
+            position: relative;
+            height: 100%;
+            padding: 30px 25px;
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid #e4eee7;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+        }
+
+        .cert-step-number {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #198754;
+            color: #fff;
+            font-weight: 700;
+            font-size: 17px;
+            margin-bottom: 18px;
+        }
+
+        .cert-process h5 {
+            color: #164c35;
+            font-weight: 700;
+        }
+
+        .cert-process p {
+            color: #6b7771;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .cert-document-box {
+            background: #164c35;
+            border-radius: 18px;
+            padding: 45px;
+            color: #fff;
+        }
+
+        .cert-document-box h3 {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .cert-document-box p {
+            color: #dcebe2;
+            line-height: 1.8;
+        }
+
+        .cert-doc-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0;
+        }
+
+        .cert-doc-list li {
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .12);
+            color: #eef7f1;
+        }
+
+        .cert-doc-list li:last-child {
+            border-bottom: none;
+        }
+
+        .cert-doc-list i {
+            margin-right: 10px;
+            color: #9bd6b2;
+        }
+
+        .cert-benefit-card {
+            text-align: center;
+            padding: 35px 20px;
+            background: #fff;
+            border-radius: 14px;
+            height: 100%;
+            border: 1px solid #e6eee9;
+            transition: .3s;
+        }
+
+        .cert-benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cert-benefit-card i {
+            font-size: 34px;
+            color: #198754;
+            margin-bottom: 20px;
+        }
+
+        .cert-benefit-card h5 {
+            color: #164c35;
+            font-weight: 700;
+        }
+
+        .cert-benefit-card p {
+            color: #68736e;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .cert-cta {
+            background:
+                linear-gradient(rgba(9, 69, 43, .88), rgba(9, 69, 43, .88)),
+                url("img/carousel-2.jpg") center center/cover no-repeat;
+            padding: 85px 0;
+            color: #fff;
+        }
+
+        .cert-cta h2 {
+            color: #fff;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .cert-cta p {
+            color: #e4f1e9;
+            max-width: 700px;
+            margin: 15px auto 30px;
+            line-height: 1.8;
+        }
+
+        .cert-form-box {
+            background: #fff;
+            border-radius: 18px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .08);
+        }
+
+        .cert-form-box label {
+            font-weight: 600;
+            color: #385047;
+            margin-bottom: 8px;
+        }
+
+        .cert-form-box .form-control,
+        .cert-form-box .form-select {
+            border-radius: 8px;
+            min-height: 48px;
+            border: 1px solid #dbe5df;
+        }
+
+        .cert-form-box textarea {
+            min-height: 130px !important;
+        }
+
+        .cert-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, .13);
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 991px) {
+            .cert-hero h1 {
+                font-size: 43px;
+            }
+
+            .cert-hero {
+                min-height: 450px;
+            }
+
+            .cert-intro-img {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .cert-hero h1 {
+                font-size: 35px;
+            }
+
+            .cert-hero p {
+                font-size: 16px;
+            }
+
+            .cert-section {
+                padding: 60px 0;
+            }
+
+            .cert-document-box {
+                padding: 30px 22px;
+            }
+
+            .cert-cta h2 {
+                font-size: 32px;
+            }
+
+            .cert-form-box {
+                padding: 25px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"
+            style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">Home</a>
+
+                <a href="about.html" class="nav-item nav-link">About</a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">Buyer</a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item active">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html" class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html" class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html" class="nav-item nav-link">
+                    Calculator
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html" class="dropdown-item">
+                            Training
+                        </a>
+
+                        <a href="news.html" class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html" class="dropdown-item">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html" class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html" class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="career.html" class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+            </a>
+
+        </div>
+
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <section class="cert-hero">
+
+        <div class="container">
+
+            <div class="cert-hero-content wow fadeInUp">
+
+                <div class="cert-badge">
+                    <i class="fa fa-certificate"></i>
+                    Carbon Credit Certification
+                </div>
+
+                <h1>
+                    Strengthen the Credibility of Your Carbon Credits
+                </h1>
+
+                <p>
+                    Organize your carbon project documentation, data and
+                    verification requirements with a structured certification
+                    support process designed to improve transparency and
+                    market readiness.
+                </p>
+
+                <a href="#certification-request"
+                    class="btn btn-primary py-3 px-4 mt-3">
+                    Request Certification Support
+                    <i class="fa fa-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Introduction Start -->
+    <section class="cert-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 wow fadeInLeft">
+
+                    <img src="img/cer-1.jpg"
+                        alt="Carbon Credit Certification"
+                        class="cert-intro-img">
+
+                </div>
+
+                <div class="col-lg-6 wow fadeInRight">
+
+                    <span class="text-primary fw-bold text-uppercase">
+                        Credit Certification
+                    </span>
+
+                    <h2 class="cert-title display-6 mt-2 mb-4">
+                        From Project Documentation to Certification Readiness
+                    </h2>
+
+                    <p class="cert-subtitle mb-3">
+                        Carbon credit certification requires clear project
+                        information, reliable data, appropriate documentation
+                        and alignment with the applicable methodology,
+                        standard and certification requirements.
+                    </p>
+
+                    <p class="cert-subtitle">
+                        Eco-Carbon helps project developers and carbon market
+                        participants organize the information needed for
+                        assessment, verification and certification processes.
+                    </p>
+
+                    <ul class="cert-check-list">
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Project documentation review
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Certification requirement mapping
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Data and evidence organization
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Verification readiness support
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Certification process coordination
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Introduction End -->
+
+
+    <!-- Certification Areas Start -->
+    <section class="cert-section cert-section-light">
+
+        <div class="container">
+
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+
+                <span class="text-primary fw-bold text-uppercase">
+                    Our Support
+                </span>
+
+                <h2 class="cert-title display-6 mt-2">
+                    Certification Support Areas
+                </h2>
+
+                <p class="cert-subtitle mt-3">
+                    A structured approach to help carbon projects prepare
+                    clear, consistent and review-ready certification
+                    documentation.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+
+                    <div class="cert-card">
+
+                        <div class="cert-icon">
+                            <i class="fa fa-file-alt"></i>
+                        </div>
+
+                        <h5>Documentation Review</h5>
+
+                        <p>
+                            Review and organize project documents,
+                            supporting evidence, records and required
+                            information for certification preparation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.1s">
+
+                    <div class="cert-card">
+
+                        <div class="cert-icon">
+                            <i class="fa fa-clipboard-check"></i>
+                        </div>
+
+                        <h5>Requirement Mapping</h5>
+
+                        <p>
+                            Map project information against relevant
+                            certification, methodology and verification
+                            requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.2s">
+
+                    <div class="cert-card">
+
+                        <div class="cert-icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+
+                        <h5>Data Organization</h5>
+
+                        <p>
+                            Structure project data and supporting evidence
+                            so that key information can be accessed and
+                            reviewed efficiently.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+
+                    <div class="cert-card">
+
+                        <div class="cert-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+
+                        <h5>Quality Review</h5>
+
+                        <p>
+                            Identify documentation gaps, inconsistencies
+                            and areas that may require clarification before
+                            external review.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.1s">
+
+                    <div class="cert-card">
+
+                        <div class="cert-icon">
+                            <i class="fa fa-shield-alt"></i>
+                        </div>
+
+                        <h5>Verification Readiness</h5>
+
+                        <p>
+                            Help prepare project records and evidence for
+                            interaction with applicable verification and
+                            certification processes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp"
+                    data-wow-delay="0.2s">
+
+                    <div class="cert-card">
+
+                        <div class="cert-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+
+                        <h5>Certification Coordination</h5>
+
+                        <p>
+                            Support communication and coordination throughout
+                            the relevant certification preparation process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Certification Areas End -->
+
+
+    <!-- Process Start -->
+    <section class="cert-section">
+
+        <div class="container">
+
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+
+                <span class="text-primary fw-bold text-uppercase">
+                    How It Works
+                </span>
+
+                <h2 class="cert-title display-6 mt-2">
+                    Our Certification Support Process
+                </h2>
+
+                <p class="cert-subtitle mt-3">
+                    A practical step-by-step approach for preparing your
+                    project for the applicable certification pathway.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="cert-process">
+
+                        <div class="cert-step-number">
+                            01
+                        </div>
+
+                        <h5>Project Assessment</h5>
+
+                        <p>
+                            Understand the project type, activities,
+                            methodology, data sources and current
+                            documentation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="cert-process">
+
+                        <div class="cert-step-number">
+                            02
+                        </div>
+
+                        <h5>Requirement Review</h5>
+
+                        <p>
+                            Identify the relevant certification and
+                            verification requirements applicable to the
+                            project.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="cert-process">
+
+                        <div class="cert-step-number">
+                            03
+                        </div>
+
+                        <h5>Documentation Preparation</h5>
+
+                        <p>
+                            Organize project documents, records, data and
+                            supporting evidence in a structured format.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="cert-process">
+
+                        <div class="cert-step-number">
+                            04
+                        </div>
+
+                        <h5>Quality &amp; Gap Review</h5>
+
+                        <p>
+                            Review available information and identify gaps,
+                            inconsistencies or areas requiring additional
+                            evidence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="cert-process">
+
+                        <div class="cert-step-number">
+                            05
+                        </div>
+
+                        <h5>Verification Preparation</h5>
+
+                        <p>
+                            Prepare organized information and supporting
+                            records for the applicable verification process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="cert-process">
+
+                        <div class="cert-step-number">
+                            06
+                        </div>
+
+                        <h5>Certification Support</h5>
+
+                        <p>
+                            Support communication, document coordination and
+                            follow-up throughout the certification pathway.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Process End -->
+
+
+    <!-- Documents Start -->
+    <section class="cert-section cert-section-light">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="cert-document-box">
+
+                        <h3>
+                            What We Help Organize
+                        </h3>
+
+                        <p>
+                            Depending on the project and applicable
+                            requirements, certification preparation may
+                            involve a range of technical, operational and
+                            supporting documents.
+                        </p>
+
+                        <ul class="cert-doc-list">
+
+                            <li>
+                                <i class="fa fa-check"></i>
+                                Project Description &amp; Design Documents
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check"></i>
+                                Baseline and Emission Data
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check"></i>
+                                Monitoring Records
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check"></i>
+                                Activity &amp; Operational Records
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check"></i>
+                                MRV Reports &amp; Supporting Evidence
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check"></i>
+                                Verification Documents
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <span class="text-primary fw-bold text-uppercase">
+                        Certification Readiness
+                    </span>
+
+                    <h2 class="cert-title display-6 mt-2 mb-4">
+                        Better Documentation. Better Transparency.
+                    </h2>
+
+                    <p class="cert-subtitle">
+                        Well-organized project information can make the
+                        certification and verification process easier to
+                        understand and manage.
+                    </p>
+
+                    <p class="cert-subtitle mt-3">
+                        Our approach focuses on improving the completeness,
+                        consistency and accessibility of project information
+                        without replacing the role of independent
+                        certification or verification bodies.
+                    </p>
+
+                    <a href="#certification-request"
+                        class="btn btn-primary py-3 px-4 mt-3">
+                        Discuss Your Project
+                        <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Documents End -->
+
+
+    <!-- Benefits Start -->
+    <section class="cert-section">
+
+        <div class="container">
+
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+
+                <span class="text-primary fw-bold text-uppercase">
+                    Benefits
+                </span>
+
+                <h2 class="cert-title display-6 mt-2">
+                    Why Certification Readiness Matters
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="cert-benefit-card">
+
+                        <i class="fa fa-eye"></i>
+
+                        <h5>Transparency</h5>
+
+                        <p>
+                            Present project information in a clearer and
+                            more structured way.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="cert-benefit-card">
+
+                        <i class="fa fa-check-double"></i>
+
+                        <h5>Consistency</h5>
+
+                        <p>
+                            Reduce inconsistencies across project records,
+                            reports and supporting documents.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="cert-benefit-card">
+
+                        <i class="fa fa-folder-open"></i>
+
+                        <h5>Better Records</h5>
+
+                        <p>
+                            Keep important project evidence organized and
+                            easier to review.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="cert-benefit-card">
+
+                        <i class="fa fa-chart-line"></i>
+
+                        <h5>Market Readiness</h5>
+
+                        <p>
+                            Improve the overall readiness of project
+                            information for carbon market engagement.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Benefits End -->
+
+
+    <!-- CTA Start -->
+    <section class="cert-cta">
+
+        <div class="container text-center">
+
+            <h2>
+                Ready to Prepare Your Carbon Project?
+            </h2>
+
+            <p>
+                Talk to Eco-Carbon about your project documentation,
+                certification requirements and verification readiness.
+            </p>
+
+            <a href="#certification-request"
+                class="btn btn-light py-3 px-5">
+                Start a Conversation
+                <i class="fa fa-arrow-right ms-2"></i>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- CTA End -->
+
+
+    <!-- Certification Request Form Start -->
+    <section class="cert-section" id="certification-request">
+
+        <div class="container">
+
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+
+                <span class="text-primary fw-bold text-uppercase">
+                    Get in Touch
+                </span>
+
+                <h2 class="cert-title display-6 mt-2">
+                    Certification Support Request
+                </h2>
+
+                <p class="cert-subtitle mt-3">
+                    Share your project information and our team can
+                    understand your certification support requirements.
+                </p>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="cert-form-box">
+
+                        <form>
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Name
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Your Name">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Organization
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Organization Name">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Email
+                                    </label>
+
+                                    <input type="email"
+                                        class="form-control"
+                                        placeholder="Your Email">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Mobile
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Your Mobile Number">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Project Type
+                                    </label>
+
+                                    <select class="form-select">
+
+                                        <option selected>
+                                            Select Project Type
+                                        </option>
+
+                                        <option>
+                                            Renewable Energy
+                                        </option>
+
+                                        <option>
+                                            Nature-Based
+                                        </option>
+
+                                        <option>
+                                            Energy Efficiency
+                                        </option>
+
+                                        <option>
+                                            Waste Management
+                                        </option>
+
+                                        <option>
+                                            Agriculture
+                                        </option>
+
+                                        <option>
+                                            Forestry
+                                        </option>
+
+                                        <option>
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Certification Status
+                                    </label>
+
+                                    <select class="form-select">
+
+                                        <option selected>
+                                            Select Status
+                                        </option>
+
+                                        <option>
+                                            Project Planning
+                                        </option>
+
+                                        <option>
+                                            Documentation in Progress
+                                        </option>
+
+                                        <option>
+                                            MRV Completed
+                                        </option>
+
+                                        <option>
+                                            Verification Preparation
+                                        </option>
+
+                                        <option>
+                                            Certification Process
+                                        </option>
+
+                                        <option>
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-12">
+
+                                    <label>
+                                        Project Details / Requirements
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        placeholder="Tell us about your project and certification requirements"></textarea>
+
+                                </div>
+
+
+                                <div class="col-12 text-center">
+
+                                    <button type="button"
+                                        class="btn btn-primary py-3 px-5">
+
+                                        Submit Certification Request
+
+                                        <i class="fa fa-arrow-right ms-2"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Certification Request Form End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+
+                            <i class="fab fa-twitter"></i>
+
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+
+                            <i class="fab fa-youtube"></i>
+
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input
+                            class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+
+                    All Right Reserved.
+
+                </div>
+
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+
+                    <a class="border-bottom"
+                        href="https://safetaka.com">
+                        Safetaka.com Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script src="lib/easing/easing.min.js"></script>
+
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

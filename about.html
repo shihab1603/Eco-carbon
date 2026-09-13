@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | About Us</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Eco-Carbon about us, carbon markets, climate action and sustainability" name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* =========================================
+           ABOUT PAGE
+        ========================================= */
+
+        .about-page {
+            background: #f7faf8;
+        }
+
+        /* Hero */
+        .about-hero {
+            position: relative;
+            overflow: hidden;
+            min-height: 470px;
+            background: linear-gradient(135deg, #063b2a 0%, #0a6847 58%, #15915e 100%);
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-hero::before {
+            content: "";
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            border: 85px solid rgba(255,255,255,0.045);
+            border-radius: 50%;
+            right: -190px;
+            top: -260px;
+        }
+
+        .about-hero::after {
+            content: "";
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border: 60px solid rgba(255,255,255,0.045);
+            border-radius: 50%;
+            left: -180px;
+            bottom: -250px;
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 85px 0;
+        }
+
+        .about-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 8px 17px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.23);
+            background: rgba(255,255,255,0.08);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .about-hero h1 {
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 1.08;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            max-width: 700px;
+            color: rgba(255,255,255,0.84);
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        /* Hero visual */
+        .about-visual {
+            position: relative;
+            z-index: 2;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .eco-circle {
+            width: 250px;
+            height: 250px;
+            border: 1px solid rgba(255,255,255,0.22);
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eco-circle::before {
+            content: "";
+            position: absolute;
+            inset: 30px;
+            border: 1px dashed rgba(255,255,255,0.2);
+            border-radius: 50%;
+        }
+
+        .eco-circle::after {
+            content: "";
+            position: absolute;
+            inset: 65px;
+            border: 1px solid rgba(255,255,255,0.16);
+            border-radius: 50%;
+        }
+
+        .eco-center {
+            width: 82px;
+            height: 82px;
+            background: #fff;
+            color: #0b7149;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            position: relative;
+            z-index: 3;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+        }
+
+        .eco-node {
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.23);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .eco-node.n1 {
+            top: 0;
+            left: 99px;
+        }
+
+        .eco-node.n2 {
+            right: 0;
+            top: 99px;
+        }
+
+        .eco-node.n3 {
+            bottom: 0;
+            left: 99px;
+        }
+
+        .eco-node.n4 {
+            left: 0;
+            top: 99px;
+        }
+
+        /* Intro */
+        .about-intro {
+            margin-top: -65px;
+            position: relative;
+            z-index: 5;
+            padding-bottom: 85px;
+        }
+
+        .intro-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 42px 45px;
+            box-shadow: 0 18px 55px rgba(16, 63, 43, 0.09);
+            border-left: 5px solid #15915e;
+        }
+
+        .intro-card h3 {
+            color: #143d2e;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .intro-card p {
+            color: #728079;
+            line-height: 1.85;
+            margin: 0;
+        }
+
+        /* Story */
+        .about-story {
+            padding: 10px 0 90px;
+        }
+
+        .story-tag {
+            color: #15915e;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .story-title {
+            color: #143d2e;
+            font-size: 39px;
+            line-height: 1.2;
+            font-weight: 700;
+            margin: 9px 0 20px;
+        }
+
+        .story-text {
+            color: #728079;
+            line-height: 1.85;
+            margin-bottom: 18px;
+        }
+
+        .story-points {
+            margin-top: 28px;
+        }
+
+        .story-point {
+            display: flex;
+            align-items: flex-start;
+            gap: 13px;
+            margin-bottom: 15px;
+        }
+
+        .story-point-icon {
+            width: 31px;
+            height: 31px;
+            min-width: 31px;
+            border-radius: 50%;
+            background: #e3f4eb;
+            color: #15915e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        .story-point span {
+            color: #43574d;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Story visual */
+        .story-visual {
+            position: relative;
+            min-height: 440px;
+        }
+
+        .story-main-card {
+            width: 80%;
+            min-height: 370px;
+            background: linear-gradient(145deg, #0b5d40, #15915e);
+            border-radius: 24px;
+            padding: 42px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .story-main-card::before {
+            content: "";
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            border: 50px solid rgba(255,255,255,0.06);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .story-main-card::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border: 30px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            bottom: -100px;
+            left: -70px;
+        }
+
+        .story-main-icon {
+            width: 76px;
+            height: 76px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.17);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .story-main-card h3 {
+            position: relative;
+            z-index: 2;
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .story-main-card p {
+            position: relative;
+            z-index: 2;
+            color: rgba(255,255,255,0.78);
+            line-height: 1.7;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .story-mini-card {
+            position: absolute;
+            right: 0;
+            top: 65px;
+            width: 220px;
+            background: #fff;
+            border-radius: 17px;
+            padding: 25px;
+            box-shadow: 0 18px 45px rgba(17, 63, 44, 0.12);
+        }
+
+        .story-mini-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #e5f5ec;
+            color: #15915e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .story-mini-card h6 {
+            color: #173f2f;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .story-mini-card p {
+            color: #7b8881;
+            font-size: 12px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Mission Vision */
+        .mv-section {
+            background: #edf6f1;
+            padding: 90px 0;
+        }
+
+        .mv-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 38px;
+            height: 100%;
+            border: 1px solid #e0ebe4;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mv-card::after {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 20px solid #f0f8f3;
+            border-radius: 50%;
+            right: -45px;
+            bottom: -50px;
+        }
+
+        .mv-icon {
+            width: 62px;
+            height: 62px;
+            border-radius: 16px;
+            background: #e5f5ec;
+            color: #15915e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .mv-card h3 {
+            color: #173f2f;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .mv-card p {
+            color: #75827b;
+            line-height: 1.8;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* What we do */
+        .what-we-do {
+            padding: 90px 0;
+        }
+
+        .section-label {
+            color: #15915e;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            color: #143d2e;
+            font-size: 39px;
+            font-weight: 700;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            color: #75827b;
+            max-width: 690px;
+            line-height: 1.8;
+        }
+
+        .work-card {
+            background: #fff;
+            border: 1px solid #e1ebe5;
+            border-radius: 17px;
+            padding: 28px;
+            height: 100%;
+            transition: .3s;
+        }
+
+        .work-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 16px 40px rgba(15, 64, 43, 0.08);
+        }
+
+        .work-number {
+            color: #d9eee2;
+            font-size: 42px;
+            line-height: 1;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .work-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 13px;
+            background: #e7f5ed;
+            color: #15915e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+            margin-bottom: 18px;
+        }
+
+        .work-card h5 {
+            color: #214536;
+            font-weight: 700;
+            margin-bottom: 9px;
+        }
+
+        .work-card p {
+            color: #78847e;
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Why */
+        .why-section {
+            background: #123c2d;
+            padding: 90px 0;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-section::before {
+            content: "";
+            position: absolute;
+            width: 480px;
+            height: 480px;
+            border: 70px solid rgba(255,255,255,0.035);
+            border-radius: 50%;
+            right: -220px;
+            top: -250px;
+        }
+
+        .why-title {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            font-size: 39px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .why-description {
+            position: relative;
+            z-index: 2;
+            color: rgba(255,255,255,0.68);
+            line-height: 1.8;
+            max-width: 650px;
+        }
+
+        .why-item {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            gap: 18px;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.09);
+        }
+
+        .why-item:last-child {
+            border-bottom: 0;
+        }
+
+        .why-icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            border-radius: 13px;
+            background: rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8de0b7;
+        }
+
+        .why-item h5 {
+            margin: 0 0 5px;
+            font-weight: 700;
+        }
+
+        .why-item p {
+            margin: 0;
+            color: rgba(255,255,255,0.62);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* Journey */
+        .journey-section {
+            padding: 90px 0;
+        }
+
+        .journey-line {
+            position: relative;
+            margin-top: 45px;
+        }
+
+        .journey-line::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #dcebe2;
+            transform: translateX(-50%);
+        }
+
+        .journey-item {
+            position: relative;
+            width: 50%;
+            padding: 0 50px 45px;
+        }
+
+        .journey-item:nth-child(odd) {
+            text-align: right;
+            padding-left: 0;
+        }
+
+        .journey-item:nth-child(even) {
+            margin-left: 50%;
+            padding-right: 0;
+        }
+
+        .journey-dot {
+            position: absolute;
+            top: 2px;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background: #15915e;
+            border: 4px solid #e4f4eb;
+            box-sizing: content-box;
+        }
+
+        .journey-item:nth-child(odd) .journey-dot {
+            right: -11px;
+        }
+
+        .journey-item:nth-child(even) .journey-dot {
+            left: -11px;
+        }
+
+        .journey-year {
+            color: #15915e;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .journey-item h5 {
+            color: #214536;
+            font-weight: 700;
+            margin: 7px 0;
+        }
+
+        .journey-item p {
+            color: #78847e;
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* CTA */
+        .about-cta {
+            padding: 5px 0 90px;
+        }
+
+        .about-cta-box {
+            background: linear-gradient(135deg, #0b5d40, #15915e);
+            color: #fff;
+            border-radius: 23px;
+            padding: 58px 35px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-cta-box::before {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            border: 35px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            right: -90px;
+            top: -120px;
+        }
+
+        .about-cta-box h2 {
+            position: relative;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .about-cta-box p {
+            position: relative;
+            max-width: 680px;
+            margin: 0 auto 25px;
+            color: rgba(255,255,255,0.82);
+            line-height: 1.7;
+        }
+
+        .about-cta-box .btn {
+            position: relative;
+            padding: 12px 28px;
+            font-weight: 700;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+
+            .about-hero {
+                min-height: auto;
+            }
+
+            .about-hero h1 {
+                font-size: 45px;
+            }
+
+            .about-visual {
+                margin-top: 30px;
+            }
+
+            .story-main-card {
+                width: 88%;
+            }
+
+            .story-mini-card {
+                right: 0;
+            }
+
+            .journey-item {
+                padding-right: 35px;
+            }
+
+            .journey-item:nth-child(even) {
+                padding-left: 35px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .about-hero-content {
+                padding: 65px 0;
+            }
+
+            .about-hero h1 {
+                font-size: 37px;
+            }
+
+            .about-hero p {
+                font-size: 15px;
+            }
+
+            .about-visual {
+                height: 250px;
+            }
+
+            .eco-circle {
+                width: 190px;
+                height: 190px;
+            }
+
+            .eco-circle::before {
+                inset: 24px;
+            }
+
+            .eco-circle::after {
+                inset: 50px;
+            }
+
+            .eco-center {
+                width: 65px;
+                height: 65px;
+                font-size: 25px;
+            }
+
+            .eco-node {
+                width: 42px;
+                height: 42px;
+                font-size: 15px;
+            }
+
+            .eco-node.n1 {
+                left: 74px;
+            }
+
+            .eco-node.n2 {
+                top: 74px;
+            }
+
+            .eco-node.n3 {
+                left: 74px;
+            }
+
+            .eco-node.n4 {
+                top: 74px;
+            }
+
+            .intro-card {
+                padding: 28px;
+            }
+
+            .story-title,
+            .section-title,
+            .why-title {
+                font-size: 30px;
+            }
+
+            .story-visual {
+                min-height: 420px;
+                margin-top: 35px;
+            }
+
+            .story-main-card {
+                width: 100%;
+                min-height: 340px;
+                padding: 30px;
+            }
+
+            .story-mini-card {
+                right: 10px;
+                top: 35px;
+                width: 190px;
+            }
+
+            .journey-line::before {
+                left: 10px;
+            }
+
+            .journey-item,
+            .journey-item:nth-child(even) {
+                width: 100%;
+                margin-left: 0;
+                text-align: left;
+                padding: 0 0 35px 40px;
+            }
+
+            .journey-item:nth-child(odd) {
+                padding-left: 40px;
+            }
+
+            .journey-item:nth-child(odd) .journey-dot,
+            .journey-item:nth-child(even) .journey-dot {
+                left: 0;
+                right: auto;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="about-page">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-item nav-link active">
+                    About
+                </a>
+
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">
+                            Buyer
+                        </a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html" class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html" class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html" class="nav-item nav-link">
+                    Calculator
+                </a>
+
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html" class="dropdown-item">
+                            Training
+                        </a>
+
+                        <a href="news.html" class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html" class="dropdown-item">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html" class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html" class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="career.html" class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="about-hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <div class="about-hero-content">
+
+                        <div class="about-label">
+                            <i class="fa fa-leaf"></i>
+                            About Eco-Carbon
+                        </div>
+
+                        <h1>
+                            Building a Smarter
+                            Carbon Future
+                        </h1>
+
+                        <p>
+                            Eco-Carbon is designed to connect carbon projects,
+                            market participants, climate solutions and knowledge
+                            through a structured digital ecosystem.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="about-visual">
+
+                        <div class="eco-circle">
+
+                            <div class="eco-center">
+                                <i class="fa fa-globe"></i>
+                            </div>
+
+                            <div class="eco-node n1">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+
+                            <div class="eco-node n2">
+                                <i class="fa fa-chart-line"></i>
+                            </div>
+
+                            <div class="eco-node n3">
+                                <i class="fa fa-recycle"></i>
+                            </div>
+
+                            <div class="eco-node n4">
+                                <i class="fa fa-users"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Intro -->
+    <section class="about-intro">
+
+        <div class="container">
+
+            <div class="intro-card">
+
+                <h3>
+                    Connecting Climate Action with Opportunity
+                </h3>
+
+                <p>
+                    Eco-Carbon focuses on creating practical connections between
+                    carbon project developers, producers, buyers, suppliers,
+                    organizations and other climate stakeholders. Our platform
+                    brings together project information, market opportunities,
+                    MRV support, certification readiness, consultation and
+                    learning resources in one ecosystem.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Our Story -->
+    <section class="about-story">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="story-tag">
+                        Our Story
+                    </span>
+
+                    <h2 class="story-title">
+                        Creating a Practical Ecosystem for Carbon &amp; Climate Action
+                    </h2>
+
+                    <p class="story-text">
+                        The carbon and climate landscape is becoming increasingly
+                        connected with technology, data, finance and sustainability.
+                        Eco-Carbon is built around the idea that stakeholders need
+                        better access to information, structured processes and
+                        meaningful connections.
+                    </p>
+
+                    <p class="story-text">
+                        Our approach is to bring these elements together through
+                        digital solutions and professional support that can help
+                        organizations understand, develop and participate in
+                        climate-related opportunities.
+                    </p>
+
+
+                    <div class="story-points">
+
+                        <div class="story-point">
+
+                            <div class="story-point-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+
+                            <span>
+                                Connecting carbon projects with relevant market participants.
+                            </span>
+
+                        </div>
+
+
+                        <div class="story-point">
+
+                            <div class="story-point-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+
+                            <span>
+                                Supporting better project information, data and documentation.
+                            </span>
+
+                        </div>
+
+
+                        <div class="story-point">
+
+                            <div class="story-point-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+
+                            <span>
+                                Promoting knowledge, transparency and informed decision-making.
+                            </span>
+
+                        </div>
+
+
+                        <div class="story-point">
+
+                            <div class="story-point-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+
+                            <span>
+                                Using technology to support climate and sustainability initiatives.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="story-visual">
+
+                <div class="story-visual">
+
+    <img src="img/services-3.jpg"
+         alt="Eco-Carbon Climate Action"
+         class="story-image">
+
+    <div class="story-mini-card">
+        <div class="story-mini-icon">
+            <i class="fa fa-network-wired"></i>
+        </div>
+        <h6>Connected Ecosystem</h6>
+        <p>Bringing different participants and climate opportunities together.</p>
+    </div>
+
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Mission & Vision -->
+    <section class="mv-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="mv-card">
+
+                        <div class="mv-icon">
+                            <i class="fa fa-bullseye"></i>
+                        </div>
+
+                        <h3>
+                            Our Mission
+                        </h3>
+
+                        <p>
+                            To make carbon markets and climate solutions more
+                            accessible through structured information, digital
+                            tools, professional support and meaningful connections
+                            among stakeholders.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="mv-card">
+
+                        <div class="mv-icon">
+                            <i class="fa fa-eye"></i>
+                        </div>
+
+                        <h3>
+                            Our Vision
+                        </h3>
+
+                        <p>
+                            To contribute to a transparent, technology-enabled
+                            and collaborative climate ecosystem where organizations
+                            can better understand and act on carbon and sustainability
+                            opportunities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- What We Do -->
+    <section class="what-we-do">
+
+        <div class="container">
+
+            <div class="row align-items-end mb-5">
+
+                <div class="col-lg-7">
+
+                    <span class="section-label">
+                        What We Do
+                    </span>
+
+                    <h2 class="section-title">
+                        Supporting the Carbon Ecosystem
+                    </h2>
+
+                    <p class="section-description">
+                        Eco-Carbon brings several important areas of carbon
+                        management and climate action together under one platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="work-card">
+
+                        <div class="work-number">
+                            01
+                        </div>
+
+                        <div class="work-icon">
+                            <i class="fa fa-project-diagram"></i>
+                        </div>
+
+                        <h5>
+                            Carbon Projects
+                        </h5>
+
+                        <p>
+                            Support for understanding, developing and organizing
+                            carbon project information and requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="work-card">
+
+                        <div class="work-number">
+                            02
+                        </div>
+
+                        <div class="work-icon">
+                            <i class="fa fa-store"></i>
+                        </div>
+
+                        <h5>
+                            Carbon Marketplace
+                        </h5>
+
+                        <p>
+                            A structured environment for exploring project,
+                            buyer and seller connections within the carbon market.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="work-card">
+
+                        <div class="work-number">
+                            03
+                        </div>
+
+                        <div class="work-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+
+                        <h5>
+                            MRV &amp; Verification
+                        </h5>
+
+                        <p>
+                            Support for measurement, monitoring, reporting,
+                            data organization and verification readiness.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="work-card">
+
+                        <div class="work-number">
+                            04
+                        </div>
+
+                        <div class="work-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+
+                        <h5>
+                            Certification Support
+                        </h5>
+
+                        <p>
+                            Assistance with documentation, requirement mapping,
+                            quality review and certification readiness.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="work-card">
+
+                        <div class="work-number">
+                            05
+                        </div>
+
+                        <div class="work-icon">
+                            <i class="fa fa-comments"></i>
+                        </div>
+
+                        <h5>
+                            Consultation
+                        </h5>
+
+                        <p>
+                            Consultation pathways for carbon projects,
+                            sustainability, market participation and climate action.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="work-card">
+
+                        <div class="work-number">
+                            06
+                        </div>
+
+                        <div class="work-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+
+                        <h5>
+                            Training &amp; Knowledge
+                        </h5>
+
+                        <p>
+                            Training, reports and resources designed to improve
+                            understanding of carbon markets and climate solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Eco-Carbon -->
+    <section class="why-section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-5 mb-5 mb-lg-0">
+
+                    <span class="section-label" style="color:#8de0b7;">
+                        Why Eco-Carbon
+                    </span>
+
+                    <h2 class="why-title">
+                        Designed Around Real Climate Needs
+                    </h2>
+
+                    <p class="why-description">
+                        Our approach combines technology, information,
+                        structured processes and stakeholder connections
+                        to make climate-related activities easier to navigate.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            <i class="fa fa-layer-group"></i>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Integrated Approach
+                            </h5>
+
+                            <p>
+                                Projects, markets, MRV, certification,
+                                consultation and learning are connected
+                                through one ecosystem.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Data &amp; Documentation Focus
+                            </h5>
+
+                            <p>
+                                Better organized information can support
+                                transparency, review and informed decisions.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Stakeholder Connection
+                            </h5>
+
+                            <p>
+                                We aim to create useful connections between
+                                project developers, producers, buyers and organizations.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            <i class="fa fa-laptop-code"></i>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Technology Enabled
+                            </h5>
+
+                            <p>
+                                Digital tools can help simplify information,
+                                workflows and access to climate-related resources.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Journey -->
+    <section class="journey-section">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="section-label">
+                    Our Approach
+                </span>
+
+                <h2 class="section-title">
+                    From Understanding to Action
+                </h2>
+
+                <p class="section-description mx-auto">
+                    We structure the Eco-Carbon experience around a simple
+                    journey that helps stakeholders move from information
+                    toward practical climate action.
+                </p>
+
+            </div>
+
+
+            <div class="journey-line">
+
+                <div class="journey-item">
+
+                    <div class="journey-dot"></div>
+
+                    <span class="journey-year">
+                        Step 01
+                    </span>
+
+                    <h5>
+                        Understand
+                    </h5>
+
+                    <p>
+                        Learn about carbon markets, climate action,
+                        project requirements and available opportunities.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-dot"></div>
+
+                    <span class="journey-year">
+                        Step 02
+                    </span>
+
+                    <h5>
+                        Explore
+                    </h5>
+
+                    <p>
+                        Explore projects, services, resources and potential
+                        market or sustainability pathways.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-dot"></div>
+
+                    <span class="journey-year">
+                        Step 03
+                    </span>
+
+                    <h5>
+                        Connect
+                    </h5>
+
+                    <p>
+                        Connect with relevant stakeholders, services,
+                        consultation opportunities and project information.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-dot"></div>
+
+                    <span class="journey-year">
+                        Step 04
+                    </span>
+
+                    <h5>
+                        Take Action
+                    </h5>
+
+                    <p>
+                        Move forward with better information, organized
+                        processes and a clearer understanding of next steps.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="about-cta">
+
+        <div class="container">
+
+            <div class="about-cta-box">
+
+                <h2>
+                    Ready to Explore Eco-Carbon?
+                </h2>
+
+                <p>
+                    Whether you are a buyer, producer, project developer,
+                    organization or climate professional, start exploring
+                    the Eco-Carbon ecosystem today.
+                </p>
+
+                <a href="signup.html"
+                    class="btn btn-light rounded-pill">
+
+                    Get Started
+                    <i class="fa fa-arrow-right ms-2"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input
+                            class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+
+                    All Right Reserved.
+
+                </div>
+
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+
+                    <a class="border-bottom" href="https://safetaka.com">
+                        Safetaka.com Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Back To Top -->
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

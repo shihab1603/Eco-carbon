@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | MRV & Verification</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Eco-Carbon, MRV, carbon measurement, reporting, verification, carbon projects, monitoring" name="keywords">
+    <meta content="Eco-Carbon MRV and Verification solutions for carbon projects, including measurement, monitoring, reporting, data management and verification support." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+        /* =========================================
+           MRV & VERIFICATION PAGE
+        ========================================= */
+
+        .mrv-hero {
+            min-height: 560px;
+            background:
+                linear-gradient(rgba(8, 55, 38, .82), rgba(8, 55, 38, .72)),
+                url('img/PIC-1.jpg') center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+        }
+
+        .mrv-hero-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #fff;
+        }
+
+        .mrv-hero-content .small-title {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 1px solid rgba(255,255,255,.45);
+            border-radius: 30px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .mrv-hero-content h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 22px;
+        }
+
+        .mrv-hero-content p {
+            font-size: 19px;
+            line-height: 1.8;
+            max-width: 740px;
+            margin: 0 auto 32px;
+        }
+
+        .mrv-btn {
+            padding: 14px 28px;
+            font-weight: 600;
+            margin: 5px;
+            border-radius: 4px;
+        }
+
+        .mrv-btn-outline {
+            color: #fff;
+            border: 1px solid rgba(255,255,255,.7);
+            background: transparent;
+        }
+
+        .mrv-btn-outline:hover {
+            background: #fff;
+            color: #198754;
+        }
+
+        .mrv-section-title {
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 50px;
+        }
+
+        .mrv-section-title .subtitle {
+            color: #198754;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .mrv-section-title h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #173b2b;
+            margin-bottom: 15px;
+        }
+
+        .mrv-section-title p {
+            color: #666;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Intro */
+
+        .mrv-intro {
+            padding: 90px 0;
+        }
+
+        .mrv-intro-image {
+            min-height: 440px;
+            background:
+                linear-gradient(rgba(25,135,84,.10), rgba(25,135,84,.10)),
+                url('img/mrv-project.jpg') center center/cover no-repeat;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .mrv-floating-card {
+            position: absolute;
+            bottom: 25px;
+            right: -20px;
+            background: #fff;
+            padding: 22px 25px;
+            border-radius: 8px;
+            box-shadow: 0 12px 35px rgba(0,0,0,.12);
+            max-width: 275px;
+        }
+
+        .mrv-floating-card i {
+            font-size: 30px;
+            color: #198754;
+            margin-bottom: 10px;
+        }
+
+        .mrv-floating-card h5 {
+            font-weight: 700;
+            color: #173b2b;
+            margin-bottom: 5px;
+        }
+
+        .mrv-floating-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+            line-height: 1.6;
+        }
+
+        .mrv-intro-text h3 {
+            font-size: 35px;
+            font-weight: 700;
+            color: #173b2b;
+            margin-bottom: 20px;
+        }
+
+        .mrv-intro-text p {
+            color: #666;
+            line-height: 1.9;
+        }
+
+        .mrv-check-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0;
+        }
+
+        .mrv-check-list li {
+            margin-bottom: 13px;
+            color: #444;
+        }
+
+        .mrv-check-list i {
+            color: #198754;
+            margin-right: 10px;
+        }
+
+        /* Core MRV */
+
+        .mrv-core {
+            padding: 90px 0;
+            background: #f6faf7;
+        }
+
+        .mrv-card {
+            height: 100%;
+            background: #fff;
+            border: 1px solid #e4ece7;
+            border-radius: 8px;
+            padding: 32px 28px;
+            transition: all .3s ease;
+        }
+
+        .mrv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.09);
+            border-color: #198754;
+        }
+
+        .mrv-icon {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #e9f7ef;
+            color: #198754;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .mrv-card h4 {
+            font-size: 21px;
+            color: #173b2b;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .mrv-card p {
+            color: #777;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Data Section */
+
+        .mrv-data {
+            padding: 90px 0;
+        }
+
+        .data-box {
+            padding: 30px;
+            border: 1px solid #e5ece7;
+            border-radius: 8px;
+            background: #fff;
+            height: 100%;
+            transition: .3s;
+        }
+
+        .data-box:hover {
+            box-shadow: 0 12px 30px rgba(0,0,0,.07);
+            transform: translateY(-5px);
+        }
+
+        .data-number {
+            font-size: 38px;
+            font-weight: 700;
+            color: #198754;
+            line-height: 1;
+            margin-bottom: 18px;
+        }
+
+        .data-box h5 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #173b2b;
+            margin-bottom: 10px;
+        }
+
+        .data-box p {
+            color: #777;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Process */
+
+        .mrv-process {
+            padding: 90px 0;
+            background: #f6faf7;
+        }
+
+        .process-box {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .process-number {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #198754;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 auto 22px;
+            box-shadow: 0 8px 20px rgba(25,135,84,.20);
+        }
+
+        .process-box h4 {
+            font-size: 20px;
+            color: #173b2b;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .process-box p {
+            color: #777;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        /* Verification */
+
+        .mrv-verification {
+            padding: 90px 0;
+        }
+
+        .verification-panel {
+            background: #173b2b;
+            border-radius: 10px;
+            padding: 50px;
+            color: #fff;
+            height: 100%;
+        }
+
+        .verification-panel h3 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 31px;
+            margin-bottom: 18px;
+        }
+
+        .verification-panel p {
+            color: rgba(255,255,255,.76);
+            line-height: 1.8;
+        }
+
+        .verification-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0;
+        }
+
+        .verification-list li {
+            margin-bottom: 15px;
+            color: rgba(255,255,255,.88);
+        }
+
+        .verification-list i {
+            color: #7be2a8;
+            margin-right: 10px;
+        }
+
+        .verification-info {
+            padding: 45px;
+            background: #f6faf7;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        .verification-info h3 {
+            color: #173b2b;
+            font-weight: 700;
+            font-size: 31px;
+            margin-bottom: 18px;
+        }
+
+        .verification-info p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .verification-step {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 22px;
+        }
+
+        .verification-step-icon {
+            min-width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #fff;
+            color: #198754;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.06);
+        }
+
+        .verification-step h6 {
+            color: #173b2b;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .verification-step p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Benefits */
+
+        .mrv-benefits {
+            padding: 90px 0;
+            background: #173b2b;
+            color: #fff;
+        }
+
+        .mrv-benefits .mrv-section-title h2,
+        .mrv-benefits .mrv-section-title p {
+            color: #fff;
+        }
+
+        .mrv-benefits .subtitle {
+            color: #7be2a8;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .benefit-icon {
+            min-width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7be2a8;
+            font-size: 20px;
+            margin-right: 18px;
+        }
+
+        .benefit-item h5 {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .benefit-item p {
+            color: rgba(255,255,255,.72);
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        /* CTA */
+
+        .mrv-cta {
+            padding: 85px 0;
+            background:
+                linear-gradient(rgba(25,135,84,.93), rgba(25,135,84,.93)),
+                url('img/carousel-2.jpg') center/cover;
+        }
+
+        .mrv-cta-content {
+            text-align: center;
+            color: #fff;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .mrv-cta-content h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .mrv-cta-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 28px;
+            color: rgba(255,255,255,.9);
+        }
+
+        /* Request Form */
+
+        .mrv-request {
+            padding: 90px 0;
+            background: #f7faf8;
+        }
+
+        .mrv-form-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 45px;
+            box-shadow: 0 12px 40px rgba(0,0,0,.07);
+        }
+
+        .mrv-form-box .form-label {
+            font-weight: 600;
+            color: #444;
+        }
+
+        .mrv-form-box .form-control,
+        .mrv-form-box .form-select {
+            min-height: 50px;
+            border: 1px solid #dce5df;
+            border-radius: 5px;
+        }
+
+        .mrv-form-box textarea.form-control {
+            min-height: 130px;
+        }
+
+        .mrv-form-box .form-control:focus,
+        .mrv-form-box .form-select:focus {
+            border-color: #198754;
+            box-shadow: 0 0 0 .15rem rgba(25,135,84,.1);
+        }
+
+        .mrv-submit {
+            background: #198754;
+            color: #fff;
+            border: none;
+            padding: 14px 30px;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        .mrv-submit:hover {
+            background: #146c43;
+            color: #fff;
+        }
+
+        @media (max-width: 991px) {
+
+            .mrv-hero-content h1 {
+                font-size: 44px;
+            }
+
+            .mrv-floating-card {
+                right: 15px;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+
+            .mrv-hero {
+                min-height: 500px;
+            }
+
+            .mrv-hero-content h1 {
+                font-size: 35px;
+            }
+
+            .mrv-hero-content p {
+                font-size: 16px;
+            }
+
+            .mrv-section-title h2 {
+                font-size: 31px;
+            }
+
+            .mrv-intro {
+                padding: 65px 0;
+            }
+
+            .mrv-intro-image {
+                min-height: 330px;
+                margin-bottom: 45px;
+            }
+
+            .mrv-floating-card {
+                right: 15px;
+                bottom: -25px;
+            }
+
+            .mrv-intro-text h3 {
+                font-size: 28px;
+            }
+
+            .verification-panel,
+            .verification-info {
+                padding: 30px;
+            }
+
+            .mrv-form-box {
+                padding: 25px;
+            }
+
+            .mrv-cta-content h2 {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h1 class="m-0">Eco-Carbon</h1>
+    </a>
+
+    <button class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+            <a href="index.html" class="nav-item nav-link">
+                Home
+            </a>
+
+            <a href="about.html" class="nav-item nav-link">
+                About
+            </a>
+
+            <div class="nav-item dropdown">
+
+                <a href="#"
+                   class="nav-link dropdown-toggle"
+                   data-bs-toggle="dropdown">
+                    Services
+                </a>
+
+                <div class="dropdown-menu bg-light m-0">
+
+                    <a href="buyer.html" class="dropdown-item">
+                        Buyer
+                    </a>
+
+                    <a href="seller.html" class="dropdown-item">
+                        Seller / Producer
+                    </a>
+
+                    <a href="supplier.html" class="dropdown-item">
+                        Supplier
+                    </a>
+
+                    <a href="mrv.html" class="dropdown-item active">MVR
+                    </a>
+
+                    <a href="certification.html" class="dropdown-item">
+                        Credit Certification
+                    </a>
+
+                    <a href="consultation.html" class="dropdown-item">
+                        Consultation
+                    </a>
+
+                </div>
+            </div>
+
+            <a href="projects.html" class="nav-item nav-link">
+                Projects
+            </a>
+
+            <a href="marketplace.html" class="nav-item nav-link">
+                Marketplace
+            </a>
+
+            <a href="calculator.html" class="nav-item nav-link">
+                Calculator
+            </a>
+
+            <div class="nav-item dropdown">
+
+                <a href="#"
+                   class="nav-link dropdown-toggle"
+                   data-bs-toggle="dropdown">
+                    Resources
+                </a>
+
+                <div class="dropdown-menu bg-light m-0">
+
+                    <a href="training.html" class="dropdown-item">
+                        Training
+                    </a>
+
+                    <a href="news.html" class="dropdown-item">
+                        News &amp; Media
+                    </a>
+
+                    <a href="gallery.html" class="dropdown-item">
+                        Photo Gallery
+                    </a>
+
+                    <a href="reports.html" class="dropdown-item">
+                        Reports
+                    </a>
+
+                    <a href="links.html" class="dropdown-item">
+                        Related Links
+                    </a>
+
+                </div>
+            </div>
+
+            <a href="career.html" class="nav-item nav-link">
+                Career
+            </a>
+
+            <a href="contact.html" class="nav-item nav-link">
+                Contact Us
+            </a>
+
+        </div>
+
+        <a href="signup.html"
+           class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+            Get Started
+            <i class="fa fa-arrow-right ms-3"></i>
+
+        </a>
+
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- MRV Hero Start -->
+<section class="mrv-hero">
+
+    <div class="container">
+
+        <div class="mrv-hero-content">
+
+            <span class="small-title">
+                Measurement • Reporting • Verification
+            </span>
+
+            <h1>
+                Build Trust Through Better Carbon Data
+            </h1>
+
+            <p>
+                Strengthen your carbon project with structured measurement,
+                monitoring, reporting and verification support designed to
+                improve data quality, transparency and project readiness.
+            </p>
+
+            <a href="#mrv-request"
+               class="btn btn-primary mrv-btn">
+
+                Request MRV Support
+                <i class="fa fa-arrow-right ms-2"></i>
+
+            </a>
+
+            <a href="projects.html"
+               class="btn mrv-btn mrv-btn-outline">
+
+                Explore Projects
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- MRV Hero End -->
+
+
+<!-- Introduction Start -->
+<section class="mrv-intro">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="mrv-intro-image">
+
+                    <div class="mrv-floating-card">
+
+                        <i class="fa fa-chart-line"></i>
+
+                        <h5>
+                            Data-Driven Carbon Management
+                        </h5>
+
+                        <p>
+                            Organize project data and monitoring activities
+                            for better transparency and decision-making.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6 mrv-intro-text">
+
+                <div class="mrv-section-title text-start mb-4">
+
+                    <div class="subtitle">
+                        MRV &amp; Verification
+                    </div>
+
+                    <h2>
+                        Making Carbon Project Data More Reliable
+                    </h2>
+
+                </div>
+
+                <p>
+                    Measurement, Reporting and Verification (MRV) is an
+                    important part of understanding and documenting the
+                    environmental performance of a carbon project.
+                </p>
+
+                <p>
+                    Eco-Carbon supports project stakeholders with structured
+                    approaches to data collection, monitoring, reporting,
+                    documentation and verification readiness.
+                </p>
+
+                <ul class="mrv-check-list">
+
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Project monitoring and data collection
+                    </li>
+
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Emission reduction and carbon data management
+                    </li>
+
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Reporting and documentation support
+                    </li>
+
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Verification readiness and coordination
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Introduction End -->
+
+
+<!-- Core MRV Start -->
+<section class="mrv-core">
+
+    <div class="container">
+
+        <div class="mrv-section-title">
+
+            <div class="subtitle">
+                Our MRV Framework
+            </div>
+
+            <h2>
+                Four Key Areas of MRV
+            </h2>
+
+            <p>
+                A structured MRV approach helps project teams manage
+                information consistently throughout the project lifecycle.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="mrv-card">
+
+                    <div class="mrv-icon">
+                        <i class="fa fa-ruler-combined"></i>
+                    </div>
+
+                    <h4>
+                        Measurement
+                    </h4>
+
+                    <p>
+                        Identify relevant project data and establish
+                        appropriate approaches for measuring project
+                        activities and outcomes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="mrv-card">
+
+                    <div class="mrv-icon">
+                        <i class="fa fa-satellite-dish"></i>
+                    </div>
+
+                    <h4>
+                        Monitoring
+                    </h4>
+
+                    <p>
+                        Track project activities, operational information,
+                        field observations and other relevant indicators.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="mrv-card">
+
+                    <div class="mrv-icon">
+                        <i class="fa fa-file-alt"></i>
+                    </div>
+
+                    <h4>
+                        Reporting
+                    </h4>
+
+                    <p>
+                        Organize collected information into structured
+                        records and reports for project stakeholders.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="mrv-card">
+
+                    <div class="mrv-icon">
+                        <i class="fa fa-search"></i>
+                    </div>
+
+                    <h4>
+                        Verification
+                    </h4>
+
+                    <p>
+                        Support the preparation and coordination of
+                        documentation required for applicable verification
+                        processes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Core MRV End -->
+
+
+<!-- Data Management Start -->
+<section class="mrv-data">
+
+    <div class="container">
+
+        <div class="mrv-section-title">
+
+            <div class="subtitle">
+                Project Data
+            </div>
+
+            <h2>
+                From Field Data to Project Records
+            </h2>
+
+            <p>
+                Good project data should be organized, traceable and
+                accessible to the people responsible for monitoring and
+                reporting.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-4">
+
+                <div class="data-box">
+
+                    <div class="data-number">
+                        01
+                    </div>
+
+                    <h5>
+                        Data Collection
+                    </h5>
+
+                    <p>
+                        Collect relevant project information from field
+                        activities, equipment, sensors, surveys and other
+                        appropriate sources.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="data-box">
+
+                    <div class="data-number">
+                        02
+                    </div>
+
+                    <h5>
+                        Data Management
+                    </h5>
+
+                    <p>
+                        Organize project records, supporting documents and
+                        monitoring information in a structured environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="data-box">
+
+                    <div class="data-number">
+                        03
+                    </div>
+
+                    <h5>
+                        Data Review
+                    </h5>
+
+                    <p>
+                        Review information for consistency, completeness
+                        and documentation readiness before reporting or
+                        verification activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Data Management End -->
+
+
+<!-- Process Start -->
+<section class="mrv-process">
+
+    <div class="container">
+
+        <div class="mrv-section-title">
+
+            <div class="subtitle">
+                MRV Process
+            </div>
+
+            <h2>
+                How MRV Support Works
+            </h2>
+
+            <p>
+                A practical workflow can help project teams prepare,
+                manage and document their MRV activities.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg col-md-6">
+
+                <div class="process-box">
+
+                    <div class="process-number">
+                        01
+                    </div>
+
+                    <h4>
+                        Project Assessment
+                    </h4>
+
+                    <p>
+                        Understand the project, activities, available data
+                        and applicable requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg col-md-6">
+
+                <div class="process-box">
+
+                    <div class="process-number">
+                        02
+                    </div>
+
+                    <h4>
+                        MRV Planning
+                    </h4>
+
+                    <p>
+                        Define monitoring activities, data requirements,
+                        responsibilities and reporting structure.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg col-md-6">
+
+                <div class="process-box">
+
+                    <div class="process-number">
+                        03
+                    </div>
+
+                    <h4>
+                        Data Collection
+                    </h4>
+
+                    <p>
+                        Gather relevant project data through appropriate
+                        field and digital monitoring methods.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg col-md-6">
+
+                <div class="process-box">
+
+                    <div class="process-number">
+                        04
+                    </div>
+
+                    <h4>
+                        Reporting
+                    </h4>
+
+                    <p>
+                        Prepare organized records and reports based on
+                        available project information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg col-md-6">
+
+                <div class="process-box">
+
+                    <div class="process-number">
+                        05
+                    </div>
+
+                    <h4>
+                        Verification Support
+                    </h4>
+
+                    <p>
+                        Prepare documentation and coordinate information
+                        required for applicable verification activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Process End -->
+
+
+<!-- Verification Start -->
+<section class="mrv-verification">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-6">
+
+                <div class="verification-panel">
+
+                    <h3>
+                        Verification Readiness
+                    </h3>
+
+                    <p>
+                        Verification can require clear evidence, consistent
+                        records and supporting documentation. Eco-Carbon can
+                        help project teams organize information before an
+                        applicable verification process.
+                    </p>
+
+                    <ul class="verification-list">
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Project documentation organization
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Monitoring records
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Supporting evidence and data
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Reporting structure
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            Verification coordination support
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="verification-info">
+
+                    <h3>
+                        What We Help Organize
+                    </h3>
+
+                    <p>
+                        The exact requirements depend on the project,
+                        methodology, applicable standard and verification
+                        arrangement. Our approach focuses on organized,
+                        traceable project information.
+                    </p>
+
+
+                    <div class="verification-step">
+
+                        <div class="verification-step-icon">
+                            <i class="fa fa-folder-open"></i>
+                        </div>
+
+                        <div>
+                            <h6>
+                                Project Records
+                            </h6>
+
+                            <p>
+                                Organize project documents and relevant
+                                supporting records.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="verification-step">
+
+                        <div class="verification-step-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+
+                        <div>
+                            <h6>
+                                Monitoring Evidence
+                            </h6>
+
+                            <p>
+                                Maintain appropriate monitoring and
+                                measurement information.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="verification-step">
+
+                        <div class="verification-step-icon">
+                            <i class="fa fa-file-signature"></i>
+                        </div>
+
+                        <div>
+                            <h6>
+                                Reporting Documents
+                            </h6>
+
+                            <p>
+                                Structure reporting materials and relevant
+                                project evidence.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="verification-step">
+
+                        <div class="verification-step-icon">
+                            <i class="fa fa-user-check"></i>
+                        </div>
+
+                        <div>
+                            <h6>
+                                Verification Coordination
+                            </h6>
+
+                            <p>
+                                Help coordinate information exchange during
+                                the applicable verification process.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Verification End -->
+
+
+<!-- Benefits Start -->
+<section class="mrv-benefits">
+
+    <div class="container">
+
+        <div class="mrv-section-title">
+
+            <div class="subtitle">
+                Why MRV Matters
+            </div>
+
+            <h2>
+                Better Data. Better Transparency.
+            </h2>
+
+            <p>
+                Strong MRV practices can help project stakeholders
+                understand performance and maintain better project records.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-6">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="fa fa-eye"></i>
+                    </div>
+
+                    <div>
+
+                        <h5>
+                            Transparency
+                        </h5>
+
+                        <p>
+                            Maintain clearer records of project activities,
+                            measurements and reported information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="fa fa-database"></i>
+                    </div>
+
+                    <div>
+
+                        <h5>
+                            Data Quality
+                        </h5>
+
+                        <p>
+                            Create structured approaches for collecting,
+                            organizing and reviewing project information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="fa fa-file-alt"></i>
+                    </div>
+
+                    <div>
+
+                        <h5>
+                            Documentation
+                        </h5>
+
+                        <p>
+                            Keep relevant project records and supporting
+                            evidence organized and accessible.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="fa fa-shield-alt"></i>
+                    </div>
+
+                    <div>
+
+                        <h5>
+                            Verification Readiness
+                        </h5>
+
+                        <p>
+                            Improve preparedness for applicable verification
+                            activities through organized project information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="fa fa-chart-pie"></i>
+                    </div>
+
+                    <div>
+
+                        <h5>
+                            Better Decision Making
+                        </h5>
+
+                        <p>
+                            Use structured project information to support
+                            operational and sustainability decisions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="fa fa-network-wired"></i>
+                    </div>
+
+                    <div>
+
+                        <h5>
+                            Digital Integration
+                        </h5>
+
+                        <p>
+                            Connect monitoring, data and reporting workflows
+                            with appropriate digital technologies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Benefits End -->
+
+
+<!-- CTA Start -->
+<section class="mrv-cta">
+
+    <div class="container">
+
+        <div class="mrv-cta-content">
+
+            <h2>
+                Is Your Carbon Project Ready for MRV?
+            </h2>
+
+            <p>
+                Share your project details with Eco-Carbon and explore
+                an appropriate MRV and verification support pathway.
+            </p>
+
+            <a href="#mrv-request"
+               class="btn btn-light mrv-btn">
+
+                Request MRV Support
+                <i class="fa fa-arrow-right ms-2"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- CTA End -->
+
+
+<!-- Request Form Start -->
+<section class="mrv-request" id="mrv-request">
+
+    <div class="container">
+
+        <div class="mrv-section-title">
+
+            <div class="subtitle">
+                MRV Consultation Request
+            </div>
+
+            <h2>
+                Tell Us About Your Project
+            </h2>
+
+            <p>
+                Submit your basic project information so our team can
+                understand your MRV and verification requirements.
+            </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+
+                <div class="mrv-form-box">
+
+                    <form action="#" method="post">
+
+                        <div class="row g-4">
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Contact Name
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Organization / Company
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Organization name"
+                                       required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Email Address
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Enter email address"
+                                       required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Mobile Number
+                                </label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       placeholder="Enter mobile number"
+                                       required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Project Type
+                                </label>
+
+                                <select class="form-select" required>
+
+                                    <option value="">
+                                        Select project type
+                                    </option>
+
+                                    <option>
+                                        Nature-Based Project
+                                    </option>
+
+                                    <option>
+                                        Renewable Energy
+                                    </option>
+
+                                    <option>
+                                        Emission Reduction
+                                    </option>
+
+                                    <option>
+                                        Waste Management
+                                    </option>
+
+                                    <option>
+                                        Clean Water / Community
+                                    </option>
+
+                                    <option>
+                                        Technology / Innovation
+                                    </option>
+
+                                    <option>
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Project Location
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Country / Region">
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Current Project Stage
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option value="">
+                                        Select project stage
+                                    </option>
+
+                                    <option>
+                                        Concept / Early Stage
+                                    </option>
+
+                                    <option>
+                                        Under Development
+                                    </option>
+
+                                    <option>
+                                        Operational
+                                    </option>
+
+                                    <option>
+                                        Monitoring
+                                    </option>
+
+                                    <option>
+                                        Reporting
+                                    </option>
+
+                                    <option>
+                                        Verification Preparation
+                                    </option>
+
+                                    <option>
+                                        Already Verified
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    MRV Requirement
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option value="">
+                                        Select requirement
+                                    </option>
+
+                                    <option>
+                                        MRV Planning
+                                    </option>
+
+                                    <option>
+                                        Data Collection
+                                    </option>
+
+                                    <option>
+                                        Monitoring System
+                                    </option>
+
+                                    <option>
+                                        Reporting Support
+                                    </option>
+
+                                    <option>
+                                        Verification Readiness
+                                    </option>
+
+                                    <option>
+                                        Full MRV Support
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label class="form-label">
+                                    Project Details / Message
+                                </label>
+
+                                <textarea class="form-control"
+                                          rows="5"
+                                          placeholder="Briefly describe your project and MRV / verification requirements"></textarea>
+
+                            </div>
+
+
+                            <div class="col-12 text-center pt-2">
+
+                                <button type="submit"
+                                        class="mrv-submit">
+
+                                    Submit MRV Request
+
+                                    <i class="fa fa-paper-plane ms-2"></i>
+
+                                </button>
+
+                            </div>
+
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Request Form End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+
+    <div class="container py-5">
+
+        <div class="row g-5">
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="text-white mb-4">
+                    Eco-Carbon
+                </h4>
+
+                <p class="mb-2">
+                    <i class="fa fa-map-marker-alt me-3"></i>
+                    Sukrabad,Meem Tower,Dhaka
+                </p>
+
+                <p class="mb-2">
+                    <i class="fa fa-phone-alt me-3"></i>
+                    +8801339863939
+                </p>
+
+                <p class="mb-2">
+                    <i class="fa fa-envelope me-3"></i>
+                    info@eco-carbon.com
+                </p>
+
+                <div class="d-flex pt-2">
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="Twitter">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="Facebook">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="YouTube">
+
+                        <i class="fab fa-youtube"></i>
+
+                    </a>
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="text-white mb-4">
+                    Services
+                </h4>
+
+                <a class="btn btn-link" href="projects.html">
+                    Carbon Projects
+                </a>
+
+                <a class="btn btn-link" href="marketplace.html">
+                    Carbon Marketplace
+                </a>
+
+                <a class="btn btn-link" href="mrv.html">
+                    MRV &amp; Verification
+                </a>
+
+                <a class="btn btn-link" href="calculator.html">
+                    Carbon Calculator
+                </a>
+
+                <a class="btn btn-link" href="technology.html">
+                    Technology &amp; IoT
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="text-white mb-4">
+                    Quick Links
+                </h4>
+
+                <a class="btn btn-link" href="about.html">
+                    About Us
+                </a>
+
+                <a class="btn btn-link" href="contact.html">
+                    Contact Us
+                </a>
+
+                <a class="btn btn-link" href="buyer.html">
+                    Buyers
+                </a>
+
+                <a class="btn btn-link" href="seller.html">
+                    Sellers / Producers
+                </a>
+
+                <a class="btn btn-link" href="career.html">
+                    Career
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="text-white mb-4">
+                    Newsletter
+                </h4>
+
+                <p>
+                    Subscribe for Eco-Carbon news, market information,
+                    project updates and training.
+                </p>
+
+                <div class="position-relative w-100">
+
+                    <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                           type="email"
+                           placeholder="Your email address"
+                           aria-label="Email address">
+
+                    <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Footer End -->
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                &copy;
+
+                <a class="border-bottom" href="#">
+                    Safetaka.com Ltd
+                </a>,
+
+                All Right Reserved.
+
+            </div>
+
+
+            <div class="col-md-6 text-center text-md-end">
+
+                Designed By
+
+                <a class="border-bottom"
+                   href="https://safetaka.com">
+
+                    Safetaka.com Ltd
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Copyright End -->
+
+
+<!-- Back to Top -->
+<a href="#"
+   class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+    <i class="bi bi-arrow-up"></i>
+
+</a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/parallax/parallax.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

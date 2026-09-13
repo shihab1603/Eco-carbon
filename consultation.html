@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Consultation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Carbon Consultation, Carbon Credits, MRV, Carbon Projects, Eco-Carbon" name="keywords">
+    <meta content="Professional consultation support for carbon projects, carbon credits, MRV, certification and climate strategies." name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+
+        /* =========================================================
+           CONSULTATION PAGE
+        ========================================================= */
+
+        .consultation-page {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Hero */
+        .consult-hero {
+            position: relative;
+            padding: 100px 0;
+            background:
+                linear-gradient(135deg, rgba(20, 80, 45, 0.98), rgba(42, 130, 75, 0.92)),
+                radial-gradient(circle at top right, rgba(255,255,255,0.15), transparent 40%);
+            overflow: hidden;
+        }
+
+        .consult-hero::before {
+            content: "";
+            position: absolute;
+            width: 380px;
+            height: 380px;
+            border: 70px solid rgba(255,255,255,0.06);
+            border-radius: 50%;
+            right: -120px;
+            top: -140px;
+        }
+
+        .consult-hero::after {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 45px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            left: -100px;
+            bottom: -130px;
+        }
+
+        .consult-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .consult-label {
+            display: inline-block;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.45);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+        }
+
+        .consult-hero h1 {
+            color: #ffffff;
+            font-size: 52px;
+            line-height: 1.15;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .consult-hero p {
+            color: rgba(255,255,255,0.88);
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 720px;
+            margin-bottom: 28px;
+        }
+
+        .consult-breadcrumb {
+            margin-top: 25px;
+            color: rgba(255,255,255,0.75);
+            font-size: 14px;
+        }
+
+        .consult-breadcrumb a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* Intro */
+        .consult-intro {
+            padding: 85px 0 60px;
+        }
+
+        .consult-section-title {
+            color: #173f27;
+            font-weight: 700;
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .consult-section-subtitle {
+            color: #6c757d;
+            line-height: 1.8;
+            max-width: 750px;
+        }
+
+        .consult-intro-box {
+            background: #f4faf6;
+            border-left: 5px solid #2f9e5b;
+            padding: 28px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .consult-intro-box p {
+            margin: 0;
+            color: #4f5d55;
+            line-height: 1.8;
+        }
+
+        /* Consultation Areas */
+        .consult-services {
+            padding: 70px 0 80px;
+            background: #f7faf8;
+        }
+
+        .consult-card {
+            height: 100%;
+            background: #ffffff;
+            padding: 32px 28px;
+            border-radius: 12px;
+            border: 1px solid #e7eee9;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .consult-card::before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(47,158,91,0.07);
+            border-radius: 50%;
+            right: -25px;
+            top: -25px;
+        }
+
+        .consult-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(30,80,50,0.10);
+        }
+
+        .consult-icon {
+            width: 62px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e9f7ee;
+            color: #2f9e5b;
+            border-radius: 12px;
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .consult-card h4 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .consult-card p {
+            color: #6c757d;
+            line-height: 1.75;
+            margin-bottom: 0;
+        }
+
+        /* Process */
+        .consult-process {
+            padding: 85px 0;
+        }
+
+        .process-item {
+            position: relative;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .process-number {
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            background: #2f9e5b;
+            color: #ffffff;
+            border-radius: 50%;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 8px 20px rgba(47,158,91,0.20);
+        }
+
+        .process-item h5 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .process-item p {
+            color: #6c757d;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Expertise */
+        .consult-expertise {
+            padding: 75px 0;
+            background: #f7faf8;
+        }
+
+        .expertise-box {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 35px;
+            height: 100%;
+            border: 1px solid #e8eee9;
+        }
+
+        .expertise-box h4 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        .expertise-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .expertise-list li {
+            position: relative;
+            padding: 11px 0 11px 30px;
+            color: #5f6d65;
+            border-bottom: 1px solid #edf1ee;
+        }
+
+        .expertise-list li:last-child {
+            border-bottom: none;
+        }
+
+        .expertise-list li i {
+            position: absolute;
+            left: 0;
+            top: 14px;
+            color: #2f9e5b;
+        }
+
+        /* CTA */
+        .consult-cta {
+            padding: 80px 0;
+        }
+
+        .consult-cta-box {
+            background:
+                linear-gradient(135deg, #173f27, #2f9e5b);
+            border-radius: 18px;
+            padding: 55px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .consult-cta-box::after {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border: 55px solid rgba(255,255,255,0.06);
+            border-radius: 50%;
+            right: -80px;
+            top: -100px;
+        }
+
+        .consult-cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .consult-cta h2 {
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .consult-cta p {
+            color: rgba(255,255,255,0.85);
+            line-height: 1.8;
+            max-width: 700px;
+            margin-bottom: 25px;
+        }
+
+        .consult-btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #173f27;
+            padding: 13px 25px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .consult-btn:hover {
+            background: #eaf6ee;
+            color: #173f27;
+        }
+
+        /* Form */
+        .consult-form-section {
+            padding: 20px 0 90px;
+        }
+
+        .consult-form-box {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            border: 1px solid #e5ebe7;
+            box-shadow: 0 10px 35px rgba(20,60,35,0.06);
+        }
+
+        .consult-form-box h3 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .consult-form-box > p {
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        .consult-form-box .form-control,
+        .consult-form-box .form-select {
+            min-height: 50px;
+            border-color: #dce6df;
+        }
+
+        .consult-form-box .form-control:focus,
+        .consult-form-box .form-select:focus {
+            border-color: #2f9e5b;
+            box-shadow: 0 0 0 0.2rem rgba(47,158,91,0.12);
+        }
+
+        .consult-submit {
+            background: #2f9e5b;
+            border: none;
+            color: #ffffff;
+            padding: 13px 30px;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+
+        .consult-submit:hover {
+            background: #267d49;
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .consult-hero {
+                padding: 75px 0;
+            }
+
+            .consult-hero h1 {
+                font-size: 42px;
+            }
+
+            .consult-section-title {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .consult-hero {
+                padding: 60px 0;
+            }
+
+            .consult-hero h1 {
+                font-size: 34px;
+            }
+
+            .consult-hero p {
+                font-size: 15px;
+            }
+
+            .consult-intro,
+            .consult-process,
+            .consult-expertise,
+            .consult-cta {
+                padding: 60px 0;
+            }
+
+            .consult-cta-box {
+                padding: 35px 25px;
+            }
+
+            .consult-form-box {
+                padding: 25px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body class="consultation-page">
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">Home</a>
+
+                <a href="about.html" class="nav-item nav-link">About</a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle active"
+                        data-bs-toggle="dropdown">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">Buyer</a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html"
+                            class="dropdown-item active">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html" class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html" class="nav-item nav-link">
+                    Calculator
+                </a>
+
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html" class="dropdown-item">
+                            Training
+                        </a>
+
+                        <a href="news.html" class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html" class="dropdown-item">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html" class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html" class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="career.html" class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <section class="consult-hero">
+
+        <div class="container">
+
+            <div class="consult-hero-content">
+
+                <span class="consult-label">
+                    <i class="fa fa-comments me-2"></i>
+                    Carbon Consultation
+                </span>
+
+                <h1>
+                    Expert Guidance for Your Carbon Journey
+                </h1>
+
+                <p>
+                    Get practical guidance for carbon projects, carbon credits,
+                    MRV, certification, climate strategies and carbon market
+                    opportunities.
+                </p>
+
+                <div class="consult-breadcrumb">
+
+                    <a href="index.html">Home</a>
+
+                    <span class="mx-2">/</span>
+
+                    <span>Services</span>
+
+                    <span class="mx-2">/</span>
+
+                    <strong>Consultation</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Intro Start -->
+    <section class="consult-intro">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10 text-center">
+
+                    <span class="text-primary fw-bold">
+                        CONSULTATION SERVICES
+                    </span>
+
+                    <h2 class="consult-section-title mt-2">
+                        Make Better Carbon Decisions
+                    </h2>
+
+                    <p class="consult-section-subtitle mx-auto">
+
+                        Carbon markets can involve project development,
+                        emissions data, MRV, verification, certification,
+                        credit procurement and market strategy. Our
+                        consultation service helps organizations understand
+                        these areas and identify practical next steps.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10">
+
+                    <div class="consult-intro-box">
+
+                        <p>
+                            Whether you are developing a new carbon project,
+                            preparing project documentation, exploring carbon
+                            credit opportunities or planning an organizational
+                            climate strategy, Eco-Carbon can help you organize
+                            the requirements and move forward with greater
+                            clarity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Intro End -->
+
+
+    <!-- Consultation Areas Start -->
+    <section class="consult-services">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="text-primary fw-bold">
+                    WHAT WE CONSULT ON
+                </span>
+
+                <h2 class="consult-section-title mt-2">
+                    Consultation Areas
+                </h2>
+
+                <p class="consult-section-subtitle mx-auto">
+                    Our consultation approach can be tailored to the
+                    organization's project stage, objectives and requirements.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="consult-card">
+
+                        <div class="consult-icon">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+
+                        <h4>
+                            Carbon Project Development
+                        </h4>
+
+                        <p>
+                            Guidance on project concepts, activities,
+                            documentation, data requirements and development
+                            considerations for carbon projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="consult-card">
+
+                        <div class="consult-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+
+                        <h4>
+                            Carbon Market Strategy
+                        </h4>
+
+                        <p>
+                            Support for organizations exploring carbon credit
+                            markets, project opportunities, procurement and
+                            market participation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="consult-card">
+
+                        <div class="consult-icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+
+                        <h4>
+                            MRV &amp; Data Management
+                        </h4>
+
+                        <p>
+                            Guidance on measurement, monitoring, reporting,
+                            data collection, evidence organization and MRV
+                            readiness.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="consult-card">
+
+                        <div class="consult-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+
+                        <h4>
+                            Certification Readiness
+                        </h4>
+
+                        <p>
+                            Help understand documentation, requirement
+                            mapping, quality review and preparation for
+                            certification-related processes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="consult-card">
+
+                        <div class="consult-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+
+                        <h4>
+                            Credit &amp; Project Review
+                        </h4>
+
+                        <p>
+                            Support in reviewing project information,
+                            documentation, available data and key factors
+                            before making carbon-related decisions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="consult-card">
+
+                        <div class="consult-icon">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+
+                        <h4>
+                            Climate Strategy
+                        </h4>
+
+                        <p>
+                            Practical guidance for organizations planning
+                            carbon reduction, sustainability and climate
+                            action initiatives.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Consultation Areas End -->
+
+
+    <!-- Process Start -->
+    <section class="consult-process">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="text-primary fw-bold">
+                    SIMPLE &amp; PRACTICAL
+                </span>
+
+                <h2 class="consult-section-title mt-2">
+                    How Consultation Works
+                </h2>
+
+                <p class="consult-section-subtitle mx-auto">
+                    A structured approach helps identify the right questions,
+                    requirements and next steps.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            01
+                        </div>
+
+                        <h5>
+                            Understand
+                        </h5>
+
+                        <p>
+                            Understand your project, organization,
+                            objectives and current requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            02
+                        </div>
+
+                        <h5>
+                            Assess
+                        </h5>
+
+                        <p>
+                            Review available information, documents,
+                            data and key project considerations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            03
+                        </div>
+
+                        <h5>
+                            Recommend
+                        </h5>
+
+                        <p>
+                            Identify practical options, priorities,
+                            requirements and possible next steps.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            04
+                        </div>
+
+                        <h5>
+                            Plan
+                        </h5>
+
+                        <p>
+                            Develop a clear action path based on the
+                            agreed objectives and project needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Process End -->
+
+
+    <!-- Expertise Start -->
+    <section class="consult-expertise">
+
+        <div class="container">
+
+            <div class="row g-5 align-items-stretch">
+
+                <div class="col-lg-6">
+
+                    <div class="expertise-box">
+
+                        <h4>
+                            Areas We Can Help Organize
+                        </h4>
+
+                        <ul class="expertise-list">
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Project concept and objectives
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Carbon project documentation
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Emission and activity data
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                MRV requirements
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Verification preparation
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Certification requirements
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Carbon credit procurement considerations
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="expertise-box">
+
+                        <h4>
+                            Who Can Benefit?
+                        </h4>
+
+                        <ul class="expertise-list">
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Carbon project developers
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Businesses and corporations
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Renewable energy projects
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Agriculture and nature-based projects
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                NGOs and development organizations
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Carbon credit buyers
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Organizations starting their climate journey
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Expertise End -->
+
+
+    <!-- CTA Start -->
+    <section class="consult-cta">
+
+        <div class="container">
+
+            <div class="consult-cta-box">
+
+                <div class="consult-cta-content">
+
+                    <h2>
+                        Have a Carbon Project or Climate Challenge?
+                    </h2>
+
+                    <p>
+                        Tell us about your objectives and requirements.
+                        We can help you identify the key areas to review
+                        and the next steps to consider.
+                    </p>
+
+                    <a href="#consultation-form" class="consult-btn">
+                        Request a Consultation
+                        <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- CTA End -->
+
+
+    <!-- Form Start -->
+    <section class="consult-form-section" id="consultation-form">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="consult-form-box">
+
+                        <h3>
+                            Consultation Request
+                        </h3>
+
+                        <p>
+                            Share some basic information and tell us what
+                            you would like to discuss.
+                        </p>
+
+
+                        <form>
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Name
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Your name">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Organization
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Organization name">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Email
+                                    </label>
+
+                                    <input type="email"
+                                        class="form-control"
+                                        placeholder="Your email address">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Mobile
+                                    </label>
+
+                                    <input type="tel"
+                                        class="form-control"
+                                        placeholder="Your mobile number">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Consultation Area
+                                    </label>
+
+                                    <select class="form-select">
+
+                                        <option selected>
+                                            Select an area
+                                        </option>
+
+                                        <option>
+                                            Carbon Project Development
+                                        </option>
+
+                                        <option>
+                                            Carbon Market Strategy
+                                        </option>
+
+                                        <option>
+                                            MRV &amp; Data Management
+                                        </option>
+
+                                        <option>
+                                            Certification Readiness
+                                        </option>
+
+                                        <option>
+                                            Credit &amp; Project Review
+                                        </option>
+
+                                        <option>
+                                            Climate Strategy
+                                        </option>
+
+                                        <option>
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Preferred Contact Method
+                                    </label>
+
+                                    <select class="form-select">
+
+                                        <option selected>
+                                            Select method
+                                        </option>
+
+                                        <option>
+                                            Email
+                                        </option>
+
+                                        <option>
+                                            Phone
+                                        </option>
+
+                                        <option>
+                                            Meeting
+                                        </option>
+
+                                        <option>
+                                            Online Meeting
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-12">
+
+                                    <label class="form-label">
+                                        Tell Us About Your Requirement
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        rows="5"
+                                        placeholder="Briefly describe your project, objective or consultation requirement"></textarea>
+
+                                </div>
+
+
+                                <div class="col-12">
+
+                                    <button type="submit"
+                                        class="consult-submit">
+
+                                        Submit Consultation Request
+
+                                        <i class="fa fa-arrow-right ms-2"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Form End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input
+                            class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

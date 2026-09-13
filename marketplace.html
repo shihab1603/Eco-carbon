@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Marketplace</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Carbon Marketplace, Carbon Credits, Eco-Carbon" name="keywords">
+    <meta content="Explore carbon credit opportunities through the Eco-Carbon marketplace." name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+
+        /* =========================================================
+           MARKETPLACE PAGE
+        ========================================================= */
+
+        .marketplace-page {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Hero */
+        .market-hero {
+            position: relative;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #123f25, #2f9e5b);
+            overflow: hidden;
+        }
+
+        .market-hero::before {
+            content: "";
+            position: absolute;
+            width: 430px;
+            height: 430px;
+            border: 75px solid rgba(255,255,255,0.06);
+            border-radius: 50%;
+            right: -150px;
+            top: -180px;
+        }
+
+        .market-hero::after {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 45px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            left: -110px;
+            bottom: -130px;
+        }
+
+        .market-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .market-label {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 1px solid rgba(255,255,255,0.45);
+            border-radius: 30px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .market-hero h1 {
+            color: #fff;
+            font-size: 52px;
+            line-height: 1.15;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .market-hero p {
+            color: rgba(255,255,255,0.88);
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 760px;
+            margin-bottom: 25px;
+        }
+
+        .market-breadcrumb {
+            color: rgba(255,255,255,0.75);
+            font-size: 14px;
+        }
+
+        .market-breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Intro */
+        .market-intro {
+            padding: 85px 0 65px;
+        }
+
+        .market-title {
+            color: #173f27;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .market-subtitle {
+            color: #6c757d;
+            line-height: 1.8;
+            max-width: 780px;
+        }
+
+        /* Search Area */
+        .market-search-section {
+            padding: 0 0 70px;
+        }
+
+        .market-search-box {
+            background: #f4faf6;
+            border: 1px solid #e1eee5;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .market-search-box h4 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .market-search-box .form-control,
+        .market-search-box .form-select {
+            min-height: 50px;
+            border-color: #d8e5dc;
+        }
+
+        .market-search-box .form-control:focus,
+        .market-search-box .form-select:focus {
+            border-color: #2f9e5b;
+            box-shadow: 0 0 0 0.2rem rgba(47,158,91,0.12);
+        }
+
+        .market-search-btn {
+            min-height: 50px;
+            background: #2f9e5b;
+            color: #fff;
+            border: none;
+            padding: 0 25px;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+
+        .market-search-btn:hover {
+            background: #267d49;
+            color: #fff;
+        }
+
+        /* Marketplace Cards */
+        .market-list {
+            padding: 75px 0 90px;
+            background: #f7faf8;
+        }
+
+        .credit-card {
+            background: #fff;
+            border: 1px solid #e4ebe6;
+            border-radius: 14px;
+            overflow: hidden;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .credit-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(25,70,40,0.12);
+        }
+
+        .credit-card-top {
+            padding: 30px;
+            background: linear-gradient(135deg, #e9f7ee, #f8fcf9);
+            position: relative;
+        }
+
+        .credit-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #2f9e5b;
+            color: #fff;
+            border-radius: 14px;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .credit-card-top h4 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .credit-location {
+            color: #718078;
+            font-size: 13px;
+        }
+
+        .credit-body {
+            padding: 27px;
+        }
+
+        .credit-body p {
+            color: #6c757d;
+            line-height: 1.7;
+        }
+
+        .credit-meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 20px 0;
+            padding: 15px 0;
+            border-top: 1px solid #edf1ee;
+            border-bottom: 1px solid #edf1ee;
+        }
+
+        .credit-meta div {
+            flex: 1;
+        }
+
+        .credit-meta small {
+            display: block;
+            color: #89958e;
+            margin-bottom: 4px;
+        }
+
+        .credit-meta strong {
+            color: #173f27;
+            font-size: 14px;
+        }
+
+        .credit-tag {
+            display: inline-block;
+            background: #eef8f1;
+            color: #287947;
+            padding: 6px 11px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 3px 2px;
+        }
+
+        .credit-btn {
+            display: inline-block;
+            margin-top: 18px;
+            color: #2f9e5b;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .credit-btn:hover {
+            color: #173f27;
+        }
+
+        /* Marketplace Features */
+        .market-features {
+            padding: 85px 0;
+        }
+
+        .market-feature-card {
+            height: 100%;
+            padding: 32px 28px;
+            border: 1px solid #e4ebe6;
+            border-radius: 12px;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        .market-feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(25,70,40,0.08);
+        }
+
+        .market-feature-icon {
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eaf7ee;
+            color: #2f9e5b;
+            border-radius: 12px;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .market-feature-card h5 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .market-feature-card p {
+            color: #6c757d;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* How It Works */
+        .market-process {
+            padding: 75px 0;
+            background: #f7faf8;
+        }
+
+        .market-step {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .market-step-number {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #2f9e5b;
+            color: #fff;
+            border-radius: 50%;
+            font-weight: 700;
+            box-shadow: 0 8px 20px rgba(47,158,91,0.20);
+        }
+
+        .market-step h5 {
+            color: #173f27;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .market-step p {
+            color: #6c757d;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Buyer / Seller */
+        .market-participants {
+            padding: 85px 0;
+        }
+
+        .participant-box {
+            height: 100%;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .participant-buyer {
+            background: #173f27;
+        }
+
+        .participant-seller {
+            background: #f1f8f3;
+            border: 1px solid #dfece3;
+        }
+
+        .participant-box h3 {
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .participant-buyer h3 {
+            color: #fff;
+        }
+
+        .participant-seller h3 {
+            color: #173f27;
+        }
+
+        .participant-box p {
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .participant-buyer p {
+            color: rgba(255,255,255,0.82);
+        }
+
+        .participant-seller p {
+            color: #6c757d;
+        }
+
+        .participant-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .participant-list li {
+            padding: 9px 0;
+            line-height: 1.6;
+        }
+
+        .participant-buyer li {
+            color: rgba(255,255,255,0.85);
+        }
+
+        .participant-seller li {
+            color: #5f6d65;
+        }
+
+        .participant-list i {
+            margin-right: 9px;
+        }
+
+        .participant-buyer i {
+            color: #91d6aa;
+        }
+
+        .participant-seller i {
+            color: #2f9e5b;
+        }
+
+        /* CTA */
+        .market-cta {
+            padding: 70px 0 90px;
+        }
+
+        .market-cta-box {
+            background: linear-gradient(135deg, #2f9e5b, #173f27);
+            border-radius: 18px;
+            padding: 55px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .market-cta-box::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 55px solid rgba(255,255,255,0.06);
+            border-radius: 50%;
+            right: -100px;
+            top: -120px;
+        }
+
+        .market-cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .market-cta h2 {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .market-cta p {
+            color: rgba(255,255,255,0.85);
+            max-width: 720px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .market-cta-btn {
+            display: inline-block;
+            background: #fff;
+            color: #173f27;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .market-cta-btn:hover {
+            background: #eaf7ee;
+            color: #173f27;
+        }
+
+        @media (max-width: 991px) {
+
+            .market-hero {
+                padding: 75px 0;
+            }
+
+            .market-hero h1 {
+                font-size: 42px;
+            }
+
+            .market-title {
+                font-size: 32px;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+
+            .market-hero {
+                padding: 60px 0;
+            }
+
+            .market-hero h1 {
+                font-size: 34px;
+            }
+
+            .market-hero p {
+                font-size: 15px;
+            }
+
+            .market-intro,
+            .market-features,
+            .market-process,
+            .market-participants,
+            .market-cta {
+                padding: 60px 0;
+            }
+
+            .market-cta-box {
+                padding: 35px 25px;
+            }
+
+            .credit-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body class="marketplace-page">
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-item nav-link">
+                    About
+                </a>
+
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">
+                            Buyer
+                        </a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html" class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html"
+                    class="nav-item nav-link active">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html"
+                    class="nav-item nav-link">
+                    Calculator
+                </a>
+
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html" class="dropdown-item">
+                            Training
+                        </a>
+
+                        <a href="news.html" class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html" class="dropdown-item">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html" class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html" class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="career.html" class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <section class="market-hero">
+
+        <div class="container">
+
+            <div class="market-hero-content">
+
+                <span class="market-label">
+                    <i class="fa fa-store me-2"></i>
+                    Carbon Marketplace
+                </span>
+
+                <h1>
+                    Connect Carbon Projects with Market Opportunities
+                </h1>
+
+                <p>
+                    Explore carbon project opportunities, review project
+                    information and connect buyers, sellers and project
+                    stakeholders through a structured carbon marketplace.
+                </p>
+
+                <div class="market-breadcrumb">
+
+                    <a href="index.html">Home</a>
+
+                    <span class="mx-2">/</span>
+
+                    <strong>Marketplace</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Intro Start -->
+    <section class="market-intro">
+
+        <div class="container">
+
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-10">
+
+                    <span class="text-primary fw-bold">
+                        ECO-CARBON MARKETPLACE
+                    </span>
+
+                    <h2 class="market-title mt-2">
+                        A Smarter Way to Explore Carbon Opportunities
+                    </h2>
+
+                    <p class="market-subtitle mx-auto">
+
+                        The Eco-Carbon marketplace is designed to bring
+                        project developers, producers, suppliers and buyers
+                        together. Users can explore project information,
+                        understand available opportunities and initiate
+                        discussions based on their requirements.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Intro End -->
+
+
+    <!-- Search Start -->
+    <section class="market-search-section">
+
+        <div class="container">
+
+            <div class="market-search-box">
+
+                <h4>
+                    <i class="fa fa-search text-primary me-2"></i>
+                    Explore Marketplace
+                </h4>
+
+                <div class="row g-3">
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Search project or credit">
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+
+                        <select class="form-select">
+
+                            <option selected>
+                                Project Type
+                            </option>
+
+                            <option>
+                                Renewable Energy
+                            </option>
+
+                            <option>
+                                Nature-Based
+                            </option>
+
+                            <option>
+                                Waste Management
+                            </option>
+
+                            <option>
+                                Agriculture
+                            </option>
+
+                            <option>
+                                Energy Efficiency
+                            </option>
+
+                            <option>
+                                Technology
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+
+                        <select class="form-select">
+
+                            <option selected>
+                                Market Role
+                            </option>
+
+                            <option>
+                                Buyer
+                            </option>
+
+                            <option>
+                                Seller / Producer
+                            </option>
+
+                            <option>
+                                Supplier
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+
+                        <button type="button"
+                            class="market-search-btn w-100">
+
+                            Search
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Search End -->
+
+
+    <!-- Marketplace Listing Start -->
+    <section class="market-list">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="text-primary fw-bold">
+                    FEATURED OPPORTUNITIES
+                </span>
+
+                <h2 class="market-title mt-2">
+                    Explore Carbon Projects
+                </h2>
+
+                <p class="market-subtitle mx-auto">
+
+                    Example marketplace categories showing how project
+                    opportunities can be presented to buyers and other
+                    stakeholders.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="credit-card">
+
+                        <div class="credit-card-top">
+
+                            <div class="credit-icon">
+                                <i class="fa fa-solar-panel"></i>
+                            </div>
+
+                            <h4>
+                                Solar Energy Project
+                            </h4>
+
+                            <span class="credit-location">
+                                <i class="fa fa-map-marker-alt me-1"></i>
+                                Renewable Energy
+                            </span>
+
+                        </div>
+
+                        <div class="credit-body">
+
+                            <p>
+                                Renewable energy project opportunity
+                                focused on solar power generation and
+                                emission reduction.
+                            </p>
+
+                            <div class="credit-meta">
+
+                                <div>
+                                    <small>Type</small>
+                                    <strong>Renewable</strong>
+                                </div>
+
+                                <div>
+                                    <small>Status</small>
+                                    <strong>Project Review</strong>
+                                </div>
+
+                            </div>
+
+                            <span class="credit-tag">
+                                Solar
+                            </span>
+
+                            <span class="credit-tag">
+                                Clean Energy
+                            </span>
+
+                            <span class="credit-tag">
+                                Carbon Project
+                            </span>
+
+                            <br>
+
+                            <a href="contact.html"
+                                class="credit-btn">
+
+                                View Opportunity
+                                <i class="fa fa-arrow-right ms-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="credit-card">
+
+                        <div class="credit-card-top">
+
+                            <div class="credit-icon">
+                                <i class="fa fa-tree"></i>
+                            </div>
+
+                            <h4>
+                                Nature-Based Project
+                            </h4>
+
+                            <span class="credit-location">
+                                <i class="fa fa-map-marker-alt me-1"></i>
+                                Nature &amp; Conservation
+                            </span>
+
+                        </div>
+
+                        <div class="credit-body">
+
+                            <p>
+                                Nature-focused project involving
+                                conservation, restoration and sustainable
+                                land management activities.
+                            </p>
+
+                            <div class="credit-meta">
+
+                                <div>
+                                    <small>Type</small>
+                                    <strong>Nature-Based</strong>
+                                </div>
+
+                                <div>
+                                    <small>Status</small>
+                                    <strong>Project Review</strong>
+                                </div>
+
+                            </div>
+
+                            <span class="credit-tag">
+                                Forest
+                            </span>
+
+                            <span class="credit-tag">
+                                Restoration
+                            </span>
+
+                            <span class="credit-tag">
+                                Conservation
+                            </span>
+
+                            <br>
+
+                            <a href="contact.html"
+                                class="credit-btn">
+
+                                View Opportunity
+                                <i class="fa fa-arrow-right ms-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="credit-card">
+
+                        <div class="credit-card-top">
+
+                            <div class="credit-icon">
+                                <i class="fa fa-recycle"></i>
+                            </div>
+
+                            <h4>
+                                Waste Management Project
+                            </h4>
+
+                            <span class="credit-location">
+                                <i class="fa fa-map-marker-alt me-1"></i>
+                                Waste &amp; Resource Recovery
+                            </span>
+
+                        </div>
+
+                        <div class="credit-body">
+
+                            <p>
+                                Waste reduction and resource recovery
+                                initiative designed to improve waste
+                                management practices.
+                            </p>
+
+                            <div class="credit-meta">
+
+                                <div>
+                                    <small>Type</small>
+                                    <strong>Waste</strong>
+                                </div>
+
+                                <div>
+                                    <small>Status</small>
+                                    <strong>Project Review</strong>
+                                </div>
+
+                            </div>
+
+                            <span class="credit-tag">
+                                Recycling
+                            </span>
+
+                            <span class="credit-tag">
+                                Waste Reduction
+                            </span>
+
+                            <span class="credit-tag">
+                                Recovery
+                            </span>
+
+                            <br>
+
+                            <a href="contact.html"
+                                class="credit-btn">
+
+                                View Opportunity
+                                <i class="fa fa-arrow-right ms-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="credit-card">
+
+                        <div class="credit-card-top">
+
+                            <div class="credit-icon">
+                                <i class="fa fa-seedling"></i>
+                            </div>
+
+                            <h4>
+                                Sustainable Agriculture
+                            </h4>
+
+                            <span class="credit-location">
+                                <i class="fa fa-map-marker-alt me-1"></i>
+                                Agriculture
+                            </span>
+
+                        </div>
+
+                        <div class="credit-body">
+
+                            <p>
+                                Agricultural project focused on resource
+                                efficiency, improved practices and climate
+                                resilience.
+                            </p>
+
+                            <div class="credit-meta">
+
+                                <div>
+                                    <small>Type</small>
+                                    <strong>Agriculture</strong>
+                                </div>
+
+                                <div>
+                                    <small>Status</small>
+                                    <strong>Project Review</strong>
+                                </div>
+
+                            </div>
+
+                            <span class="credit-tag">
+                                Agriculture
+                            </span>
+
+                            <span class="credit-tag">
+                                Soil
+                            </span>
+
+                            <span class="credit-tag">
+                                Rural
+                            </span>
+
+                            <br>
+
+                            <a href="contact.html"
+                                class="credit-btn">
+
+                                View Opportunity
+                                <i class="fa fa-arrow-right ms-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="credit-card">
+
+                        <div class="credit-card-top">
+
+                            <div class="credit-icon">
+                                <i class="fa fa-industry"></i>
+                            </div>
+
+                            <h4>
+                                Energy Efficiency
+                            </h4>
+
+                            <span class="credit-location">
+                                <i class="fa fa-map-marker-alt me-1"></i>
+                                Industrial Efficiency
+                            </span>
+
+                        </div>
+
+                        <div class="credit-body">
+
+                            <p>
+                                Energy efficiency initiative aimed at
+                                reducing energy consumption and improving
+                                operational performance.
+                            </p>
+
+                            <div class="credit-meta">
+
+                                <div>
+                                    <small>Type</small>
+                                    <strong>Efficiency</strong>
+                                </div>
+
+                                <div>
+                                    <small>Status</small>
+                                    <strong>Project Review</strong>
+                                </div>
+
+                            </div>
+
+                            <span class="credit-tag">
+                                Industry
+                            </span>
+
+                            <span class="credit-tag">
+                                Energy Saving
+                            </span>
+
+                            <span class="credit-tag">
+                                Efficiency
+                            </span>
+
+                            <br>
+
+                            <a href="contact.html"
+                                class="credit-btn">
+
+                                View Opportunity
+                                <i class="fa fa-arrow-right ms-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="credit-card">
+
+                        <div class="credit-card-top">
+
+                            <div class="credit-icon">
+                                <i class="fa fa-microchip"></i>
+                            </div>
+
+                            <h4>
+                                Technology Project
+                            </h4>
+
+                            <span class="credit-location">
+                                <i class="fa fa-map-marker-alt me-1"></i>
+                                Technology &amp; Innovation
+                            </span>
+
+                        </div>
+
+                        <div class="credit-body">
+
+                            <p>
+                                Technology-driven initiative supporting
+                                emission reduction, monitoring, data
+                                management and environmental performance.
+                            </p>
+
+                            <div class="credit-meta">
+
+                                <div>
+                                    <small>Type</small>
+                                    <strong>Technology</strong>
+                                </div>
+
+                                <div>
+                                    <small>Status</small>
+                                    <strong>Project Review</strong>
+                                </div>
+
+                            </div>
+
+                            <span class="credit-tag">
+                                IoT
+                            </span>
+
+                            <span class="credit-tag">
+                                Smart Technology
+                            </span>
+
+                            <span class="credit-tag">
+                                Data
+                            </span>
+
+                            <br>
+
+                            <a href="contact.html"
+                                class="credit-btn">
+
+                                View Opportunity
+                                <i class="fa fa-arrow-right ms-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Marketplace Listing End -->
+
+
+    <!-- Features Start -->
+    <section class="market-features">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="text-primary fw-bold">
+                    MARKETPLACE FEATURES
+                </span>
+
+                <h2 class="market-title mt-2">
+                    Built for Better Carbon Market Connections
+                </h2>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-feature-card">
+
+                        <div class="market-feature-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+
+                        <h5>
+                            Project Discovery
+                        </h5>
+
+                        <p>
+                            Explore project opportunities based on
+                            project type, activity and market needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-feature-card">
+
+                        <div class="market-feature-icon">
+                            <i class="fa fa-file-alt"></i>
+                        </div>
+
+                        <h5>
+                            Project Information
+                        </h5>
+
+                        <p>
+                            Review available project descriptions,
+                            documentation and relevant information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-feature-card">
+
+                        <div class="market-feature-icon">
+                            <i class="fa fa-handshake"></i>
+                        </div>
+
+                        <h5>
+                            Buyer &amp; Seller Connection
+                        </h5>
+
+                        <p>
+                            Help buyers and project stakeholders connect
+                            and begin discussions around opportunities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-feature-card">
+
+                        <div class="market-feature-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+
+                        <h5>
+                            Market Support
+                        </h5>
+
+                        <p>
+                            Support project owners and buyers with
+                            market-related information and coordination.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Features End -->
+
+
+    <!-- Process Start -->
+    <section class="market-process">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="text-primary fw-bold">
+                    HOW IT WORKS
+                </span>
+
+                <h2 class="market-title mt-2">
+                    Simple Marketplace Journey
+                </h2>
+
+                <p class="market-subtitle mx-auto">
+                    A straightforward process for discovering projects
+                    and starting carbon market discussions.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-step">
+
+                        <div class="market-step-number">
+                            01
+                        </div>
+
+                        <h5>
+                            Explore
+                        </h5>
+
+                        <p>
+                            Browse project types and available
+                            marketplace opportunities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-step">
+
+                        <div class="market-step-number">
+                            02
+                        </div>
+
+                        <h5>
+                            Review
+                        </h5>
+
+                        <p>
+                            Review available project information,
+                            documents and key details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-step">
+
+                        <div class="market-step-number">
+                            03
+                        </div>
+
+                        <h5>
+                            Connect
+                        </h5>
+
+                        <p>
+                            Submit an inquiry or connect with the
+                            relevant project stakeholder.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="market-step">
+
+                        <div class="market-step-number">
+                            04
+                        </div>
+
+                        <h5>
+                            Proceed
+                        </h5>
+
+                        <p>
+                            Discuss requirements, documentation,
+                            pricing and transaction considerations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Process End -->
+
+
+    <!-- Participants Start -->
+    <section class="market-participants">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-6">
+
+                    <div class="participant-box participant-buyer">
+
+                        <h3>
+                            For Buyers
+                        </h3>
+
+                        <p>
+                            Explore carbon project opportunities and identify
+                            projects that may align with your organization's
+                            climate and procurement objectives.
+                        </p>
+
+                        <ul class="participant-list">
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Explore project opportunities
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Review available project information
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Compare project characteristics
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Submit buyer inquiries
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Discuss volume and requirements
+                            </li>
+
+                        </ul>
+
+                        <a href="buyer.html"
+                            class="market-cta-btn mt-4">
+
+                            Buyer Services
+
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="participant-box participant-seller">
+
+                        <h3>
+                            For Sellers &amp; Producers
+                        </h3>
+
+                        <p>
+                            Present your carbon project or environmental
+                            initiative to potential buyers and market
+                            participants.
+                        </p>
+
+                        <ul class="participant-list">
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Present project information
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Organize project documentation
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Share project characteristics
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Receive market inquiries
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Discuss buyer requirements
+                            </li>
+
+                        </ul>
+
+                        <a href="seller.html"
+                            class="market-cta-btn mt-4">
+
+                            Seller / Producer
+
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Participants End -->
+
+
+    <!-- CTA Start -->
+    <section class="market-cta">
+
+        <div class="container">
+
+            <div class="market-cta-box">
+
+                <div class="market-cta-content">
+
+                    <h2>
+                        Ready to Explore the Carbon Market?
+                    </h2>
+
+                    <p>
+                        Whether you are looking to buy carbon credits,
+                        develop a project or explore a market opportunity,
+                        Eco-Carbon can help you take the next step.
+                    </p>
+
+                    <a href="contact.html"
+                        class="market-cta-btn">
+
+                        Contact Eco-Carbon
+
+                        <i class="fa fa-arrow-right ms-2"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- CTA End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input
+                            class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

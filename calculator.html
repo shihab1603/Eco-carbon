@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Carbon Calculator</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ================================
+           CALCULATOR PAGE ONLY
+        ================================= */
+
+        .calc-hero {
+            background:
+                linear-gradient(135deg, rgba(10, 55, 38, .94), rgba(29, 112, 78, .88)),
+                radial-gradient(circle at top right, rgba(255,255,255,.15), transparent 35%);
+            padding: 85px 0 90px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .calc-hero::after {
+            content: "";
+            position: absolute;
+            width: 380px;
+            height: 380px;
+            border: 60px solid rgba(255,255,255,.06);
+            border-radius: 50%;
+            right: -130px;
+            top: -130px;
+        }
+
+        .calc-hero h1 {
+            font-size: 52px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 18px;
+        }
+
+        .calc-hero p {
+            color: rgba(255,255,255,.88);
+            font-size: 18px;
+            max-width: 720px;
+            margin: auto;
+        }
+
+        .calc-breadcrumb {
+            margin-top: 25px;
+            color: rgba(255,255,255,.85);
+        }
+
+        .calc-breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .calc-main {
+            margin-top: -45px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .calc-panel {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 15px 45px rgba(0,0,0,.10);
+            padding: 35px;
+        }
+
+        .calc-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #173f2e;
+            margin-bottom: 8px;
+        }
+
+        .calc-subtitle {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .calc-section {
+            border: 1px solid #e7eee9;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            background: #fbfdfc;
+        }
+
+        .calc-section h5 {
+            color: #1d704e;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .calc-section h5 i {
+            margin-right: 9px;
+        }
+
+        .calc-label {
+            font-weight: 600;
+            color: #39483f;
+            margin-bottom: 8px;
+        }
+
+        .calc-input {
+            height: 48px;
+            border-radius: 8px;
+            border: 1px solid #dce5df;
+        }
+
+        .calc-input:focus {
+            border-color: #1d704e;
+            box-shadow: 0 0 0 .2rem rgba(29,112,78,.10);
+        }
+
+        .calc-btn {
+            background: #1d704e;
+            color: #fff;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .calc-btn:hover {
+            background: #145438;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .calc-reset {
+            border: 1px solid #d6dfda;
+            background: #fff;
+            color: #555;
+            padding: 13px 25px;
+            border-radius: 8px;
+            margin-left: 8px;
+        }
+
+        .calc-result {
+            background: linear-gradient(145deg, #123f2d, #1d704e);
+            border-radius: 18px;
+            padding: 35px;
+            color: #fff;
+            height: 100%;
+            position: sticky;
+            top: 100px;
+            overflow: hidden;
+        }
+
+        .calc-result::before {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.06);
+            right: -65px;
+            top: -65px;
+        }
+
+        .calc-result h4 {
+            color: #fff;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .result-label {
+            color: rgba(255,255,255,.75);
+            font-size: 14px;
+            margin-top: 25px;
+        }
+
+        .result-number {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 6px 0;
+        }
+
+        .result-unit {
+            color: rgba(255,255,255,.75);
+        }
+
+        .result-divider {
+            height: 1px;
+            background: rgba(255,255,255,.18);
+            margin: 25px 0;
+        }
+
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 13px;
+            font-size: 15px;
+        }
+
+        .result-row span:first-child {
+            color: rgba(255,255,255,.75);
+        }
+
+        .result-row span:last-child {
+            font-weight: 600;
+        }
+
+        .calc-note {
+            background: #f1f8f4;
+            border-left: 4px solid #1d704e;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            color: #526158;
+            font-size: 14px;
+        }
+
+        .category-section {
+            padding: 75px 0 25px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading .tag {
+            display: inline-block;
+            color: #1d704e;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .section-heading h2 {
+            font-size: 36px;
+            color: #173f2e;
+            font-weight: 700;
+        }
+
+        .category-card {
+            background: #fff;
+            padding: 30px 25px;
+            border-radius: 15px;
+            height: 100%;
+            border: 1px solid #e8eee9;
+            transition: .3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,.08);
+        }
+
+        .category-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eaf5ef;
+            color: #1d704e;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .category-card h5 {
+            color: #173f2e;
+            font-weight: 700;
+        }
+
+        .category-card p {
+            color: #6c756f;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .steps-section {
+            background: #f4f8f5;
+            padding: 75px 0;
+            margin-top: 55px;
+        }
+
+        .step-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            width: 62px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            background: #1d704e;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .step-card h5 {
+            font-weight: 700;
+            color: #173f2e;
+        }
+
+        .step-card p {
+            color: #707a74;
+            font-size: 14px;
+        }
+
+        .tips-section {
+            padding: 75px 0;
+        }
+
+        .tip-box {
+            border-radius: 15px;
+            background: #173f2e;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .tip-box h3 {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .tip-box p {
+            color: rgba(255,255,255,.78);
+        }
+
+        .tip-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0;
+        }
+
+        .tip-list li {
+            margin-bottom: 14px;
+            color: rgba(255,255,255,.88);
+        }
+
+        .tip-list i {
+            color: #9bd5b6;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 991px) {
+            .calc-hero h1 {
+                font-size: 40px;
+            }
+
+            .calc-result {
+                position: relative;
+                top: 0;
+                margin-top: 25px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .calc-panel {
+                padding: 22px;
+            }
+
+            .calc-hero {
+                padding: 60px 0 75px;
+            }
+
+            .calc-hero h1 {
+                font-size: 34px;
+            }
+
+            .calc-result {
+                padding: 25px;
+            }
+
+            .result-number {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">Home</a>
+
+                <a href="about.html" class="nav-item nav-link">About</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="buyer.html" class="dropdown-item">Buyer</a>
+                        <a href="seller.html" class="dropdown-item">Seller / Producer</a>
+                        <a href="supplier.html" class="dropdown-item">Supplier</a>
+                        <a href="mrv.html" class="dropdown-item">MRV &amp; Verification</a>
+                        <a href="certification.html" class="dropdown-item">Credit Certification</a>
+                        <a href="consultation.html" class="dropdown-item">Consultation</a>
+                    </div>
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">Projects</a>
+
+                <a href="marketplace.html" class="nav-item nav-link">Marketplace</a>
+
+                <a href="calculator.html" class="nav-item nav-link active">Calculator</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="training.html" class="dropdown-item">Training</a>
+                        <a href="news.html" class="dropdown-item">News &amp; Media</a>
+                        <a href="gallery.html" class="dropdown-item">Photo Gallery</a>
+                        <a href="reports.html" class="dropdown-item">Reports</a>
+                        <a href="links.html" class="dropdown-item">Related Links</a>
+                    </div>
+                </div>
+
+                <a href="career.html" class="nav-item nav-link">Career</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+                Get Started <i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <section class="calc-hero">
+        <div class="container text-center">
+
+            <h1>Carbon Footprint Calculator</h1>
+
+            <p>
+                Estimate your carbon emissions from energy, transportation,
+                travel and other everyday activities.
+            </p>
+
+            <div class="calc-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="mx-2">/</span>
+                <strong>Calculator</strong>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Calculator Start -->
+    <section class="calc-main">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Input Area -->
+                <div class="col-lg-8">
+
+                    <div class="calc-panel">
+
+                        <h2 class="calc-title">Calculate Your Footprint</h2>
+
+                        <p class="calc-subtitle">
+                            Enter approximate monthly activity data to estimate
+                            your carbon footprint.
+                        </p>
+
+                        <!-- Energy -->
+                        <div class="calc-section">
+
+                            <h5>
+                                <i class="fas fa-bolt"></i>
+                                Energy Consumption
+                            </h5>
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+                                    <label class="calc-label">
+                                        Electricity Usage
+                                    </label>
+
+                                    <input type="number"
+                                        id="electricity"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 300">
+
+                                    <small class="text-muted">
+                                        kWh per month
+                                    </small>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="calc-label">
+                                        Natural Gas
+                                    </label>
+
+                                    <input type="number"
+                                        id="gas"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 20">
+
+                                    <small class="text-muted">
+                                        Units per month
+                                    </small>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Transportation -->
+                        <div class="calc-section">
+
+                            <h5>
+                                <i class="fas fa-car"></i>
+                                Transportation
+                            </h5>
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label class="calc-label">
+                                        Car Travel
+                                    </label>
+
+                                    <input type="number"
+                                        id="car"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 500">
+
+                                    <small class="text-muted">
+                                        km per month
+                                    </small>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label class="calc-label">
+                                        Motorcycle Travel
+                                    </label>
+
+                                    <input type="number"
+                                        id="bike"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 300">
+
+                                    <small class="text-muted">
+                                        km per month
+                                    </small>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Travel -->
+                        <div class="calc-section">
+
+                            <h5>
+                                <i class="fas fa-plane"></i>
+                                Air Travel
+                            </h5>
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label class="calc-label">
+                                        Short / Medium Flights
+                                    </label>
+
+                                    <input type="number"
+                                        id="shortFlight"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 2">
+
+                                    <small class="text-muted">
+                                        Flights per month
+                                    </small>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label class="calc-label">
+                                        Long-Haul Flights
+                                    </label>
+
+                                    <input type="number"
+                                        id="longFlight"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 1">
+
+                                    <small class="text-muted">
+                                        Flights per month
+                                    </small>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Waste -->
+                        <div class="calc-section">
+
+                            <h5>
+                                <i class="fas fa-recycle"></i>
+                                Waste &amp; Lifestyle
+                            </h5>
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label class="calc-label">
+                                        Household Waste
+                                    </label>
+
+                                    <input type="number"
+                                        id="waste"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 20">
+
+                                    <small class="text-muted">
+                                        kg per month
+                                    </small>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label class="calc-label">
+                                        Household Members
+                                    </label>
+
+                                    <input type="number"
+                                        id="people"
+                                        class="form-control calc-input"
+                                        placeholder="e.g. 4">
+
+                                    <small class="text-muted">
+                                        Number of people
+                                    </small>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="mt-4">
+
+                            <button class="calc-btn" onclick="calculateCarbon()">
+                                <i class="fas fa-calculator me-2"></i>
+                                Calculate Footprint
+                            </button>
+
+                            <button class="calc-reset" onclick="resetCalculator()">
+                                Reset
+                            </button>
+
+                        </div>
+
+                        <div class="calc-note">
+                            <strong>Note:</strong>
+                            This calculator provides an illustrative estimate.
+                            Actual emissions can vary depending on energy sources,
+                            vehicle type, distance, methodology and other factors.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Result -->
+                <div class="col-lg-4">
+
+                    <div class="calc-result">
+
+                        <h4>
+                            <i class="fas fa-leaf me-2"></i>
+                            Your Result
+                        </h4>
+
+                        <div class="result-label">
+                            Estimated Monthly Emissions
+                        </div>
+
+                        <div class="result-number" id="totalResult">
+                            0.00
+                        </div>
+
+                        <div class="result-unit">
+                            kg CO₂e / month
+                        </div>
+
+                        <div class="result-divider"></div>
+
+                        <div class="result-row">
+                            <span>Energy</span>
+                            <span id="energyResult">0.00 kg</span>
+                        </div>
+
+                        <div class="result-row">
+                            <span>Transportation</span>
+                            <span id="transportResult">0.00 kg</span>
+                        </div>
+
+                        <div class="result-row">
+                            <span>Air Travel</span>
+                            <span id="flightResult">0.00 kg</span>
+                        </div>
+
+                        <div class="result-row">
+                            <span>Waste</span>
+                            <span id="wasteResult">0.00 kg</span>
+                        </div>
+
+                        <div class="result-divider"></div>
+
+                        <div class="result-row">
+                            <span>Estimated Annual</span>
+                            <span id="annualResult">0.00 kg</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Calculator End -->
+
+
+    <!-- Categories Start -->
+    <section class="category-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="tag">Understand Your Impact</span>
+
+                <h2>
+                    What Contributes to Your Carbon Footprint?
+                </h2>
+
+                <p class="text-muted">
+                    Different daily activities can contribute to greenhouse
+                    gas emissions. Understanding the major categories can help
+                    identify areas for improvement.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+
+                        <h5>Energy</h5>
+
+                        <p>
+                            Electricity and fuel used in homes, offices and
+                            facilities can contribute to overall emissions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+
+                        <h5>Transport</h5>
+
+                        <p>
+                            Cars, motorcycles, public transport and other
+                            mobility activities can affect emissions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+
+                        <h5>Travel</h5>
+
+                        <p>
+                            Air travel can represent a significant part of
+                            an individual's or organization's footprint.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+
+                        <h5>Waste</h5>
+
+                        <p>
+                            Waste generation and disposal practices can
+                            contribute to greenhouse gas emissions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Categories End -->
+
+
+    <!-- Steps Start -->
+    <section class="steps-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="tag">Simple Process</span>
+
+                <h2>
+                    From Measurement to Action
+                </h2>
+
+                <p class="text-muted">
+                    Use your footprint estimate as a starting point for
+                    understanding and managing emissions.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="step-card">
+
+                        <div class="step-number">01</div>
+
+                        <h5>Measure</h5>
+
+                        <p>
+                            Enter your activity and consumption information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="step-card">
+
+                        <div class="step-number">02</div>
+
+                        <h5>Understand</h5>
+
+                        <p>
+                            Review which categories contribute to your estimate.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="step-card">
+
+                        <div class="step-number">03</div>
+
+                        <h5>Reduce</h5>
+
+                        <p>
+                            Identify practical opportunities to reduce emissions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="step-card">
+
+                        <div class="step-number">04</div>
+
+                        <h5>Track</h5>
+
+                        <p>
+                            Monitor changes over time and improve your strategy.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Steps End -->
+
+
+    <!-- Tips Start -->
+    <section class="tips-section">
+
+        <div class="container">
+
+            <div class="tip-box">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+
+                        <h3>
+                            Start Your Carbon Reduction Journey
+                        </h3>
+
+                        <p>
+                            A footprint estimate is only the first step.
+                            Better data can help organizations and individuals
+                            identify practical opportunities for reducing
+                            greenhouse gas emissions.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <ul class="tip-list">
+
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Improve energy efficiency
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Consider lower-emission transportation
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Reduce unnecessary resource consumption
+                            </li>
+
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Improve waste management
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Tips End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input
+                            class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button
+                            type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            Subscribe
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+                    All Right Reserved.
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+                    <a class="border-bottom" href="https://safetaka.com">
+                        Safetaka.com Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+
+        function getValue(id) {
+            const value = parseFloat(document.getElementById(id).value);
+            return isNaN(value) || value < 0 ? 0 : value;
+        }
+
+        function calculateCarbon() {
+
+            /*
+             * Illustrative calculation factors.
+             * These are intentionally presented as estimates,
+             * not as a certified emissions methodology.
+             */
+
+            const electricity = getValue("electricity");
+            const gas = getValue("gas");
+
+            const car = getValue("car");
+            const bike = getValue("bike");
+
+            const shortFlight = getValue("shortFlight");
+            const longFlight = getValue("longFlight");
+
+            const waste = getValue("waste");
+
+            // Illustrative emission factors
+            const electricityEmission = electricity * 0.50;
+            const gasEmission = gas * 2.00;
+
+            const carEmission = car * 0.17;
+            const bikeEmission = bike * 0.08;
+
+            const shortFlightEmission = shortFlight * 250;
+            const longFlightEmission = longFlight * 800;
+
+            const wasteEmission = waste * 0.50;
+
+            const energy =
+                electricityEmission + gasEmission;
+
+            const transport =
+                carEmission + bikeEmission;
+
+            const flight =
+                shortFlightEmission + longFlightEmission;
+
+            const wasteTotal =
+                wasteEmission;
+
+            const total =
+                energy +
+                transport +
+                flight +
+                wasteTotal;
+
+            const annual =
+                total * 12;
+
+            document.getElementById("totalResult").innerText =
+                total.toFixed(2);
+
+            document.getElementById("energyResult").innerText =
+                energy.toFixed(2) + " kg";
+
+            document.getElementById("transportResult").innerText =
+                transport.toFixed(2) + " kg";
+
+            document.getElementById("flightResult").innerText =
+                flight.toFixed(2) + " kg";
+
+            document.getElementById("wasteResult").innerText =
+                wasteTotal.toFixed(2) + " kg";
+
+            document.getElementById("annualResult").innerText =
+                annual.toFixed(2) + " kg";
+        }
+
+
+        function resetCalculator() {
+
+            const fields = [
+                "electricity",
+                "gas",
+                "car",
+                "bike",
+                "shortFlight",
+                "longFlight",
+                "waste",
+                "people"
+            ];
+
+            fields.forEach(function (id) {
+                document.getElementById(id).value = "";
+            });
+
+            document.getElementById("totalResult").innerText =
+                "0.00";
+
+            document.getElementById("energyResult").innerText =
+                "0.00 kg";
+
+            document.getElementById("transportResult").innerText =
+                "0.00 kg";
+
+            document.getElementById("flightResult").innerText =
+                "0.00 kg";
+
+            document.getElementById("wasteResult").innerText =
+                "0.00 kg";
+
+            document.getElementById("annualResult").innerText =
+                "0.00 kg";
+        }
+    </script>
+
+</body>
+
+</html>

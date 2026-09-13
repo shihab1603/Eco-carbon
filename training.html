@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Training</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* =========================================
+           TRAINING PAGE
+        ========================================= */
+
+        .training-hero {
+            background:
+                linear-gradient(135deg, rgba(12, 58, 40, .96), rgba(29, 112, 78, .90));
+            padding: 85px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .training-hero::before {
+            content: "";
+            position: absolute;
+            width: 430px;
+            height: 430px;
+            border: 65px solid rgba(255, 255, 255, .05);
+            border-radius: 50%;
+            right: -150px;
+            top: -170px;
+        }
+
+        .training-hero::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            background: rgba(255, 255, 255, .04);
+            border-radius: 50%;
+            left: -100px;
+            bottom: -120px;
+        }
+
+        .training-hero h1 {
+            color: #fff;
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .training-hero p {
+            color: rgba(255, 255, 255, .88);
+            font-size: 18px;
+            max-width: 760px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .training-breadcrumb {
+            margin-top: 25px;
+            color: rgba(255, 255, 255, .85);
+        }
+
+        .training-breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Learning Intro */
+
+        .training-intro {
+            margin-top: -55px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .training-intro-box {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, .10);
+            padding: 38px;
+        }
+
+        .training-intro-box h2 {
+            color: #173f2e;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .training-intro-box p {
+            color: #6c756f;
+            line-height: 1.8;
+        }
+
+        .training-stat {
+            text-align: center;
+            padding: 15px;
+            border-left: 1px solid #e5ece8;
+        }
+
+        .training-stat:first-child {
+            border-left: none;
+        }
+
+        .training-stat h3 {
+            color: #1d704e;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .training-stat span {
+            color: #707a74;
+            font-size: 13px;
+        }
+
+        /* General Section */
+
+        .training-section {
+            padding: 80px 0 35px;
+        }
+
+        .training-heading {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 45px;
+        }
+
+        .training-heading .tag {
+            color: #1d704e;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .training-heading h2 {
+            color: #173f2e;
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+        .training-heading p {
+            color: #707a74;
+            line-height: 1.7;
+        }
+
+        /* Tracks */
+
+        .learning-track {
+            border-radius: 16px;
+            padding: 32px 28px;
+            height: 100%;
+            background: #fff;
+            border: 1px solid #e5ece8;
+            transition: .3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .learning-track:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+        }
+
+        .learning-track::after {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #f0f7f3;
+            right: -35px;
+            top: -35px;
+        }
+
+        .track-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eaf5ef;
+            color: #1d704e;
+            border-radius: 13px;
+            font-size: 24px;
+            margin-bottom: 22px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .learning-track h5 {
+            color: #173f2e;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .learning-track p {
+            color: #717b75;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .track-link {
+            color: #1d704e;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* Featured Courses */
+
+        .course-section {
+            background: #f5f8f6;
+            padding: 80px 0;
+            margin-top: 45px;
+        }
+
+        .course-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 100%;
+            border: 1px solid #e5ece8;
+            transition: .3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+        }
+
+        .course-top {
+            padding: 28px;
+            background: linear-gradient(135deg, #173f2e, #1d704e);
+            color: #fff;
+            position: relative;
+        }
+
+        .course-top::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.06);
+            right: -25px;
+            top: -30px;
+        }
+
+        .course-level {
+            display: inline-block;
+            background: rgba(255,255,255,.14);
+            padding: 5px 11px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .course-top h4 {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .course-body {
+            padding: 28px;
+        }
+
+        .course-body p {
+            color: #707a74;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .course-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .course-info span {
+            color: #5f6a64;
+            font-size: 12px;
+        }
+
+        .course-info i {
+            color: #1d704e;
+            margin-right: 5px;
+        }
+
+        .course-btn {
+            display: inline-block;
+            background: #1d704e;
+            color: #fff;
+            padding: 10px 19px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .course-btn:hover {
+            color: #fff;
+            background: #145438;
+        }
+
+        /* Learning Journey */
+
+        .journey-section {
+            padding: 80px 0;
+        }
+
+        .journey-line {
+            position: relative;
+        }
+
+        .journey-line::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            bottom: 25px;
+            width: 2px;
+            background: #dce9e1;
+            transform: translateX(-50%);
+        }
+
+        .journey-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .journey-number {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #1d704e;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .journey-content {
+            width: 44%;
+            background: #f5f8f6;
+            border-radius: 14px;
+            padding: 25px;
+        }
+
+        .journey-item:nth-child(odd) .journey-content {
+            margin-right: auto;
+        }
+
+        .journey-item:nth-child(even) .journey-content {
+            margin-left: auto;
+        }
+
+        .journey-content h5 {
+            color: #173f2e;
+            font-weight: 700;
+        }
+
+        .journey-content p {
+            color: #707a74;
+            font-size: 14px;
+            margin-bottom: 0;
+            line-height: 1.7;
+        }
+
+        /* Audience */
+
+        .audience-section {
+            background: #173f2e;
+            padding: 80px 0;
+        }
+
+        .audience-section .training-heading h2 {
+            color: #fff;
+        }
+
+        .audience-section .training-heading p {
+            color: rgba(255,255,255,.72);
+        }
+
+        .audience-card {
+            background: rgba(255,255,255,.06);
+            border: 1px solid rgba(255,255,255,.10);
+            border-radius: 15px;
+            padding: 30px 25px;
+            height: 100%;
+        }
+
+        .audience-card i {
+            color: #a7d9bc;
+            font-size: 28px;
+            margin-bottom: 18px;
+        }
+
+        .audience-card h5 {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .audience-card p {
+            color: rgba(255,255,255,.68);
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* Training Request */
+
+        .request-section {
+            padding: 80px 0;
+        }
+
+        .request-box {
+            background: #f5f8f6;
+            border-radius: 18px;
+            padding: 42px;
+        }
+
+        .request-box h2 {
+            color: #173f2e;
+            font-weight: 700;
+        }
+
+        .request-box > p {
+            color: #6d7771;
+        }
+
+        .training-label {
+            color: #39483f;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .training-input {
+            height: 48px;
+            border: 1px solid #dce5df;
+            border-radius: 8px;
+        }
+
+        textarea.training-input {
+            height: 125px;
+            resize: none;
+        }
+
+        .training-input:focus {
+            border-color: #1d704e;
+            box-shadow: 0 0 0 .2rem rgba(29,112,78,.10);
+        }
+
+        .request-btn {
+            background: #1d704e;
+            color: #fff;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .request-btn:hover {
+            background: #145438;
+            color: #fff;
+        }
+
+        /* CTA */
+
+        .training-cta {
+            padding: 0 0 80px;
+        }
+
+        .training-cta-box {
+            background: linear-gradient(135deg, #1d704e, #123f2d);
+            border-radius: 18px;
+            padding: 50px;
+        }
+
+        .training-cta-box h3 {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .training-cta-box p {
+            color: rgba(255,255,255,.78);
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 991px) {
+
+            .training-hero h1 {
+                font-size: 42px;
+            }
+
+            .journey-line::before {
+                left: 27px;
+            }
+
+            .journey-number {
+                left: 27px;
+            }
+
+            .journey-content {
+                width: calc(100% - 80px);
+                margin-left: 80px !important;
+                margin-right: 0 !important;
+            }
+
+            .training-stat {
+                border-left: none;
+            }
+        }
+
+        @media (max-width: 575px) {
+
+            .training-hero {
+                padding: 60px 0 75px;
+            }
+
+            .training-hero h1 {
+                font-size: 34px;
+            }
+
+            .training-heading h2 {
+                font-size: 29px;
+            }
+
+            .training-intro-box,
+            .request-box,
+            .training-cta-box {
+                padding: 25px;
+            }
+
+            .journey-content {
+                width: calc(100% - 65px);
+                margin-left: 65px !important;
+            }
+
+            .journey-line::before {
+                left: 22px;
+            }
+
+            .journey-number {
+                left: 22px;
+                width: 45px;
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html"
+            class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-item nav-link">
+                    About
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">
+                            Buyer
+                        </a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html" class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html" class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html" class="nav-item nav-link">
+                    Calculator
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html"
+                            class="dropdown-item active">
+                            Training
+                        </a>
+
+                        <a href="news.html" class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html" class="dropdown-item">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html" class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html" class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="career.html" class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <section class="training-hero">
+
+        <div class="container text-center">
+
+            <h1>Learn. Understand. Build Climate Solutions.</h1>
+
+            <p>
+                Develop practical knowledge about carbon markets,
+                carbon projects, MRV, sustainability, climate finance
+                and emerging environmental technologies.
+            </p>
+
+            <div class="training-breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span class="mx-2">/</span>
+
+                <strong>Training</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Hero End -->
+
+
+    <!-- Intro Start -->
+    <section class="training-intro">
+
+        <div class="container">
+
+            <div class="training-intro-box">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-7">
+
+                        <span class="training-heading text-start mx-0 mb-2"
+                            style="display:block;">
+
+                            <span class="tag">
+                                Eco-Carbon Learning Hub
+                            </span>
+
+                        </span>
+
+                        <h2>
+                            Practical Learning for a Changing Climate Economy
+                        </h2>
+
+                        <p>
+                            Carbon markets and climate-related business are
+                            evolving rapidly. Our training programs are designed
+                            to help participants understand the concepts,
+                            processes and practical considerations behind
+                            carbon projects and sustainability initiatives.
+                        </p>
+
+                        <p class="mb-0">
+                            Training can be designed for individuals,
+                            organizations, project teams, corporate groups
+                            and professionals.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <div class="row g-2">
+
+                            <div class="col-6">
+
+                                <div class="training-stat">
+
+                                    <h3>01</h3>
+
+                                    <span>
+                                        Foundation
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <div class="training-stat">
+
+                                    <h3>02</h3>
+
+                                    <span>
+                                        Practical Skills
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <div class="training-stat">
+
+                                    <h3>03</h3>
+
+                                    <span>
+                                        Industry Focus
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <div class="training-stat">
+
+                                    <h3>04</h3>
+
+                                    <span>
+                                        Applied Learning
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Intro End -->
+
+
+    <!-- Learning Tracks Start -->
+    <section class="training-section">
+
+        <div class="container">
+
+            <div class="training-heading">
+
+                <span class="tag">
+                    Learning Tracks
+                </span>
+
+                <h2>
+                    Explore Your Area of Interest
+                </h2>
+
+                <p>
+                    Choose a learning area based on your role,
+                    experience and climate-related objectives.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="learning-track">
+
+                        <div class="track-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+
+                        <h5>
+                            Carbon Market Fundamentals
+                        </h5>
+
+                        <p>
+                            Understand carbon credits, carbon markets,
+                            project types, market participants and
+                            key terminology.
+                        </p>
+
+                        <a href="#courses" class="track-link">
+                            Explore Topic
+                            <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="learning-track">
+
+                        <div class="track-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+
+                        <h5>
+                            Carbon Project Development
+                        </h5>
+
+                        <p>
+                            Learn about project concepts, documentation,
+                            baselines, monitoring and project development
+                            considerations.
+                        </p>
+
+                        <a href="#courses" class="track-link">
+                            Explore Topic
+                            <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="learning-track">
+
+                        <div class="track-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                        <h5>
+                            MRV &amp; Data Management
+                        </h5>
+
+                        <p>
+                            Build an understanding of measurement,
+                            monitoring, reporting, data organization
+                            and verification readiness.
+                        </p>
+
+                        <a href="#courses" class="track-link">
+                            Explore Topic
+                            <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="learning-track">
+
+                        <div class="track-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+
+                        <h5>
+                            Climate Finance
+                        </h5>
+
+                        <p>
+                            Explore the relationship between climate
+                            action, carbon finance, investment and
+                            market opportunities.
+                        </p>
+
+                        <a href="#courses" class="track-link">
+                            Explore Topic
+                            <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="learning-track">
+
+                        <div class="track-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                        <h5>
+                            Corporate Sustainability
+                        </h5>
+
+                        <p>
+                            Learn how organizations can understand
+                            emissions, sustainability priorities and
+                            climate-related strategies.
+                        </p>
+
+                        <a href="#courses" class="track-link">
+                            Explore Topic
+                            <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="learning-track">
+
+                        <div class="track-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+
+                        <h5>
+                            Climate Technology
+                        </h5>
+
+                        <p>
+                            Discover the role of digital platforms,
+                            IoT, data systems and technology in
+                            climate solutions.
+                        </p>
+
+                        <a href="#courses" class="track-link">
+                            Explore Topic
+                            <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Learning Tracks End -->
+
+
+    <!-- Courses Start -->
+    <section class="course-section" id="courses">
+
+        <div class="container">
+
+            <div class="training-heading">
+
+                <span class="tag">
+                    Featured Learning
+                </span>
+
+                <h2>
+                    Training Programs
+                </h2>
+
+                <p>
+                    Flexible learning topics that can be adapted for
+                    professional, corporate or project-specific needs.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="course-card">
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                FOUNDATION
+                            </span>
+
+                            <h4>
+                                Introduction to Carbon Markets
+                            </h4>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p>
+                                A foundation-level overview of carbon
+                                credits, markets, projects and the
+                                broader climate ecosystem.
+                            </p>
+
+                            <div class="course-info">
+
+                                <span>
+                                    <i class="far fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-user-graduate"></i>
+                                    Beginner
+                                </span>
+
+                            </div>
+
+                            <a href="#request"
+                                class="course-btn">
+                                Request Training
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="course-card">
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                PROFESSIONAL
+                            </span>
+
+                            <h4>
+                                Carbon Project Development
+                            </h4>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p>
+                                Explore project planning, documentation,
+                                data requirements, monitoring and
+                                implementation considerations.
+                            </p>
+
+                            <div class="course-info">
+
+                                <span>
+                                    <i class="far fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-user-graduate"></i>
+                                    Intermediate
+                                </span>
+
+                            </div>
+
+                            <a href="#request"
+                                class="course-btn">
+                                Request Training
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="course-card">
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                SPECIALIZED
+                            </span>
+
+                            <h4>
+                                MRV &amp; Verification Readiness
+                            </h4>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p>
+                                Understand the role of MRV systems,
+                                data quality, reporting and verification
+                                preparation.
+                            </p>
+
+                            <div class="course-info">
+
+                                <span>
+                                    <i class="far fa-clock"></i>
+                                    Flexible
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-user-graduate"></i>
+                                    Professional
+                                </span>
+
+                            </div>
+
+                            <a href="#request"
+                                class="course-btn">
+                                Request Training
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="course-card">
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                CORPORATE
+                            </span>
+
+                            <h4>
+                                Corporate Carbon Awareness
+                            </h4>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p>
+                                Help teams understand emissions,
+                                carbon management, sustainability and
+                                climate-related business considerations.
+                            </p>
+
+                            <div class="course-info">
+
+                                <span>
+                                    <i class="far fa-clock"></i>
+                                    Custom
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-users"></i>
+                                    Teams
+                                </span>
+
+                            </div>
+
+                            <a href="#request"
+                                class="course-btn">
+                                Request Training
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="course-card">
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                PRACTICAL
+                            </span>
+
+                            <h4>
+                                Carbon Data &amp; MRV Workshop
+                            </h4>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p>
+                                A practical learning session focused on
+                                activity data, records, monitoring and
+                                reporting workflows.
+                            </p>
+
+                            <div class="course-info">
+
+                                <span>
+                                    <i class="far fa-clock"></i>
+                                    Workshop
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-users"></i>
+                                    Group
+                                </span>
+
+                            </div>
+
+                            <a href="#request"
+                                class="course-btn">
+                                Request Training
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="course-card">
+
+                        <div class="course-top">
+
+                            <span class="course-level">
+                                CUSTOM
+                            </span>
+
+                            <h4>
+                                Organization-Specific Training
+                            </h4>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <p>
+                                Customized training designed around
+                                your organization's sector, project,
+                                team and learning objectives.
+                            </p>
+
+                            <div class="course-info">
+
+                                <span>
+                                    <i class="far fa-clock"></i>
+                                    Custom
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-users"></i>
+                                    Organization
+                                </span>
+
+                            </div>
+
+                            <a href="#request"
+                                class="course-btn">
+                                Request Training
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Courses End -->
+
+
+    <!-- Learning Journey Start -->
+    <section class="journey-section">
+
+        <div class="container">
+
+            <div class="training-heading">
+
+                <span class="tag">
+                    Learning Journey
+                </span>
+
+                <h2>
+                    From Knowledge to Application
+                </h2>
+
+                <p>
+                    A practical approach that connects concepts
+                    with real-world climate and carbon activities.
+                </p>
+
+            </div>
+
+            <div class="journey-line">
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        01
+                    </div>
+
+                    <div class="journey-content">
+
+                        <h5>
+                            Understand
+                        </h5>
+
+                        <p>
+                            Build a clear foundation of climate,
+                            carbon and sustainability concepts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        02
+                    </div>
+
+                    <div class="journey-content">
+
+                        <h5>
+                            Explore
+                        </h5>
+
+                        <p>
+                            Examine project structures, market
+                            processes, data and practical examples.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        03
+                    </div>
+
+                    <div class="journey-content">
+
+                        <h5>
+                            Practice
+                        </h5>
+
+                        <p>
+                            Apply learning through exercises,
+                            workshops, case discussions or project work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        04
+                    </div>
+
+                    <div class="journey-content">
+
+                        <h5>
+                            Apply
+                        </h5>
+
+                        <p>
+                            Use the knowledge within your organization,
+                            project or professional activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Learning Journey End -->
+
+
+    <!-- Audience Start -->
+    <section class="audience-section">
+
+        <div class="container">
+
+            <div class="training-heading">
+
+                <span class="tag">
+                    Who Can Learn
+                </span>
+
+                <h2>
+                    Training for Different Audiences
+                </h2>
+
+                <p>
+                    Training content can be adjusted according to
+                    participant knowledge, role and organizational needs.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="audience-card">
+
+                        <i class="fas fa-user-tie"></i>
+
+                        <h5>
+                            Professionals
+                        </h5>
+
+                        <p>
+                            Build practical knowledge relevant to
+                            climate and carbon-related work.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="audience-card">
+
+                        <i class="fas fa-building"></i>
+
+                        <h5>
+                            Organizations
+                        </h5>
+
+                        <p>
+                            Train teams on sustainability,
+                            carbon awareness and climate strategy.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="audience-card">
+
+                        <i class="fas fa-graduation-cap"></i>
+
+                        <h5>
+                            Students
+                        </h5>
+
+                        <p>
+                            Develop foundational knowledge about
+                            climate solutions and carbon markets.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="audience-card">
+
+                        <i class="fas fa-project-diagram"></i>
+
+                        <h5>
+                            Project Teams
+                        </h5>
+
+                        <p>
+                            Strengthen understanding of project,
+                            data and MRV-related requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Audience End -->
+
+
+    <!-- Request Start -->
+    <section class="request-section" id="request">
+
+        <div class="container">
+
+            <div class="request-box">
+
+                <div class="training-heading text-start mx-0 mb-4">
+
+                    <span class="tag">
+                        Training Request
+                    </span>
+
+                    <h2>
+                        Plan a Training Program
+                    </h2>
+
+                    <p>
+                        Tell us what you want to learn or what your
+                        organization needs. Training content can be
+                        customized according to your objectives.
+                    </p>
+
+                </div>
+
+                <form onsubmit="submitTraining(event)">
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+
+                            <label class="training-label">
+                                Full Name
+                            </label>
+
+                            <input type="text"
+                                class="form-control training-input"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="training-label">
+                                Organization
+                            </label>
+
+                            <input type="text"
+                                class="form-control training-input"
+                                placeholder="Organization name">
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="training-label">
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                class="form-control training-input"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="training-label">
+                                Phone Number
+                            </label>
+
+                            <input type="tel"
+                                class="form-control training-input"
+                                placeholder="Enter your phone number">
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="training-label">
+                                Training Topic
+                            </label>
+
+                            <select class="form-select training-input"
+                                required>
+
+                                <option value="">
+                                    Select a topic
+                                </option>
+
+                                <option>
+                                    Carbon Market Fundamentals
+                                </option>
+
+                                <option>
+                                    Carbon Project Development
+                                </option>
+
+                                <option>
+                                    MRV &amp; Verification
+                                </option>
+
+                                <option>
+                                    Climate Finance
+                                </option>
+
+                                <option>
+                                    Corporate Sustainability
+                                </option>
+
+                                <option>
+                                    Climate Technology
+                                </option>
+
+                                <option>
+                                    Custom Training
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="training-label">
+                                Preferred Format
+                            </label>
+
+                            <select class="form-select training-input">
+
+                                <option value="">
+                                    Select format
+                                </option>
+
+                                <option>
+                                    Online
+                                </option>
+
+                                <option>
+                                    In-Person
+                                </option>
+
+                                <option>
+                                    Workshop
+                                </option>
+
+                                <option>
+                                    Corporate Training
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <label class="training-label">
+                                Training Requirements
+                            </label>
+
+                            <textarea
+                                class="form-control training-input"
+                                placeholder="Tell us about your learning objectives, expected participants or specific requirements"></textarea>
+
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <button type="submit"
+                                class="request-btn">
+
+                                Submit Training Request
+                                <i class="fa fa-arrow-right ms-2"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Request End -->
+
+
+    <!-- CTA Start -->
+    <section class="training-cta">
+
+        <div class="container">
+
+            <div class="training-cta-box">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8">
+
+                        <h3>
+                            Build Knowledge That Supports Climate Action
+                        </h3>
+
+                        <p>
+                            Whether you are starting your carbon journey
+                            or developing professional expertise, choose
+                            a learning path that fits your goals.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                        <a href="#request"
+                            class="btn btn-light px-4 py-3">
+
+                            Request Training
+                            <i class="fa fa-arrow-right ms-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- CTA End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input
+                            class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+                    All Right Reserved.
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+                    <a class="border-bottom"
+                        href="https://safetaka.com">
+                        Safetaka.com Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+
+        function submitTraining(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you for your training request. " +
+                "Our team can review your requirements and respond accordingly."
+            );
+
+        }
+    </script>
+
+</body>
+
+</html>

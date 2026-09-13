@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Photo Gallery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* =====================================================
+           ECO-CARBON GALLERY PAGE
+        ===================================================== */
+
+        .gallery-page {
+            background: #f7faf8;
+        }
+
+        /* Hero */
+        .gallery-hero {
+            position: relative;
+            min-height: 470px;
+            overflow: hidden;
+            background: #0d3d2e;
+            color: #fff;
+        }
+
+        .gallery-hero-content {
+            position: relative;
+            z-index: 5;
+            padding: 105px 0;
+        }
+
+        .gallery-eyebrow {
+            color: #a9e6c8;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .gallery-hero h1 {
+            font-size: 62px;
+            line-height: 1.05;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .gallery-hero p {
+            max-width: 650px;
+            color: rgba(255,255,255,0.78);
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 28px;
+        }
+
+        .gallery-hero-btn {
+            padding: 13px 26px;
+            border-radius: 50px;
+        }
+
+        /* Decorative Gallery */
+        .hero-gallery {
+            position: absolute;
+            right: 4%;
+            top: 55px;
+            width: 430px;
+            height: 360px;
+            transform: rotate(-4deg);
+        }
+
+        .hero-photo {
+            position: absolute;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+            border: 7px solid rgba(255,255,255,0.9);
+        }
+
+        .hero-photo.one {
+            width: 230px;
+            height: 170px;
+            right: 0;
+            top: 0;
+            z-index: 3;
+            background: linear-gradient(135deg, #76b894, #d6efdf);
+        }
+
+        .hero-photo.two {
+            width: 220px;
+            height: 175px;
+            left: 15px;
+            top: 70px;
+            z-index: 2;
+            background: linear-gradient(135deg, #2f8d65, #b7dfca);
+        }
+
+        .hero-photo.three {
+            width: 240px;
+            height: 175px;
+            right: 40px;
+            bottom: 0;
+            z-index: 1;
+            background: linear-gradient(135deg, #154f3c, #6db995);
+        }
+
+        .hero-photo i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255,255,255,0.7);
+            font-size: 42px;
+        }
+
+        /* Intro */
+        .gallery-intro {
+            background: #fff;
+            padding: 65px 0;
+            border-bottom: 1px solid #e6eee9;
+        }
+
+        .intro-number {
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 1;
+            color: #15915f;
+        }
+
+        .intro-label {
+            color: #77877f;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .intro-title {
+            color: #173e2f;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .intro-text {
+            color: #718079;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+        }
+
+        .gallery-section-heading {
+            margin-bottom: 35px;
+        }
+
+        .gallery-section-heading .small-heading {
+            color: #15915f;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-section-heading h2 {
+            color: #183e30;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .gallery-section-heading p {
+            color: #718079;
+            line-height: 1.7;
+            max-width: 650px;
+        }
+
+        /* Filter */
+        .gallery-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-bottom: 35px;
+        }
+
+        .gallery-filter button {
+            border: 1px solid #dceae2;
+            background: #fff;
+            color: #587067;
+            padding: 10px 19px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .gallery-filter button:hover,
+        .gallery-filter button.active {
+            background: #15915f;
+            color: #fff;
+            border-color: #15915f;
+        }
+
+        /* Masonry */
+        .gallery-grid {
+            columns: 3 280px;
+            column-gap: 20px;
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            background: #dfece5;
+            min-height: 220px;
+            cursor: pointer;
+        }
+
+        .gallery-item.tall {
+            min-height: 390px;
+        }
+
+        .gallery-item.wide {
+            min-height: 280px;
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background:
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,0.35), transparent 30%),
+                linear-gradient(145deg, #185d44, #6fb28f);
+        }
+
+        .gallery-item:nth-child(2) .gallery-placeholder {
+            background:
+                radial-gradient(circle at 70% 25%, rgba(255,255,255,0.3), transparent 30%),
+                linear-gradient(145deg, #315e4d, #a5cdb8);
+        }
+
+        .gallery-item:nth-child(3) .gallery-placeholder {
+            background:
+                radial-gradient(circle at 30% 70%, rgba(255,255,255,0.3), transparent 30%),
+                linear-gradient(145deg, #116347, #92c8aa);
+        }
+
+        .gallery-item:nth-child(4) .gallery-placeholder {
+            background:
+                radial-gradient(circle at 75% 70%, rgba(255,255,255,0.3), transparent 30%),
+                linear-gradient(145deg, #244b3d, #739b89);
+        }
+
+        .gallery-item:nth-child(5) .gallery-placeholder {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 30%),
+                linear-gradient(145deg, #237858, #b1d8c1);
+        }
+
+        .gallery-item:nth-child(6) .gallery-placeholder {
+            background:
+                radial-gradient(circle at 70% 35%, rgba(255,255,255,0.3), transparent 30%),
+                linear-gradient(145deg, #426857, #b8d8c5);
+        }
+
+        .gallery-item:nth-child(7) .gallery-placeholder {
+            background:
+                radial-gradient(circle at 30% 70%, rgba(255,255,255,0.3), transparent 30%),
+                linear-gradient(145deg, #15513c, #579d7c);
+        }
+
+        .gallery-item:nth-child(8) .gallery-placeholder {
+            background:
+                radial-gradient(circle at 65% 30%, rgba(255,255,255,0.3), transparent 30%),
+                linear-gradient(145deg, #36624e, #8cbda4);
+        }
+
+        .gallery-placeholder i {
+            color: rgba(255,255,255,0.75);
+            font-size: 45px;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(5,35,25,0.88),
+                rgba(5,35,25,0.05) 60%
+            );
+            opacity: 0;
+            transition: 0.35s;
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-caption {
+            color: #fff;
+        }
+
+        .gallery-caption small {
+            color: #a8e7c7;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        .gallery-caption h5 {
+            font-size: 18px;
+            margin: 5px 0 0;
+            font-weight: 700;
+        }
+
+        .gallery-view {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.9);
+            color: #15915f;
+        }
+
+        /* Featured Album */
+        .album-section {
+            background: #edf7f1;
+            padding: 80px 0;
+        }
+
+        .album-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #e1ece6;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .album-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(21,85,58,0.1);
+        }
+
+        .album-cover {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, #0e543d, #54a67e);
+        }
+
+        .album-card:nth-child(2) .album-cover {
+            background: linear-gradient(135deg, #325e4b, #8ab89f);
+        }
+
+        .album-card:nth-child(3) .album-cover {
+            background: linear-gradient(135deg, #186e50, #9acdb1);
+        }
+
+        .album-cover i {
+            color: rgba(255,255,255,0.82);
+            font-size: 55px;
+        }
+
+        .album-count {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            background: rgba(0,0,0,0.35);
+            color: #fff;
+            padding: 7px 11px;
+            border-radius: 20px;
+            font-size: 11px;
+        }
+
+        .album-content {
+            padding: 25px;
+        }
+
+        .album-content h4 {
+            color: #183e30;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .album-content p {
+            color: #76857e;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 17px;
+        }
+
+        .album-link {
+            color: #15915f;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* Moments */
+        .moments-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .moment-box {
+            position: relative;
+            min-height: 310px;
+            background: linear-gradient(135deg, #103f30, #21805c);
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .moment-box::before,
+        .moment-box::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            border: 45px solid rgba(255,255,255,0.06);
+        }
+
+        .moment-box::before {
+            width: 250px;
+            height: 250px;
+            right: -90px;
+            top: -80px;
+        }
+
+        .moment-box::after {
+            width: 170px;
+            height: 170px;
+            left: -65px;
+            bottom: -70px;
+        }
+
+        .moment-icon {
+            position: absolute;
+            top: 35px;
+            left: 35px;
+            color: rgba(255,255,255,0.8);
+            font-size: 35px;
+        }
+
+        .moment-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .moment-content small {
+            color: #a9e7c8;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        .moment-content h3 {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 700;
+            margin: 7px 0 8px;
+        }
+
+        .moment-content p {
+            color: rgba(255,255,255,0.72);
+            line-height: 1.6;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* CTA */
+        .gallery-cta {
+            background: #123f30;
+            color: #fff;
+            text-align: center;
+            padding: 75px 0;
+        }
+
+        .gallery-cta h2 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .gallery-cta p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 1100px) {
+            .hero-gallery {
+                opacity: 0.35;
+                right: -60px;
+            }
+
+            .gallery-hero-content {
+                position: relative;
+                z-index: 10;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .gallery-hero {
+                min-height: auto;
+            }
+
+            .gallery-hero-content {
+                padding: 75px 0;
+            }
+
+            .gallery-hero h1 {
+                font-size: 42px;
+            }
+
+            .gallery-hero p {
+                font-size: 16px;
+            }
+
+            .hero-gallery {
+                display: none;
+            }
+
+            .gallery-section,
+            .album-section,
+            .moments-section {
+                padding: 55px 0;
+            }
+
+            .gallery-section-heading h2 {
+                font-size: 30px;
+            }
+
+            .gallery-grid {
+                columns: 2 150px;
+                column-gap: 12px;
+            }
+
+            .gallery-item {
+                margin-bottom: 12px;
+            }
+
+            .gallery-item.tall {
+                min-height: 300px;
+            }
+
+            .gallery-item.wide {
+                min-height: 210px;
+            }
+
+            .gallery-overlay {
+                opacity: 1;
+                padding: 15px;
+            }
+
+            .gallery-caption h5 {
+                font-size: 14px;
+            }
+
+            .intro-title {
+                font-size: 28px;
+                margin-top: 25px;
+            }
+
+            .gallery-cta h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body class="gallery-page">
+
+    <!-- Header / Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-item nav-link">
+                    About
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">
+                            Buyer
+                        </a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html" class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html" class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html" class="nav-item nav-link">
+                    Calculator
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle active"
+                        data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html" class="dropdown-item">
+                            Training
+                        </a>
+
+                        <a href="news.html" class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html"
+                            class="dropdown-item active">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html" class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html" class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="career.html" class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+    </nav>
+
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+
+        <div class="container">
+
+            <div class="gallery-hero-content">
+
+                <div class="gallery-eyebrow">
+                    <i class="fa fa-camera me-2"></i>
+                    Eco-Carbon Visual Gallery
+                </div>
+
+                <h1>
+                    Capturing Ideas,<br>
+                    Actions &amp; Impact
+                </h1>
+
+                <p>
+                    Explore visual moments from Eco-Carbon activities,
+                    climate initiatives, project development, training,
+                    events and sustainability-focused work.
+                </p>
+
+                <a href="#gallery"
+                    class="btn btn-light gallery-hero-btn">
+
+                    Explore Gallery
+                    <i class="fa fa-arrow-down ms-2"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Decorative Visual -->
+        <div class="hero-gallery">
+
+            <div class="hero-photo one">
+                <i class="fa fa-leaf"></i>
+            </div>
+
+            <div class="hero-photo two">
+                <i class="fa fa-users"></i>
+            </div>
+
+            <div class="hero-photo three">
+                <i class="fa fa-globe"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Intro -->
+    <section class="gallery-intro">
+
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-2 col-md-3">
+
+                    <div class="intro-number">
+                        01
+                    </div>
+
+                    <div class="intro-label">
+                        Visual Stories
+                    </div>
+
+                </div>
+
+                <div class="col-lg-10 col-md-9">
+
+                    <h2 class="intro-title">
+                        A Visual Window into Eco-Carbon
+                    </h2>
+
+                    <p class="intro-text">
+                        From project activities and training sessions to
+                        events and climate-focused initiatives, this gallery
+                        brings together moments that represent our journey
+                        across the carbon and sustainability ecosystem.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Gallery -->
+    <section class="gallery-section" id="gallery">
+
+        <div class="container">
+
+            <div class="gallery-section-heading">
+
+                <div class="small-heading">
+                    Photo Gallery
+                </div>
+
+                <h2>
+                    Explore Our Visual Stories
+                </h2>
+
+                <p>
+                    Browse selected moments across projects, events,
+                    training and sustainability activities.
+                </p>
+
+            </div>
+
+
+            <!-- Filter -->
+            <div class="gallery-filter">
+
+                <button class="active"
+                    onclick="filterGallery('all', this)">
+                    All
+                </button>
+
+                <button onclick="filterGallery('projects', this)">
+                    Projects
+                </button>
+
+                <button onclick="filterGallery('events', this)">
+                    Events
+                </button>
+
+                <button onclick="filterGallery('training', this)">
+                    Training
+                </button>
+
+                <button onclick="filterGallery('climate', this)">
+                    Climate
+                </button>
+
+            </div>
+
+
+            <!-- Masonry Gallery -->
+            <div class="gallery-grid">
+
+
+                <div class="gallery-item tall"
+                    data-category="projects">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-leaf"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Projects
+                            </small>
+
+                            <h5>
+                                Carbon Project Development
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item"
+                    data-category="training">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-chalkboard-teacher"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Training
+                            </small>
+
+                            <h5>
+                                Learning &amp; Capacity Building
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item wide"
+                    data-category="events">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-calendar-alt"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Events
+                            </small>
+
+                            <h5>
+                                Climate &amp; Sustainability Events
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item"
+                    data-category="climate">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-globe-asia"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Climate
+                            </small>
+
+                            <h5>
+                                Climate Action
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item tall"
+                    data-category="projects">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-project-diagram"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Projects
+                            </small>
+
+                            <h5>
+                                Sustainable Project Activities
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item"
+                    data-category="events">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-users"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Events
+                            </small>
+
+                            <h5>
+                                Community &amp; Stakeholder Engagement
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item wide"
+                    data-category="training">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-book-open"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Training
+                            </small>
+
+                            <h5>
+                                Carbon Market Learning Session
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item"
+                    data-category="climate">
+
+                    <div class="gallery-placeholder">
+                        <i class="fa fa-seedling"></i>
+                    </div>
+
+                    <div class="gallery-overlay">
+
+                        <div class="gallery-caption">
+
+                            <small>
+                                Climate
+                            </small>
+
+                            <h5>
+                                Nature &amp; Sustainability
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-view">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Albums -->
+    <section class="album-section">
+
+        <div class="container">
+
+            <div class="gallery-section-heading">
+
+                <div class="small-heading">
+                    Gallery Collections
+                </div>
+
+                <h2>
+                    Browse by Collection
+                </h2>
+
+                <p>
+                    Organized visual collections make it easier to explore
+                    different areas of Eco-Carbon activities.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="album-card">
+
+                        <div class="album-cover">
+
+                            <i class="fa fa-project-diagram"></i>
+
+                            <div class="album-count">
+                                Project Collection
+                            </div>
+
+                        </div>
+
+                        <div class="album-content">
+
+                            <h4>
+                                Project Stories
+                            </h4>
+
+                            <p>
+                                Visual highlights from project development,
+                                field activities and sustainability initiatives.
+                            </p>
+
+                            <a href="#gallery"
+                                class="album-link">
+                                Explore Collection
+                                <i class="fa fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="album-card">
+
+                        <div class="album-cover">
+
+                            <i class="fa fa-users"></i>
+
+                            <div class="album-count">
+                                Events Collection
+                            </div>
+
+                        </div>
+
+                        <div class="album-content">
+
+                            <h4>
+                                Events &amp; Engagement
+                            </h4>
+
+                            <p>
+                                Moments from meetings, workshops, events and
+                                stakeholder engagement activities.
+                            </p>
+
+                            <a href="#gallery"
+                                class="album-link">
+                                Explore Collection
+                                <i class="fa fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="album-card">
+
+                        <div class="album-cover">
+
+                            <i class="fa fa-graduation-cap"></i>
+
+                            <div class="album-count">
+                                Learning Collection
+                            </div>
+
+                        </div>
+
+                        <div class="album-content">
+
+                            <h4>
+                                Training &amp; Learning
+                            </h4>
+
+                            <p>
+                                Visual stories from training, knowledge-sharing
+                                and capacity-building sessions.
+                            </p>
+
+                            <a href="#gallery"
+                                class="album-link">
+                                Explore Collection
+                                <i class="fa fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Moments -->
+    <section class="moments-section">
+
+        <div class="container">
+
+            <div class="gallery-section-heading text-center mx-auto">
+
+                <div class="small-heading">
+                    Moments That Matter
+                </div>
+
+                <h2>
+                    More Than Just Photos
+                </h2>
+
+                <p class="mx-auto">
+                    Every image can represent a project, a conversation,
+                    a learning opportunity or a step toward climate action.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+
+                    <div class="moment-box">
+
+                        <div class="moment-icon">
+                            <i class="fa fa-seedling"></i>
+                        </div>
+
+                        <div class="moment-content">
+
+                            <small>
+                                Sustainability
+                            </small>
+
+                            <h3>
+                                Ideas into Action
+                            </h3>
+
+                            <p>
+                                Highlighting activities that support practical
+                                sustainability and climate solutions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="moment-box">
+
+                        <div class="moment-icon">
+                            <i class="fa fa-handshake"></i>
+                        </div>
+
+                        <div class="moment-content">
+
+                            <small>
+                                Collaboration
+                            </small>
+
+                            <h3>
+                                Connecting People
+                            </h3>
+
+                            <p>
+                                Building meaningful connections among stakeholders
+                                across the carbon ecosystem.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="moment-box">
+
+                        <div class="moment-icon">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+
+                        <div class="moment-content">
+
+                            <small>
+                                Knowledge
+                            </small>
+
+                            <h3>
+                                Learning Together
+                            </h3>
+
+                            <p>
+                                Sharing knowledge, ideas and practical approaches
+                                for a changing climate.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="gallery-cta">
+
+        <div class="container">
+
+            <h2>
+                Have a Story to Share?
+            </h2>
+
+            <p>
+                Connect with Eco-Carbon to share project activities,
+                events, collaboration opportunities or media content.
+            </p>
+
+            <a href="contact.html"
+                class="btn btn-light rounded-pill px-5 py-3">
+
+                Contact Us
+                <i class="fa fa-arrow-right ms-2"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            Subscribe
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+                    All Right Reserved.
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+                    <a class="border-bottom"
+                        href="https://safetaka.com">
+                        Safetaka.com Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Back To Top -->
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+
+
+        /* Gallery Filter */
+        function filterGallery(category, button) {
+
+            const items = document.querySelectorAll(".gallery-item");
+            const buttons = document.querySelectorAll(".gallery-filter button");
+
+            buttons.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            items.forEach(function(item) {
+
+                if (category === "all" ||
+                    item.getAttribute("data-category") === category) {
+
+                    item.style.display = "block";
+
+                } else {
+
+                    item.style.display = "none";
+
+                }
+
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>

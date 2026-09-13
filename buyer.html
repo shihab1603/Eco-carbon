@@ -1,0 +1,2728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Carbon Credit Buyer</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="Carbon Credit Buyer, Carbon Credits, Carbon Marketplace, Eco-Carbon, Carbon Projects, Climate Action"
+        name="keywords">
+
+    <meta content="Eco-Carbon helps businesses, organizations and institutions discover, evaluate and purchase carbon credits from suitable carbon projects."
+        name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+        rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- Buyer Page CSS -->
+    <style>
+
+        /* =========================================
+           GENERAL
+        ========================================= */
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #26332c;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Jost', sans-serif;
+        }
+
+        .text-green {
+            color: #198754;
+        }
+
+        .buyer-section {
+            padding: 90px 0;
+        }
+
+        .section-label {
+            color: #198754;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #18251e;
+            line-height: 1.2;
+        }
+
+        .section-description {
+            color: #6b756f;
+            line-height: 1.8;
+            max-width: 680px;
+        }
+
+
+        /* =========================================
+           BUYER HERO
+        ========================================= */
+
+        .buyer-hero {
+            min-height: 500px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7, 45, 25, .93),
+                    rgba(17, 83, 47, .82),
+                    rgba(17, 83, 47, .48)
+                ),
+                url("img/buyer-banner.jpg")
+                center center / cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .buyer-hero::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 50%;
+            right: -180px;
+            top: -100px;
+        }
+
+        .buyer-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 760px;
+        }
+
+        .buyer-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 18px;
+            border-radius: 30px;
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.25);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 22px;
+        }
+
+        .buyer-hero h1 {
+            color: #fff;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.08;
+            margin-bottom: 22px;
+        }
+
+        .buyer-hero h1 span {
+            color: #8ee0ad;
+        }
+
+        .buyer-hero p {
+            color: rgba(255,255,255,.88);
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 690px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-outline-btn {
+            border: 1px solid rgba(255,255,255,.6);
+            color: #fff;
+            padding: 13px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .hero-outline-btn:hover {
+            background: #fff;
+            color: #198754;
+        }
+
+
+        /* =========================================
+           INTRO
+        ========================================= */
+
+        .buyer-intro {
+            background: #fff;
+        }
+
+        .buyer-intro-box {
+            background: #f6faf7;
+            border-radius: 20px;
+            padding: 45px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .buyer-intro-box::before {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background: rgba(25,135,84,.06);
+            border-radius: 50%;
+            right: -60px;
+            top: -60px;
+        }
+
+        .buyer-intro-icon {
+            width: 75px;
+            height: 75px;
+            border-radius: 18px;
+            background: #198754;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .buyer-intro-box h2 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #18251e;
+        }
+
+        .buyer-intro-box p {
+            color: #66736c;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+
+        /* =========================================
+           WHO CAN BUY
+        ========================================= */
+
+        .who-can-buy {
+            background: #f7faf8;
+        }
+
+        .buyer-type-card {
+            height: 100%;
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 28px;
+            border: 1px solid #e7eee9;
+            transition: .35s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .buyer-type-card::before {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0;
+            left: 0;
+            top: 0;
+            background: #198754;
+            transition: .35s;
+        }
+
+        .buyer-type-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(24,70,45,.10);
+        }
+
+        .buyer-type-card:hover::before {
+            width: 100%;
+        }
+
+        .buyer-type-icon {
+            width: 62px;
+            height: 62px;
+            border-radius: 15px;
+            background: #eaf6ef;
+            color: #198754;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .buyer-type-card h4 {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .buyer-type-card p {
+            color: #6c757d;
+            line-height: 1.7;
+            font-size: 14px;
+            margin: 0;
+        }
+
+
+        /* =========================================
+           WHY BUY
+        ========================================= */
+
+        .why-buy {
+            background: #fff;
+        }
+
+        .benefit-list {
+            margin-top: 30px;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #eaf6ef;
+            color: #198754;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .benefit-item h5 {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .benefit-item p {
+            color: #6c757d;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .why-buy-visual {
+            min-height: 470px;
+            border-radius: 25px;
+
+            background:
+                linear-gradient(
+                    rgba(8,48,28,.72),
+                    rgba(8,48,28,.72)
+                ),
+                url("img/buyer.jpg")
+                center / cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .impact-circle {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,.35);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            background: rgba(255,255,255,.08);
+            backdrop-filter: blur(5px);
+        }
+
+        .impact-circle i {
+            font-size: 48px;
+            color: #8ee0ad;
+            margin-bottom: 15px;
+        }
+
+        .impact-circle h3 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .impact-circle p {
+            color: rgba(255,255,255,.75);
+            font-size: 13px;
+            max-width: 180px;
+        }
+
+
+        /* =========================================
+           WHAT BUYERS CAN PURCHASE
+        ========================================= */
+
+        .purchase-section {
+            background: #f7faf8;
+        }
+
+        .purchase-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 35px 30px;
+            height: 100%;
+            border: 1px solid #e7eee9;
+            transition: .35s;
+        }
+
+        .purchase-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.08);
+        }
+
+        .purchase-number {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #198754;
+            margin-bottom: 15px;
+        }
+
+        .purchase-card h4 {
+            font-size: 21px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .purchase-card p {
+            color: #6c757d;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .purchase-card ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .purchase-card li {
+            color: #536059;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================================
+           BUYER JOURNEY
+        ========================================= */
+
+        .buyer-journey {
+            background: #fff;
+        }
+
+        .buyer-process {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 55px;
+        }
+
+        .buyer-process-line {
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: #dce9e1;
+            z-index: 0;
+        }
+
+        .buyer-process-item {
+            position: relative;
+            z-index: 2;
+            width: 20%;
+            text-align: center;
+        }
+
+        .process-number {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid #198754;
+            color: #198754;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(25,135,84,.12);
+        }
+
+        .buyer-process-item h5 {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .buyer-process-item p {
+            color: #6c757d;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+
+        /* =========================================
+           BUYER REQUIREMENTS
+        ========================================= */
+
+        .requirements {
+            background: #f7faf8;
+        }
+
+        .requirement-box {
+            background: #fff;
+            border-radius: 18px;
+            padding: 35px;
+            height: 100%;
+            border: 1px solid #e7eee9;
+        }
+
+        .requirement-box h4 {
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        .requirement-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        .requirement-row i {
+            color: #198754;
+            font-size: 18px;
+            margin-top: 3px;
+        }
+
+        .requirement-row span {
+            color: #59645e;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+
+        /* =========================================
+           REQUEST FORM
+        ========================================= */
+
+        .buyer-request {
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(8,48,28,.94),
+                    rgba(25,135,84,.85)
+                ),
+                url("img/carousel-2.jpg")
+                center / cover no-repeat;
+        }
+
+        .request-box {
+            background: #fff;
+            border-radius: 22px;
+            padding: 45px;
+            box-shadow: 0 20px 60px rgba(0,0,0,.18);
+        }
+
+        .request-box h2 {
+            font-size: 35px;
+            font-weight: 700;
+            color: #18251e;
+        }
+
+        .request-box p {
+            color: #6c757d;
+        }
+
+        .request-input {
+            height: 55px;
+            border: 0;
+            background: #f4f7f5;
+        }
+
+        .request-input:focus {
+            box-shadow: 0 0 0 2px rgba(25,135,84,.15);
+            background: #fff;
+        }
+
+        .request-textarea {
+            height: 120px !important;
+        }
+
+
+        /* =========================================
+           FAQ
+        ========================================= */
+
+        .faq-section {
+            background: #fff;
+        }
+
+        .faq-section .accordion-item {
+            border: 1px solid #e5ece7;
+            margin-bottom: 12px;
+            border-radius: 10px !important;
+            overflow: hidden;
+        }
+
+        .faq-section .accordion-button {
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            color: #1d2b24;
+            background: #fff;
+            padding: 20px;
+            box-shadow: none;
+        }
+
+        .faq-section .accordion-button:not(.collapsed) {
+            color: #198754;
+            background: #f5faf7;
+        }
+
+        .faq-section .accordion-body {
+            color: #6c757d;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+
+        /* =========================================
+           CTA
+        ========================================= */
+
+        .buyer-cta {
+            background: #f0f8f3;
+            padding: 75px 0;
+        }
+
+        .cta-box {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .cta-box h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #18251e;
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            color: #68746d;
+            max-width: 650px;
+            margin: 0 auto 28px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 991px) {
+
+            .buyer-hero {
+                min-height: 480px;
+            }
+
+            .buyer-hero h1 {
+                font-size: 48px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .buyer-process {
+                flex-wrap: wrap;
+            }
+
+            .buyer-process-item {
+                width: 45%;
+                margin-bottom: 30px;
+            }
+
+            .buyer-process-line {
+                display: none;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+
+            .buyer-section {
+                padding: 65px 0;
+            }
+
+            .buyer-hero {
+                min-height: 560px;
+            }
+
+            .buyer-hero h1 {
+                font-size: 40px;
+            }
+
+            .buyer-hero p {
+                font-size: 15px;
+            }
+
+            .buyer-intro-box {
+                padding: 30px;
+            }
+
+            .buyer-intro-box h2 {
+                font-size: 30px;
+            }
+
+            .why-buy-visual {
+                min-height: 350px;
+            }
+
+            .request-box {
+                padding: 28px 20px;
+            }
+
+            .cta-box h2 {
+                font-size: 32px;
+            }
+        }
+
+
+        @media (max-width: 575px) {
+
+            .buyer-hero h1 {
+                font-size: 34px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .buyer-process-item {
+                width: 100%;
+            }
+
+            .impact-circle {
+                width: 230px;
+                height: 230px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+
+        <div class="spinner-border text-primary"
+            role="status"
+            style="width: 3rem; height: 3rem;">
+        </div>
+
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- =========================================
+         NAVBAR START
+    ========================================== -->
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html"
+            class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+
+            <h1 class="m-0">Eco-Carbon</h1>
+
+        </a>
+
+
+        <button class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html"
+                    class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html"
+                    class="nav-item nav-link">
+                    About
+                </a>
+
+
+                <!-- Services -->
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle active"
+                        data-bs-toggle="dropdown">
+
+                        Services
+
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html"
+                            class="dropdown-item active">
+                            Buyer
+                        </a>
+
+                        <a href="seller.html"
+                            class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html"
+                            class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html"
+                            class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html"
+                            class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html"
+                            class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="projects.html"
+                    class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html"
+                    class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html"
+                    class="nav-item nav-link">
+                    Calculator
+                </a>
+
+
+                <!-- Resources -->
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+
+                        Resources
+
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html"
+                            class="dropdown-item">
+                            Training
+                        </a>
+
+                        <a href="news.html"
+                            class="dropdown-item">
+                            News &amp; Media
+                        </a>
+
+                        <a href="gallery.html"
+                            class="dropdown-item">
+                            Photo Gallery
+                        </a>
+
+                        <a href="reports.html"
+                            class="dropdown-item">
+                            Reports
+                        </a>
+
+                        <a href="links.html"
+                            class="dropdown-item">
+                            Related Links
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="career.html"
+                    class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html"
+                    class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!-- =========================================
+         BUYER HERO START
+    ========================================== -->
+
+    <section class="buyer-hero">
+
+        <div class="container">
+
+            <div class="buyer-hero-content wow fadeInUp">
+
+                <div class="buyer-badge">
+
+                    <i class="fa fa-leaf"></i>
+
+                    CARBON CREDIT BUYER
+
+                </div>
+
+
+                <h1>
+
+                    Turn Carbon Credits Into
+                    <span>Climate Impact</span>
+
+                </h1>
+
+
+                <p>
+
+                    Discover suitable carbon projects, evaluate carbon credits
+                    and connect with project owners through the Eco-Carbon
+                    digital ecosystem.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#buyer-request"
+                        class="btn btn-primary py-3 px-4">
+
+                        Find Carbon Credits
+
+                        <i class="fa fa-arrow-right ms-2"></i>
+
+                    </a>
+
+
+                    <a href="marketplace.html"
+                        class="hero-outline-btn">
+
+                        Explore Marketplace
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Buyer Hero End -->
+
+
+    <!-- =========================================
+         INTRO START
+    ========================================== -->
+
+    <section class="buyer-section buyer-intro">
+
+        <div class="container">
+
+            <div class="buyer-intro-box wow fadeInUp">
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-2">
+
+                        <div class="buyer-intro-icon">
+
+                            <i class="fa fa-shopping-cart"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-10">
+
+                        <span class="section-label">
+                            Carbon Credit Buyer
+                        </span>
+
+                        <h2>
+                            Who is a Carbon Credit Buyer?
+                        </h2>
+
+                        <p class="mb-0">
+
+                            A carbon credit buyer is an organization,
+                            company, institution or other eligible participant
+                            that purchases carbon credits from carbon projects
+                            to support climate action, meet sustainability
+                            objectives or manage carbon-related commitments.
+
+                            Eco-Carbon helps buyers discover projects,
+                            compare opportunities, communicate with sellers
+                            and move toward informed carbon credit procurement.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Intro End -->
+
+
+    <!-- =========================================
+         WHO CAN BUY START
+    ========================================== -->
+
+    <section class="buyer-section who-can-buy">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-label">
+                    Who Can Participate
+                </span>
+
+                <h2 class="section-title">
+                    Who Can Buy Carbon Credits?
+                </h2>
+
+                <p class="section-description mx-auto">
+
+                    Different organizations may participate in the carbon
+                    market depending on their sustainability objectives,
+                    procurement requirements and applicable rules.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- Business -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="buyer-type-card wow fadeInUp">
+
+                        <div class="buyer-type-icon">
+
+                            <i class="fa fa-building"></i>
+
+                        </div>
+
+                        <h4>
+                            Corporates & Businesses
+                        </h4>
+
+                        <p>
+
+                            Companies looking to support climate initiatives,
+                            sustainability programs and carbon management
+                            activities.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Financial -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="buyer-type-card wow fadeInUp"
+                        data-wow-delay=".1s">
+
+                        <div class="buyer-type-icon">
+
+                            <i class="fa fa-university"></i>
+
+                        </div>
+
+                        <h4>
+                            Financial Institutions
+                        </h4>
+
+                        <p>
+
+                            Banks, financial organizations and investment
+                            participants exploring environmental and
+                            sustainable finance opportunities.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Government -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="buyer-type-card wow fadeInUp"
+                        data-wow-delay=".2s">
+
+                        <div class="buyer-type-icon">
+
+                            <i class="fa fa-landmark"></i>
+
+                        </div>
+
+                        <h4>
+                            Government & Institutions
+                        </h4>
+
+                        <p>
+
+                            Public institutions and organizations supporting
+                            climate programs, environmental initiatives and
+                            sustainability objectives.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NGOs -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="buyer-type-card wow fadeInUp"
+                        data-wow-delay=".3s">
+
+                        <div class="buyer-type-icon">
+
+                            <i class="fa fa-users"></i>
+
+                        </div>
+
+                        <h4>
+                            NGOs & Development Organizations
+                        </h4>
+
+                        <p>
+
+                            Organizations supporting environmental protection,
+                            community development and climate-related
+                            initiatives.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Investors -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="buyer-type-card wow fadeInUp"
+                        data-wow-delay=".4s">
+
+                        <div class="buyer-type-icon">
+
+                            <i class="fa fa-chart-line"></i>
+
+                        </div>
+
+                        <h4>
+                            Investors & Market Participants
+                        </h4>
+
+                        <p>
+
+                            Eligible participants interested in carbon market
+                            opportunities, project portfolios and climate
+                            investment activities.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Others -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="buyer-type-card wow fadeInUp"
+                        data-wow-delay=".5s">
+
+                        <div class="buyer-type-icon">
+
+                            <i class="fa fa-globe"></i>
+
+                        </div>
+
+                        <h4>
+                            Other Organizations
+                        </h4>
+
+                        <p>
+
+                            Organizations with legitimate sustainability,
+                            environmental or climate-related procurement
+                            requirements.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Who Can Buy End -->
+
+
+    <!-- =========================================
+         WHY BUY START
+    ========================================== -->
+
+    <section class="buyer-section why-buy">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <span class="section-label">
+                        Why Buy Carbon Credits
+                    </span>
+
+                    <h2 class="section-title mb-4">
+
+                        From Procurement
+                        <span class="text-green">
+                            To Positive Impact
+                        </span>
+
+                    </h2>
+
+                    <p class="section-description">
+
+                        Carbon credits can connect organizations with
+                        climate projects while supporting broader
+                        environmental and sustainability initiatives.
+
+                    </p>
+
+
+                    <div class="benefit-list">
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+
+                                <i class="fa fa-leaf"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>
+                                    Support Climate Projects
+                                </h5>
+
+                                <p>
+                                    Help direct demand toward eligible
+                                    carbon reduction or removal projects.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+
+                                <i class="fa fa-chart-line"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>
+                                    Sustainability Strategy
+                                </h5>
+
+                                <p>
+                                    Support organizational sustainability
+                                    and climate-related programs.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+
+                                <i class="fa fa-search"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>
+                                    Better Project Discovery
+                                </h5>
+
+                                <p>
+                                    Explore different project types,
+                                    locations and available information
+                                    through one platform.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+
+                                <i class="fa fa-handshake"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>
+                                    Connect With Sellers
+                                </h5>
+
+                                <p>
+                                    Build direct connections with project
+                                    owners, producers and market participants.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="why-buy-visual">
+
+                        <div class="impact-circle">
+
+                            <i class="fa fa-globe"></i>
+
+                            <h3>
+                                Carbon Action
+                            </h3>
+
+                            <p>
+                                Connecting buyers with climate-focused
+                                projects and opportunities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Buy End -->
+
+
+    <!-- =========================================
+         WHAT BUYERS CAN PURCHASE
+    ========================================== -->
+
+    <section class="buyer-section purchase-section">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-label">
+                    Carbon Credit Opportunities
+                </span>
+
+                <h2 class="section-title">
+                    What Can Buyers Explore?
+                </h2>
+
+                <p class="section-description mx-auto">
+
+                    Buyers can explore different types of carbon projects
+                    and credit opportunities based on their requirements.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="purchase-card">
+
+                        <div class="purchase-number">
+                            01 / PROJECT TYPE
+                        </div>
+
+                        <h4>
+                            Renewable Energy
+                        </h4>
+
+                        <p>
+                            Explore projects associated with renewable
+                            energy generation and clean energy solutions.
+                        </p>
+
+                        <ul>
+                            <li>Solar energy</li>
+                            <li>Wind energy</li>
+                            <li>Other renewable solutions</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="purchase-card">
+
+                        <div class="purchase-number">
+                            02 / PROJECT TYPE
+                        </div>
+
+                        <h4>
+                            Agriculture & Land
+                        </h4>
+
+                        <p>
+                            Explore climate-focused agriculture,
+                            land management and nature-based opportunities.
+                        </p>
+
+                        <ul>
+                            <li>Sustainable agriculture</li>
+                            <li>Land management</li>
+                            <li>Nature-based activities</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="purchase-card">
+
+                        <div class="purchase-number">
+                            03 / PROJECT TYPE
+                        </div>
+
+                        <h4>
+                            Forestry & Nature
+                        </h4>
+
+                        <p>
+                            Explore projects connected with forests,
+                            ecosystems and nature-based climate action.
+                        </p>
+
+                        <ul>
+                            <li>Forest projects</li>
+                            <li>Conservation activities</li>
+                            <li>Nature restoration</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="purchase-card">
+
+                        <div class="purchase-number">
+                            04 / PROJECT TYPE
+                        </div>
+
+                        <h4>
+                            Waste Management
+                        </h4>
+
+                        <p>
+                            Explore projects that focus on waste reduction,
+                            treatment and resource recovery.
+                        </p>
+
+                        <ul>
+                            <li>Waste management</li>
+                            <li>Waste-to-energy</li>
+                            <li>Resource recovery</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="purchase-card">
+
+                        <div class="purchase-number">
+                            05 / PROJECT TYPE
+                        </div>
+
+                        <h4>
+                            Industrial & Technology
+                        </h4>
+
+                        <p>
+                            Explore technology-driven and industrial
+                            opportunities related to emission reduction.
+                        </p>
+
+                        <ul>
+                            <li>Industrial efficiency</li>
+                            <li>Clean technology</li>
+                            <li>Emission reduction</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="purchase-card">
+
+                        <div class="purchase-number">
+                            06 / PROJECT TYPE
+                        </div>
+
+                        <h4>
+                            Community Projects
+                        </h4>
+
+                        <p>
+                            Explore projects that combine climate action
+                            with community and social development.
+                        </p>
+
+                        <ul>
+                            <li>Community programs</li>
+                            <li>Clean cooking</li>
+                            <li>Local climate initiatives</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Purchase End -->
+
+
+    <!-- =========================================
+         BUYER JOURNEY
+    ========================================== -->
+
+    <section class="buyer-section buyer-journey">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="section-label">
+                    Buyer Journey
+                </span>
+
+                <h2 class="section-title">
+                    How Carbon Credit Buying Works
+                </h2>
+
+                <p class="section-description mx-auto">
+
+                    A simple digital journey from project discovery
+                    to informed carbon credit procurement.
+
+                </p>
+
+            </div>
+
+
+            <div class="buyer-process">
+
+                <div class="buyer-process-line"></div>
+
+
+                <div class="buyer-process-item">
+
+                    <div class="process-number">
+                        01
+                    </div>
+
+                    <h5>
+                        Register
+                    </h5>
+
+                    <p>
+                        Create your buyer profile and share your requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="buyer-process-item">
+
+                    <div class="process-number">
+                        02
+                    </div>
+
+                    <h5>
+                        Discover
+                    </h5>
+
+                    <p>
+                        Explore projects and available carbon credit
+                        opportunities.
+                    </p>
+
+                </div>
+
+
+                <div class="buyer-process-item">
+
+                    <div class="process-number">
+                        03
+                    </div>
+
+                    <h5>
+                        Evaluate
+                    </h5>
+
+                    <p>
+                        Review project information, documentation and
+                        suitability.
+                    </p>
+
+                </div>
+
+
+                <div class="buyer-process-item">
+
+                    <div class="process-number">
+                        04
+                    </div>
+
+                    <h5>
+                        Connect
+                    </h5>
+
+                    <p>
+                        Communicate with project owners or relevant
+                        market participants.
+                    </p>
+
+                </div>
+
+
+                <div class="buyer-process-item">
+
+                    <div class="process-number">
+                        05
+                    </div>
+
+                    <h5>
+                        Procure
+                    </h5>
+
+                    <p>
+                        Proceed with suitable procurement arrangements
+                        through the applicable process.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Buyer Journey End -->
+
+
+    <!-- =========================================
+         BUYER REQUIREMENTS
+    ========================================== -->
+
+    <section class="buyer-section requirements">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-6">
+
+                    <div class="requirement-box">
+
+                        <span class="section-label">
+                            Before Buying
+                        </span>
+
+                        <h4>
+                            What Should Buyers Consider?
+                        </h4>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            <span>
+                                Project type and climate activity.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            <span>
+                                Project location and implementation details.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            <span>
+                                Applicable standards, methodology and
+                                verification information.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            <span>
+                                Credit vintage, quantity and availability.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            <span>
+                                Pricing, transaction terms and documentation.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="requirement-box">
+
+                        <span class="section-label">
+                            Buyer Information
+                        </span>
+
+                        <h4>
+                            Tell Us What You Need
+                        </h4>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-file-alt"></i>
+
+                            <span>
+                                Preferred project or credit type.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-balance-scale"></i>
+
+                            <span>
+                                Approximate quantity or procurement requirement.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-map-marker-alt"></i>
+
+                            <span>
+                                Preferred project location or region.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-calendar"></i>
+
+                            <span>
+                                Preferred vintage or procurement timeline.
+                            </span>
+
+                        </div>
+
+
+                        <div class="requirement-row">
+
+                            <i class="fa fa-comment"></i>
+
+                            <span>
+                                Additional sustainability or project preferences.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Requirements End -->
+
+
+    <!-- =========================================
+         REQUEST FORM
+    ========================================== -->
+
+    <section class="buyer-section buyer-request"
+        id="buyer-request">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="request-box wow fadeInUp">
+
+                        <div class="text-center mb-4">
+
+                            <span class="section-label">
+                                Buyer Request
+                            </span>
+
+                            <h2>
+                                Looking for Carbon Credits?
+                            </h2>
+
+                            <p>
+                                Share your requirements and our team can
+                                help you explore suitable carbon project
+                                opportunities.
+                            </p>
+
+                        </div>
+
+
+                        <form>
+
+                            <div class="row g-3">
+
+
+                                <div class="col-md-6">
+
+                                    <input type="text"
+                                        class="form-control request-input"
+                                        placeholder="Your Name"
+                                        required>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <input type="text"
+                                        class="form-control request-input"
+                                        placeholder="Organization / Company"
+                                        required>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <input type="email"
+                                        class="form-control request-input"
+                                        placeholder="Email Address"
+                                        required>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <input type="tel"
+                                        class="form-control request-input"
+                                        placeholder="Mobile Number">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <select class="form-select request-input">
+
+                                        <option selected>
+                                            Project / Credit Type
+                                        </option>
+
+                                        <option>
+                                            Renewable Energy
+                                        </option>
+
+                                        <option>
+                                            Agriculture
+                                        </option>
+
+                                        <option>
+                                            Forestry / Nature
+                                        </option>
+
+                                        <option>
+                                            Waste Management
+                                        </option>
+
+                                        <option>
+                                            Industrial / Technology
+                                        </option>
+
+                                        <option>
+                                            Community Project
+                                        </option>
+
+                                        <option>
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <input type="text"
+                                        class="form-control request-input"
+                                        placeholder="Approximate Quantity">
+
+                                </div>
+
+
+                                <div class="col-12">
+
+                                    <textarea
+                                        class="form-control request-input request-textarea"
+                                        placeholder="Tell us about your carbon credit requirements"></textarea>
+
+                                </div>
+
+
+                                <div class="col-12 text-center pt-2">
+
+                                    <button type="submit"
+                                        class="btn btn-primary py-3 px-5">
+
+                                        Submit Buyer Request
+
+                                        <i class="fa fa-arrow-right ms-2"></i>
+
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Request End -->
+
+
+    <!-- =========================================
+         FAQ
+    ========================================== -->
+
+    <section class="buyer-section faq-section">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-label">
+                    Frequently Asked Questions
+                </span>
+
+                <h2 class="section-title">
+                    Carbon Buyer FAQ
+                </h2>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="accordion" id="buyerFAQ">
+
+
+                        <!-- FAQ 1 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqOne">
+
+                                    What is a carbon credit?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqOne"
+                                class="accordion-collapse collapse show"
+                                data-bs-parent="#buyerFAQ">
+
+                                <div class="accordion-body">
+
+                                    A carbon credit generally represents a
+                                    quantified unit of greenhouse-gas emission
+                                    reduction or removal associated with a
+                                    qualifying project or activity, subject
+                                    to the applicable standard and methodology.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FAQ 2 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqTwo">
+
+                                    Who can become a carbon credit buyer?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#buyerFAQ">
+
+                                <div class="accordion-body">
+
+                                    Depending on applicable requirements,
+                                    businesses, institutions, NGOs,
+                                    financial organizations and other
+                                    eligible participants may participate
+                                    in carbon credit procurement.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FAQ 3 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqThree">
+
+                                    Can buyers choose specific project types?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#buyerFAQ">
+
+                                <div class="accordion-body">
+
+                                    Yes. Buyers can communicate their preferred
+                                    project type, location, quantity, vintage
+                                    and other relevant requirements so that
+                                    suitable opportunities can be explored.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FAQ 4 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqFour">
+
+                                    What information should buyers review?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqFour"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#buyerFAQ">
+
+                                <div class="accordion-body">
+
+                                    Buyers should review relevant project
+                                    information, methodology, documentation,
+                                    verification details, credit quantity,
+                                    vintage, pricing and transaction terms
+                                    before proceeding.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FAQ 5 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqFive">
+
+                                    Does Eco-Carbon provide buyer support?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqFive"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#buyerFAQ">
+
+                                <div class="accordion-body">
+
+                                    Eco-Carbon is designed to connect buyers
+                                    with carbon projects, sellers, experts
+                                    and relevant market participants and
+                                    support the buyer journey through its
+                                    digital ecosystem.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ End -->
+
+
+    <!-- =========================================
+         CTA
+    ========================================== -->
+
+    <section class="buyer-cta">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <span class="section-label">
+                    Start Your Carbon Journey
+                </span>
+
+                <h2>
+                    Ready to Explore Carbon Credit Opportunities?
+                </h2>
+
+                <p>
+
+                    Connect with Eco-Carbon to discover carbon projects,
+                    communicate your requirements and explore suitable
+                    carbon credit opportunities.
+
+                </p>
+
+
+                <div>
+
+                    <a href="#buyer-request"
+                        class="btn btn-primary py-3 px-4 me-2">
+
+                        Submit Buyer Request
+
+                    </a>
+
+
+                    <a href="marketplace.html"
+                        class="btn btn-outline-primary py-3 px-4">
+
+                        Visit Marketplace
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA End -->
+
+
+    <!-- =========================================
+         FOOTER START
+    ========================================== -->
+
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+
+                <!-- Company -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad, Meem Tower, Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="Twitter">
+
+                            <i class="fab fa-twitter"></i>
+
+                        </a>
+
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="Facebook">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="YouTube">
+
+                            <i class="fab fa-youtube"></i>
+
+                        </a>
+
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="LinkedIn">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Services -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link"
+                        href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <!-- Quick Links -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link"
+                        href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link"
+                        href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <!-- Newsletter -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+
+                        Subscribe for Eco-Carbon news,
+                        market information, project updates
+                        and training.
+
+                    </p>
+
+
+                    <div class="position-relative w-100">
+
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- =========================================
+         COPYRIGHT
+    ========================================== -->
+
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+
+                    <a class="border-bottom"
+                        href="#">
+
+                        Safetaka.com Ltd
+
+                    </a>,
+
+                    All Right Reserved.
+
+                </div>
+
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+
+                    <a class="border-bottom"
+                        href="https://safetaka.com">
+
+                        Safetaka.com Ltd
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script src="lib/easing/easing.min.js"></script>
+
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Media</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* =========================================================
+           MEDIA PAGE
+        ========================================================= */
+
+        .media-page {
+            background: #f7faf8;
+            color: #263b31;
+        }
+
+        /* Hero */
+        .media-hero {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0b3d2e 0%, #126b4b 55%, #1b8a60 100%);
+            padding: 90px 0 85px;
+            color: #fff;
+        }
+
+        .media-hero::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border: 70px solid rgba(255,255,255,0.06);
+            border-radius: 50%;
+            right: -140px;
+            top: -170px;
+        }
+
+        .media-hero::after {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 45px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            left: -100px;
+            bottom: -120px;
+        }
+
+        .media-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .media-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #b8efd5;
+            margin-bottom: 18px;
+        }
+
+        .media-kicker span {
+            width: 32px;
+            height: 2px;
+            background: #b8efd5;
+            display: inline-block;
+        }
+
+        .media-hero h1 {
+            font-size: 58px;
+            line-height: 1.08;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        .media-hero p {
+            max-width: 700px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.86);
+            margin-bottom: 30px;
+        }
+
+        .media-hero-buttons .btn {
+            padding: 13px 25px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .media-hero-buttons .btn-outline-light:hover {
+            color: #126b4b;
+        }
+
+        /* Media Navigation Strip */
+        .media-strip {
+            background: #ffffff;
+            border-bottom: 1px solid #e5eee9;
+            box-shadow: 0 5px 20px rgba(18,107,75,0.06);
+        }
+
+        .media-strip-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            flex-wrap: wrap;
+        }
+
+        .media-strip a {
+            display: inline-block;
+            padding: 19px 25px;
+            color: #496257;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border-right: 1px solid #edf2ef;
+            transition: 0.3s;
+        }
+
+        .media-strip a:first-child {
+            border-left: 1px solid #edf2ef;
+        }
+
+        .media-strip a:hover {
+            color: #15915f;
+            background: #f3faf6;
+        }
+
+        /* Section */
+        .media-section {
+            padding: 75px 0;
+        }
+
+        .media-heading {
+            margin-bottom: 40px;
+        }
+
+        .media-heading .small-title {
+            color: #15915f;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .media-heading h2 {
+            color: #15392c;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .media-heading p {
+            color: #687a72;
+            max-width: 680px;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        /* Featured Story */
+        .featured-story {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(20,70,50,0.09);
+            border: 1px solid #e8f0eb;
+        }
+
+        .featured-visual {
+            min-height: 410px;
+            position: relative;
+            background:
+                radial-gradient(circle at 25% 30%, rgba(255,255,255,0.13) 0 70px, transparent 71px),
+                radial-gradient(circle at 70% 65%, rgba(255,255,255,0.09) 0 110px, transparent 111px),
+                linear-gradient(135deg, #0c4735, #15915f);
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+        }
+
+        .featured-visual::before {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border: 35px solid rgba(255,255,255,0.08);
+            border-radius: 50%;
+            top: 45px;
+            right: 45px;
+        }
+
+        .featured-label {
+            position: relative;
+            z-index: 2;
+            background: rgba(255,255,255,0.14);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+            padding: 13px 18px;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .featured-content {
+            padding: 42px;
+        }
+
+        .featured-content .date {
+            color: #15915f;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 13px;
+        }
+
+        .featured-content h3 {
+            color: #163d2e;
+            font-size: 30px;
+            line-height: 1.3;
+            font-weight: 700;
+            margin-bottom: 17px;
+        }
+
+        .featured-content p {
+            color: #697a73;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .read-more {
+            color: #15915f;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .read-more i {
+            margin-left: 7px;
+            transition: 0.3s;
+        }
+
+        .read-more:hover {
+            color: #0b6e47;
+        }
+
+        .read-more:hover i {
+            margin-left: 12px;
+        }
+
+        /* Newsroom */
+        .newsroom {
+            background: #eef7f2;
+        }
+
+        .news-list {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #e1ece6;
+        }
+
+        .news-item {
+            display: flex;
+            align-items: center;
+            padding: 24px 28px;
+            border-bottom: 1px solid #edf1ef;
+            transition: 0.3s;
+        }
+
+        .news-item:last-child {
+            border-bottom: 0;
+        }
+
+        .news-item:hover {
+            background: #f8fcfa;
+            padding-left: 34px;
+        }
+
+        .news-date {
+            min-width: 82px;
+            text-align: center;
+            margin-right: 25px;
+            padding-right: 24px;
+            border-right: 1px solid #e1ebe6;
+        }
+
+        .news-date strong {
+            display: block;
+            color: #15915f;
+            font-size: 27px;
+            line-height: 1;
+        }
+
+        .news-date span {
+            color: #82918b;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .news-content {
+            flex: 1;
+        }
+
+        .news-category {
+            color: #15915f;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .news-content h5 {
+            color: #1d3e31;
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .news-content p {
+            color: #78877f;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .news-arrow {
+            color: #a0afa8;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        /* Media Categories */
+        .media-category {
+            height: 100%;
+            background: #fff;
+            border: 1px solid #e4ede8;
+            border-radius: 15px;
+            padding: 32px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .media-category:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(20,80,55,0.1);
+            border-color: #cde5d9;
+        }
+
+        .media-category .icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e9f7f0;
+            color: #15915f;
+            border-radius: 14px;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+
+        .media-category h4 {
+            color: #183d2e;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .media-category p {
+            color: #728079;
+            line-height: 1.7;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .media-category a {
+            color: #15915f;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* Press Section */
+        .press-section {
+            background: #123f30;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .press-section::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 90px solid rgba(255,255,255,0.035);
+            border-radius: 50%;
+            right: -220px;
+            top: -220px;
+        }
+
+        .press-inner {
+            position: relative;
+            z-index: 2;
+        }
+
+        .press-label {
+            color: #9ee2c2;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .press-section h2 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .press-section p {
+            color: rgba(255,255,255,0.72);
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+        .press-box {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.13);
+            border-radius: 15px;
+            padding: 25px;
+            height: 100%;
+        }
+
+        .press-box i {
+            color: #9ee2c2;
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .press-box h5 {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .press-box p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* Media Request */
+        .media-request {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .request-panel {
+            max-width: 1050px;
+            margin: auto;
+            background: #f4faf7;
+            border: 1px solid #dfede5;
+            border-radius: 20px;
+            padding: 45px;
+        }
+
+        .request-panel h3 {
+            color: #183d2e;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .request-panel .intro {
+            color: #718078;
+            margin-bottom: 30px;
+        }
+
+        .request-panel .form-control,
+        .request-panel .form-select {
+            border: 1px solid #dce9e2;
+            border-radius: 8px;
+            padding: 13px 15px;
+            min-height: 50px;
+        }
+
+        .request-panel .form-control:focus,
+        .request-panel .form-select:focus {
+            border-color: #15915f;
+            box-shadow: 0 0 0 0.15rem rgba(21,145,95,0.12);
+        }
+
+        .request-panel textarea {
+            min-height: 125px !important;
+        }
+
+        /* CTA */
+        .media-cta {
+            background: linear-gradient(135deg, #e6f6ee, #f6fbf8);
+            padding: 65px 0;
+            text-align: center;
+            border-top: 1px solid #e1eee7;
+        }
+
+        .media-cta h2 {
+            color: #153d2e;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .media-cta p {
+            color: #718079;
+            max-width: 650px;
+            margin: 0 auto 25px;
+            line-height: 1.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .media-hero h1 {
+                font-size: 46px;
+            }
+
+            .featured-visual {
+                min-height: 300px;
+            }
+
+            .media-strip a {
+                padding: 15px 17px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .media-hero {
+                padding: 65px 0;
+            }
+
+            .media-hero h1 {
+                font-size: 38px;
+            }
+
+            .media-hero p {
+                font-size: 16px;
+            }
+
+            .media-section {
+                padding: 55px 0;
+            }
+
+            .media-heading h2,
+            .press-section h2,
+            .media-cta h2 {
+                font-size: 30px;
+            }
+
+            .featured-content {
+                padding: 28px;
+            }
+
+            .featured-content h3 {
+                font-size: 25px;
+            }
+
+            .news-item {
+                padding: 20px;
+            }
+
+            .news-date {
+                min-width: 65px;
+                margin-right: 15px;
+                padding-right: 15px;
+            }
+
+            .news-date strong {
+                font-size: 23px;
+            }
+
+            .news-content p {
+                display: none;
+            }
+
+            .news-content h5 {
+                font-size: 15px;
+            }
+
+            .request-panel {
+                padding: 28px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="media-page">
+
+    <!-- Header / Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">Home</a>
+
+                <a href="about.html" class="nav-item nav-link">About</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="buyer.html" class="dropdown-item">Buyer</a>
+                        <a href="seller.html" class="dropdown-item">Seller / Producer</a>
+                        <a href="supplier.html" class="dropdown-item">Supplier</a>
+                        <a href="mrv.html" class="dropdown-item">MRV &amp; Verification</a>
+                        <a href="certification.html" class="dropdown-item">Credit Certification</a>
+                        <a href="consultation.html" class="dropdown-item">Consultation</a>
+                    </div>
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">Projects</a>
+
+                <a href="marketplace.html" class="nav-item nav-link">Marketplace</a>
+
+                <a href="calculator.html" class="nav-item nav-link">Calculator</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Resources</a>
+
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="training.html" class="dropdown-item">Training</a>
+                        <a href="news.html" class="dropdown-item active">News &amp; Media</a>
+                        <a href="gallery.html" class="dropdown-item">Photo Gallery</a>
+                        <a href="reports.html" class="dropdown-item">Reports</a>
+                        <a href="links.html" class="dropdown-item">Related Links</a>
+                    </div>
+                </div>
+
+                <a href="career.html" class="nav-item nav-link">Career</a>
+
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+                Get Started <i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Media Hero -->
+    <section class="media-hero">
+        <div class="container">
+            <div class="media-hero-content">
+                <div class="media-kicker">
+                    <span></span> Eco-Carbon Media Center
+                </div>
+
+                <h1>Stories, Updates &amp;<br>Climate Insights</h1>
+
+                <p>
+                    Stay informed about Eco-Carbon activities, carbon markets,
+                    climate solutions, project developments, announcements and
+                    sustainability insights.
+                </p>
+
+                <div class="media-hero-buttons">
+                    <a href="latest-news" class="btn btn-light rounded-pill">
+                        Explore Latest
+                        <i class="fa fa-arrow-down ms-2"></i>
+                    </a>
+
+                    <a href="media-request" class="btn btn-outline-light rounded-pill">
+                        Media Inquiry
+                        <i class="fa fa-paper-plane ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Media Navigation -->
+    <div class="media-strip">
+        <div class="container">
+            <div class="media-strip-inner">
+                <a href="#latest-news">Latest News</a>
+                <a href="#announcements">Announcements</a>
+                <a href="#insights">Insights</a>
+                <a href="#press">Press</a>
+                <a href="#media-request">Media Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Featured Story -->
+    <section class="media-section">
+        <div class="container">
+
+            <div class="media-heading">
+                <div class="small-title">Featured Story</div>
+                <h2>What's Happening at Eco-Carbon</h2>
+                <p>
+                    Discover selected stories, activities and updates from our
+                    carbon market and climate solutions ecosystem.
+                </p>
+            </div>
+
+            <div class="featured-story row g-0 align-items-stretch">
+
+                <div class="col-lg-6">
+                    <div class="featured-visual">
+                        <div class="featured-label">
+                            <i class="fa fa-leaf me-2"></i>
+                            Climate &amp; Carbon
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="featured-content">
+
+                        <div class="date">
+                            FEATURED UPDATE
+                        </div>
+
+                        <h3>
+                            Building Better Connections Across the Carbon Ecosystem
+                        </h3>
+
+                        <p>
+                            Eco-Carbon works to connect carbon project developers,
+                            producers, buyers and supporting organizations through
+                            better information, project visibility and practical
+                            carbon market services.
+                        </p>
+
+                        <a href="contact.html" class="read-more">
+                            Learn More
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Latest News -->
+    <section class="media-section newsroom" id="latest-news">
+        <div class="container">
+
+            <div class="media-heading">
+                <div class="small-title">Newsroom</div>
+                <h2>Latest Updates</h2>
+                <p>
+                    Follow the latest activities, announcements and developments
+                    from Eco-Carbon.
+                </p>
+            </div>
+
+            <div class="news-list">
+
+                <div class="news-item">
+                    <div class="news-date">
+                        <strong>01</strong>
+                        <span>Update</span>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="news-category">Eco-Carbon</div>
+                        <h5>Carbon Market &amp; Climate Solution Updates</h5>
+                        <p>
+                            Explore recent developments and opportunities across
+                            the carbon ecosystem.
+                        </p>
+                    </div>
+
+                    <div class="news-arrow">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+
+
+                <div class="news-item">
+                    <div class="news-date">
+                        <strong>02</strong>
+                        <span>Project</span>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="news-category">Projects</div>
+                        <h5>Project Development &amp; Sustainability Activities</h5>
+                        <p>
+                            Updates on project development, data management and
+                            sustainability initiatives.
+                        </p>
+                    </div>
+
+                    <div class="news-arrow">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+
+
+                <div class="news-item">
+                    <div class="news-date">
+                        <strong>03</strong>
+                        <span>Market</span>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="news-category">Carbon Market</div>
+                        <h5>Understanding Carbon Credits &amp; Market Opportunities</h5>
+                        <p>
+                            Practical information for organizations exploring
+                            carbon market participation.
+                        </p>
+                    </div>
+
+                    <div class="news-arrow">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+
+
+                <div class="news-item">
+                    <div class="news-date">
+                        <strong>04</strong>
+                        <span>Insight</span>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="news-category">Climate Insight</div>
+                        <h5>Data, MRV &amp; Transparency in Carbon Projects</h5>
+                        <p>
+                            Learn how better data and documentation can support
+                            stronger project processes.
+                        </p>
+                    </div>
+
+                    <div class="news-arrow">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Media Categories -->
+    <section class="media-section" id="announcements">
+        <div class="container">
+
+            <div class="media-heading text-center mx-auto">
+                <div class="small-title">Explore Media</div>
+                <h2>Explore Our Content</h2>
+                <p class="mx-auto">
+                    Find the type of information you need—from announcements
+                    and insights to project stories and media resources.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="media-category">
+                        <div class="icon">
+                            <i class="fa fa-newspaper"></i>
+                        </div>
+
+                        <h4>News &amp; Announcements</h4>
+
+                        <p>
+                            Company updates, activities, important announcements
+                            and new developments.
+                        </p>
+
+                        <a href="news.html">
+                            View News <i class="fa fa-arrow-right ms-2 active"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6" id="insights">
+                    <div class="media-category">
+                        <div class="icon">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+
+                        <h4>Climate Insights</h4>
+
+                        <p>
+                            Educational articles and practical perspectives on
+                            carbon markets, climate action and sustainability.
+                        </p>
+
+                        <a href="#">
+                            Explore Insights <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="media-category">
+                        <div class="icon">
+                            <i class="fa fa-camera"></i>
+                        </div>
+
+                        <h4>Photo Gallery</h4>
+
+                        <p>
+                            Visual highlights from projects, events, training
+                            sessions and Eco-Carbon activities.
+                        </p>
+
+                        <a href="gallery.html">
+                            Open Gallery <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="media-category">
+                        <div class="icon">
+                            <i class="fa fa-file-alt"></i>
+                        </div>
+
+                        <h4>Reports &amp; Publications</h4>
+
+                        <p>
+                            Access selected reports, publications and information
+                            resources related to climate and carbon.
+                        </p>
+
+                        <a href="reports.html">
+                            View Reports <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="media-category">
+                        <div class="icon">
+                            <i class="fa fa-video"></i>
+                        </div>
+
+                        <h4>Videos &amp; Events</h4>
+
+                        <p>
+                            Follow educational sessions, events, discussions and
+                            future multimedia content.
+                        </p>
+
+                        <a href="#">
+                            View Media <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="media-category">
+                        <div class="icon">
+                            <i class="fa fa-link"></i>
+                        </div>
+
+                        <h4>Useful Resources</h4>
+
+                        <p>
+                            Discover useful external resources, organizations and
+                            climate-related information sources.
+                        </p>
+
+                        <a href="links.html">
+                            Explore Links <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Press Section -->
+    <section class="media-section press-section" id="press">
+        <div class="container press-inner">
+
+            <div class="row g-5 align-items-center">
+
+                <div class="col-lg-7">
+
+                    <div class="press-label">
+                        Media &amp; Press
+                    </div>
+
+                    <h2>Looking for Eco-Carbon Information?</h2>
+
+                    <p>
+                        Journalists, researchers, event organizers and media
+                        professionals can contact us for company information,
+                        project-related communication and media inquiries.
+                    </p>
+
+                    <a href="media-request"
+                        class="btn btn-light rounded-pill px-4 py-3 mt-2">
+                        Send Media Inquiry
+                        <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="row g-3">
+
+                        <div class="col-6">
+                            <div class="press-box">
+                                <i class="fa fa-building"></i>
+                                <h5>Company</h5>
+                                <p>
+                                    Learn about Eco-Carbon and our services.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="press-box">
+                                <i class="fa fa-leaf"></i>
+                                <h5>Climate</h5>
+                                <p>
+                                    Explore our climate-focused activities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="press-box">
+                                <i class="fa fa-project-diagram"></i>
+                                <h5>Projects</h5>
+                                <p>
+                                    Discover project-related information.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="press-box">
+                                <i class="fa fa-envelope"></i>
+                                <h5>Contact</h5>
+                                <p>
+                                    Connect with our media team.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Media Request -->
+    <section class="media-request" id="media-request">
+        <div class="container">
+
+            <div class="request-panel">
+
+                <div class="text-center">
+
+                    <h3>Media Inquiry</h3>
+
+                    <p class="intro">
+                        Send your media or information request and our team can
+                        review your inquiry.
+                    </p>
+
+                </div>
+
+                <form onsubmit="submitMediaRequest(event)">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control"
+                                placeholder="Your full name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Organization / Media</label>
+                            <input type="text" class="form-control"
+                                placeholder="Organization or media name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control"
+                                placeholder="Your email address" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Phone Number</label>
+                            <input type="text" class="form-control"
+                                placeholder="Your phone number">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Inquiry Type</label>
+
+                            <select class="form-select">
+                                <option selected>Select inquiry type</option>
+                                <option>Media Interview</option>
+                                <option>Company Information</option>
+                                <option>Project Information</option>
+                                <option>Event / Coverage</option>
+                                <option>Research / Publication</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Contact</label>
+
+                            <select class="form-select">
+                                <option selected>Select preference</option>
+                                <option>Email</option>
+                                <option>Phone</option>
+                                <option>Online Meeting</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Your Message</label>
+
+                            <textarea class="form-control"
+                                placeholder="Tell us about your media or information request"></textarea>
+                        </div>
+
+                        <div class="col-12 text-center pt-3">
+
+                            <button type="submit"
+                                class="btn btn-primary px-5 py-3 rounded-pill">
+                                Submit Media Inquiry
+                                <i class="fa fa-paper-plane ms-2"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="media-cta">
+
+        <div class="container">
+
+            <h2>Stay Connected with Eco-Carbon</h2>
+
+            <p>
+                Follow our latest news, projects, climate insights and
+                sustainability activities.
+            </p>
+
+            <a href="contact.html"
+                class="btn btn-primary rounded-pill px-5 py-3">
+                Contact Eco-Carbon
+                <i class="fa fa-arrow-right ms-2"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">Eco-Carbon</h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">Services</h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">Quick Links</h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">Newsletter</h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            Subscribe
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+                    All Right Reserved.
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+                    <a class="border-bottom" href="https://safetaka.com">
+                        Safetaka.com Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+
+        function submitMediaRequest(event) {
+            event.preventDefault();
+
+            alert("Thank you for contacting Eco-Carbon. Your media inquiry has been submitted.");
+        }
+    </script>
+
+</body>
+
+</html>

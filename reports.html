@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Reports</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+        /* =====================================================
+           ECO-CARBON REPORTS PAGE
+        ===================================================== */
+
+        .reports-page {
+            background: #f7faf8;
+            color: #263b31;
+        }
+
+        /* HERO */
+        .reports-hero {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0a382b, #126447 65%, #1b8a60);
+            color: #fff;
+            padding: 90px 0;
+        }
+
+        .reports-hero::before {
+            content: "";
+            position: absolute;
+            width: 430px;
+            height: 430px;
+            border: 75px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            right: -150px;
+            top: -190px;
+        }
+
+        .reports-hero::after {
+            content: "";
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            border: 45px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            left: -100px;
+            bottom: -130px;
+        }
+
+        .reports-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .reports-label {
+            display: inline-block;
+            color: #a9e6c7;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .reports-hero h1 {
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 1.08;
+            margin-bottom: 20px;
+        }
+
+        .reports-hero p {
+            max-width: 700px;
+            color: rgba(255,255,255,0.78);
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 28px;
+        }
+
+        .reports-hero .btn {
+            padding: 13px 25px;
+            border-radius: 50px;
+        }
+
+        /* HERO DOCUMENT */
+        .report-stack {
+            position: absolute;
+            right: 8%;
+            top: 65px;
+            width: 280px;
+            height: 330px;
+            z-index: 2;
+        }
+
+        .report-paper {
+            position: absolute;
+            width: 210px;
+            height: 275px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+        }
+
+        .report-paper.back {
+            right: 0;
+            top: 0;
+            transform: rotate(10deg);
+            background: #d8ebe1;
+        }
+
+        .report-paper.middle {
+            left: 35px;
+            top: 25px;
+            transform: rotate(-5deg);
+            background: #edf7f2;
+        }
+
+        .report-paper.front {
+            left: 20px;
+            top: 42px;
+            z-index: 3;
+            padding: 25px;
+        }
+
+        .paper-line {
+            height: 7px;
+            background: #d9e9e1;
+            border-radius: 5px;
+            margin-bottom: 13px;
+        }
+
+        .paper-line.big {
+            width: 75%;
+            height: 12px;
+            background: #15915f;
+            margin-bottom: 25px;
+        }
+
+        .paper-line.short {
+            width: 55%;
+        }
+
+        .paper-chart {
+            height: 75px;
+            margin-top: 25px;
+            border-bottom: 3px solid #15915f;
+            position: relative;
+        }
+
+        .paper-chart span {
+            position: absolute;
+            bottom: 0;
+            width: 15px;
+            background: #8bc8aa;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .paper-chart span:nth-child(1) {
+            left: 10px;
+            height: 25px;
+        }
+
+        .paper-chart span:nth-child(2) {
+            left: 40px;
+            height: 42px;
+        }
+
+        .paper-chart span:nth-child(3) {
+            left: 70px;
+            height: 55px;
+        }
+
+        .paper-chart span:nth-child(4) {
+            left: 100px;
+            height: 68px;
+        }
+
+        .paper-chart span:nth-child(5) {
+            left: 130px;
+            height: 50px;
+        }
+
+        /* SEARCH */
+        .report-search-section {
+            background: #fff;
+            padding: 35px 0;
+            border-bottom: 1px solid #e4eee8;
+            box-shadow: 0 5px 20px rgba(20,70,50,0.04);
+        }
+
+        .report-search {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 20px;
+            top: 17px;
+            color: #7c8d85;
+        }
+
+        .search-box input {
+            width: 100%;
+            border: 1px solid #dce9e2;
+            border-radius: 50px;
+            padding: 15px 22px 15px 50px;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: #15915f;
+            box-shadow: 0 0 0 3px rgba(21,145,95,0.08);
+        }
+
+        /* MAIN */
+        .reports-section {
+            padding: 80px 0;
+        }
+
+        .reports-heading {
+            margin-bottom: 40px;
+        }
+
+        .reports-heading .small-title {
+            color: #15915f;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .reports-heading h2 {
+            color: #173e2f;
+            font-size: 39px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .reports-heading p {
+            color: #718078;
+            max-width: 680px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* FEATURED */
+        .featured-report {
+            background: #fff;
+            border-radius: 18px;
+            border: 1px solid #e2ece6;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(20,70,50,0.07);
+            margin-bottom: 55px;
+        }
+
+        .featured-report-cover {
+            min-height: 330px;
+            background:
+                radial-gradient(circle at 75% 25%, rgba(255,255,255,0.18), transparent 25%),
+                linear-gradient(135deg, #0c4a36, #1a9362);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .featured-report-cover .document-icon {
+            width: 150px;
+            height: 190px;
+            background: #fff;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+            padding: 25px;
+        }
+
+        .document-icon::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-style: solid;
+            border-width: 0 40px 40px 0;
+            border-color: transparent #d9eee3 transparent transparent;
+        }
+
+        .document-icon .doc-title {
+            color: #15915f;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .document-icon .doc-line {
+            height: 6px;
+            background: #dcebe4;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .document-icon .doc-line.short {
+            width: 60%;
+        }
+
+        .featured-report-content {
+            padding: 40px;
+        }
+
+        .featured-tag {
+            color: #15915f;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .featured-report-content h3 {
+            color: #173e2f;
+            font-size: 29px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        .featured-report-content p {
+            color: #718079;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .report-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            color: #7d8c85;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+
+        .report-meta i {
+            color: #15915f;
+            margin-right: 5px;
+        }
+
+        /* CATEGORY */
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .category-filter button {
+            border: 1px solid #dce9e2;
+            background: #fff;
+            color: #587067;
+            padding: 9px 17px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .category-filter button:hover,
+        .category-filter button.active {
+            background: #15915f;
+            color: #fff;
+            border-color: #15915f;
+        }
+
+        /* REPORT LIST */
+        .report-list {
+            background: #fff;
+            border: 1px solid #e1ebe5;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .report-row {
+            display: flex;
+            align-items: center;
+            padding: 23px 25px;
+            border-bottom: 1px solid #edf1ef;
+            transition: 0.3s;
+        }
+
+        .report-row:last-child {
+            border-bottom: 0;
+        }
+
+        .report-row:hover {
+            background: #f7fbf9;
+            padding-left: 30px;
+        }
+
+        .report-file-icon {
+            width: 52px;
+            height: 58px;
+            border-radius: 8px;
+            background: #e8f6ef;
+            color: #15915f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+            margin-right: 18px;
+            flex-shrink: 0;
+        }
+
+        .report-info {
+            flex: 1;
+        }
+
+        .report-info .category {
+            color: #15915f;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 5px;
+        }
+
+        .report-info h5 {
+            color: #193e30;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .report-info p {
+            color: #7a8982;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .report-action {
+            margin-left: 20px;
+        }
+
+        .report-action a {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            border: 1px solid #d8e8df;
+            padding: 9px 14px;
+            border-radius: 7px;
+            color: #15915f;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .report-action a:hover {
+            background: #15915f;
+            color: #fff;
+            border-color: #15915f;
+        }
+
+        /* INFO CARDS */
+        .report-info-section {
+            background: #edf7f1;
+            padding: 75px 0;
+        }
+
+        .info-card {
+            height: 100%;
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid #e1ebe5;
+        }
+
+        .info-card .icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e8f6ef;
+            color: #15915f;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .info-card h4 {
+            color: #183e30;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: #73827b;
+            font-size: 14px;
+            line-height: 1.75;
+            margin: 0;
+        }
+
+        /* REQUEST */
+        .report-request {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .request-box {
+            background: #f5faf7;
+            border: 1px solid #dfebe5;
+            border-radius: 20px;
+            padding: 45px;
+        }
+
+        .request-box h3 {
+            color: #183e30;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .request-box .lead-text {
+            color: #73827b;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .request-box .form-control,
+        .request-box .form-select {
+            min-height: 50px;
+            border: 1px solid #dce9e2;
+            border-radius: 8px;
+            padding: 12px 15px;
+        }
+
+        .request-box textarea {
+            min-height: 120px !important;
+        }
+
+        .request-box .form-control:focus,
+        .request-box .form-select:focus {
+            border-color: #15915f;
+            box-shadow: 0 0 0 0.15rem rgba(21,145,95,0.1);
+        }
+
+        /* CTA */
+        .reports-cta {
+            background: #123f30;
+            color: #fff;
+            text-align: center;
+            padding: 70px 0;
+        }
+
+        .reports-cta h2 {
+            font-size: 37px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .reports-cta p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 1100px) {
+            .report-stack {
+                opacity: 0.25;
+                right: -30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .reports-hero {
+                padding: 65px 0;
+            }
+
+            .reports-hero h1 {
+                font-size: 40px;
+            }
+
+            .reports-hero p {
+                font-size: 16px;
+            }
+
+            .report-stack {
+                display: none;
+            }
+
+            .reports-section,
+            .report-request {
+                padding: 55px 0;
+            }
+
+            .reports-heading h2 {
+                font-size: 30px;
+            }
+
+            .featured-report-content {
+                padding: 28px;
+            }
+
+            .featured-report-content h3 {
+                font-size: 24px;
+            }
+
+            .report-row {
+                padding: 18px;
+            }
+
+            .report-file-icon {
+                width: 45px;
+                height: 50px;
+                margin-right: 12px;
+            }
+
+            .report-info h5 {
+                font-size: 14px;
+            }
+
+            .report-info p {
+                display: none;
+            }
+
+            .report-action {
+                margin-left: 10px;
+            }
+
+            .report-action a {
+                padding: 8px;
+                font-size: 0;
+            }
+
+            .report-action i {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .request-box {
+                padding: 28px 20px;
+            }
+
+            .reports-cta h2 {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="reports-page">
+
+    <!-- Header / Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Eco-Carbon</h1>
+        </a>
+
+        <button class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-item nav-link">
+                    About
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">
+
+                        Services
+
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="buyer.html" class="dropdown-item">
+                            Buyer
+                        </a>
+
+                        <a href="seller.html" class="dropdown-item">
+                            Seller / Producer
+                        </a>
+
+                        <a href="supplier.html" class="dropdown-item">
+                            Supplier
+                        </a>
+
+                        <a href="mrv.html" class="dropdown-item">
+                            MRV &amp; Verification
+                        </a>
+
+                        <a href="certification.html" class="dropdown-item">
+                            Credit Certification
+                        </a>
+
+                        <a href="consultation.html" class="dropdown-item">
+                            Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="projects.html" class="nav-item nav-link">
+                    Projects
+                </a>
+
+                <a href="marketplace.html" class="nav-item nav-link">
+                    Marketplace
+                </a>
+
+                <a href="calculator.html" class="nav-item nav-link">
+                    Calculator
+                </a>
+
+                <div class="nav-item dropdown">
+
+                    <a href="#"
+                        class="nav-link dropdown-toggle active"
+                        data-bs-toggle="dropdown">
+
+                        Resources
+
+                    </a>
+
+                    <div class="dropdown-menu bg-light m-0">
+
+                        <a href="training.html"
+                            class="dropdown-item">
+
+                            Training
+
+                        </a>
+
+                        <a href="news.html"
+                            class="dropdown-item">
+
+                            News &amp; Media
+
+                        </a>
+
+                        <a href="gallery.html"
+                            class="dropdown-item">
+
+                            Photo Gallery
+
+                        </a>
+
+                        <a href="reports.html"
+                            class="dropdown-item active">
+
+                            Reports
+
+                        </a>
+
+                        <a href="links.html"
+                            class="dropdown-item">
+
+                            Related Links
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="career.html" class="nav-item nav-link">
+                    Career
+                </a>
+
+                <a href="contact.html" class="nav-item nav-link">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <a href="signup.html"
+                class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+
+                Get Started
+                <i class="fa fa-arrow-right ms-3"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="reports-hero">
+
+        <div class="container">
+
+            <div class="reports-hero-content">
+
+                <span class="reports-label">
+                    Eco-Carbon Report Center
+                </span>
+
+                <h1>
+                    Reports, Research<br>
+                    &amp; Publications
+                </h1>
+
+                <p>
+                    Access reports, research materials, market insights and
+                    publications that support better understanding of carbon
+                    markets, climate action and sustainability.
+                </p>
+
+                <a href="#report-library"
+                    class="btn btn-light">
+
+                    Explore Reports
+                    <i class="fa fa-arrow-down ms-2"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Decorative Document Stack -->
+        <div class="report-stack">
+
+            <div class="report-paper back"></div>
+
+            <div class="report-paper middle"></div>
+
+            <div class="report-paper front">
+
+                <div class="doc-title">
+                    ECO-CARBON
+                </div>
+
+                <div class="paper-line big"></div>
+
+                <div class="paper-line"></div>
+                <div class="paper-line"></div>
+                <div class="paper-line short"></div>
+
+                <div class="paper-chart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="report-search-section">
+
+        <div class="container">
+
+            <div class="report-search">
+
+                <div class="search-box">
+
+                    <i class="fa fa-search"></i>
+
+                    <input type="text"
+                        id="reportSearch"
+                        placeholder="Search reports, publications or topics..."
+                        onkeyup="searchReports()">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Reports -->
+    <section class="reports-section" id="report-library">
+
+        <div class="container">
+
+            <div class="reports-heading">
+
+                <div class="small-title">
+                    Report Library
+                </div>
+
+                <h2>
+                    Featured Publications
+                </h2>
+
+                <p>
+                    Explore selected documents and information resources
+                    prepared around carbon markets, projects, MRV and
+                    sustainability.
+                </p>
+
+            </div>
+
+
+            <!-- Featured Report -->
+            <div class="featured-report">
+
+                <div class="row g-0 align-items-stretch">
+
+                    <div class="col-lg-5">
+
+                        <div class="featured-report-cover">
+
+                            <div class="document-icon">
+
+                                <div class="doc-title">
+                                    REPORT
+                                </div>
+
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                                <div class="doc-line short"></div>
+
+                                <div class="paper-chart">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-7">
+
+                        <div class="featured-report-content">
+
+                            <div class="featured-tag">
+                                Featured Publication
+                            </div>
+
+                            <h3>
+                                Carbon Market &amp; Climate Action
+                                Knowledge Report
+                            </h3>
+
+                            <p>
+                                A structured resource covering key concepts,
+                                project development considerations, carbon
+                                market participation and the importance of
+                                data, transparency and verification.
+                            </p>
+
+                            <div class="report-meta">
+
+                                <span>
+                                    <i class="fa fa-file-alt"></i>
+                                    Report
+                                </span>
+
+                                <span>
+                                    <i class="fa fa-book-open"></i>
+                                    Knowledge Resource
+                                </span>
+
+                                <span>
+                                    <i class="fa fa-leaf"></i>
+                                    Climate
+                                </span>
+
+                            </div>
+
+                            <a href="#"
+                                class="btn btn-primary rounded-pill px-4">
+
+                                View Report
+                                <i class="fa fa-arrow-right ms-2"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Category -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+
+                <h3 style="color:#183e30;font-weight:700;">
+                    Document Library
+                </h3>
+
+            </div>
+
+
+            <div class="category-filter">
+
+                <button class="active"
+                    onclick="filterReports('all', this)">
+                    All
+                </button>
+
+                <button onclick="filterReports('market', this)">
+                    Carbon Market
+                </button>
+
+                <button onclick="filterReports('project', this)">
+                    Projects
+                </button>
+
+                <button onclick="filterReports('mrv', this)">
+                    MRV
+                </button>
+
+                <button onclick="filterReports('climate', this)">
+                    Climate
+                </button>
+
+            </div>
+
+
+            <!-- Report List -->
+            <div class="report-list" id="reportList">
+
+
+                <div class="report-row"
+                    data-category="market"
+                    data-title="carbon market overview report">
+
+                    <div class="report-file-icon">
+                        <i class="fa fa-file-pdf"></i>
+                    </div>
+
+                    <div class="report-info">
+
+                        <div class="category">
+                            Carbon Market
+                        </div>
+
+                        <h5>
+                            Carbon Market Overview
+                        </h5>
+
+                        <p>
+                            Introduction to carbon markets, participants
+                            and market opportunities.
+                        </p>
+
+                    </div>
+
+                    <div class="report-action">
+
+                        <a href="#">
+                            <i class="fa fa-eye"></i>
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-row"
+                    data-category="project"
+                    data-title="carbon project development guide">
+
+                    <div class="report-file-icon">
+                        <i class="fa fa-file-alt"></i>
+                    </div>
+
+                    <div class="report-info">
+
+                        <div class="category">
+                            Projects
+                        </div>
+
+                        <h5>
+                            Carbon Project Development Guide
+                        </h5>
+
+                        <p>
+                            Key considerations for planning and developing
+                            carbon projects.
+                        </p>
+
+                    </div>
+
+                    <div class="report-action">
+
+                        <a href="#">
+                            <i class="fa fa-eye"></i>
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-row"
+                    data-category="mrv"
+                    data-title="mrv data management report">
+
+                    <div class="report-file-icon">
+                        <i class="fa fa-chart-line"></i>
+                    </div>
+
+                    <div class="report-info">
+
+                        <div class="category">
+                            MRV
+                        </div>
+
+                        <h5>
+                            MRV &amp; Data Management
+                        </h5>
+
+                        <p>
+                            Practical considerations for measurement,
+                            monitoring, reporting and verification.
+                        </p>
+
+                    </div>
+
+                    <div class="report-action">
+
+                        <a href="#">
+                            <i class="fa fa-eye"></i>
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-row"
+                    data-category="climate"
+                    data-title="climate action sustainability report">
+
+                    <div class="report-file-icon">
+                        <i class="fa fa-leaf"></i>
+                    </div>
+
+                    <div class="report-info">
+
+                        <div class="category">
+                            Climate
+                        </div>
+
+                        <h5>
+                            Climate Action &amp; Sustainability
+                        </h5>
+
+                        <p>
+                            Perspectives on climate action, sustainability
+                            and environmental responsibility.
+                        </p>
+
+                    </div>
+
+                    <div class="report-action">
+
+                        <a href="#">
+                            <i class="fa fa-eye"></i>
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-row"
+                    data-category="project"
+                    data-title="project monitoring documentation">
+
+                    <div class="report-file-icon">
+                        <i class="fa fa-folder-open"></i>
+                    </div>
+
+                    <div class="report-info">
+
+                        <div class="category">
+                            Projects
+                        </div>
+
+                        <h5>
+                            Project Monitoring Documentation
+                        </h5>
+
+                        <p>
+                            Supporting resources for project monitoring,
+                            records and documentation.
+                        </p>
+
+                    </div>
+
+                    <div class="report-action">
+
+                        <a href="#">
+                            <i class="fa fa-eye"></i>
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-row"
+                    data-category="market"
+                    data-title="carbon credit market insights">
+
+                    <div class="report-file-icon">
+                        <i class="fa fa-globe"></i>
+                    </div>
+
+                    <div class="report-info">
+
+                        <div class="category">
+                            Carbon Market
+                        </div>
+
+                        <h5>
+                            Carbon Credit Market Insights
+                        </h5>
+
+                        <p>
+                            Selected information and perspectives on carbon
+                            credit market participation.
+                        </p>
+
+                    </div>
+
+                    <div class="report-action">
+
+                        <a href="#">
+                            <i class="fa fa-eye"></i>
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Information Cards -->
+    <section class="report-info-section">
+
+        <div class="container">
+
+            <div class="reports-heading text-center mx-auto">
+
+                <div class="small-title">
+                    Resource Types
+                </div>
+
+                <h2>
+                    What You'll Find Here
+                </h2>
+
+                <p class="mx-auto">
+                    The report center can grow into a central knowledge
+                    library for Eco-Carbon's stakeholders.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="info-card">
+
+                        <div class="icon">
+                            <i class="fa fa-chart-bar"></i>
+                        </div>
+
+                        <h4>
+                            Market Reports
+                        </h4>
+
+                        <p>
+                            Carbon market information, trends and
+                            educational resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="info-card">
+
+                        <div class="icon">
+                            <i class="fa fa-project-diagram"></i>
+                        </div>
+
+                        <h4>
+                            Project Reports
+                        </h4>
+
+                        <p>
+                            Project-related publications, summaries
+                            and development resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="info-card">
+
+                        <div class="icon">
+                            <i class="fa fa-check-double"></i>
+                        </div>
+
+                        <h4>
+                            MRV Resources
+                        </h4>
+
+                        <p>
+                            Resources related to measurement, monitoring,
+                            reporting and verification.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="info-card">
+
+                        <div class="icon">
+                            <i class="fa fa-seedling"></i>
+                        </div>
+
+                        <h4>
+                            Climate Insights
+                        </h4>
+
+                        <p>
+                            Knowledge resources around climate action
+                            and sustainability.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Report Request -->
+    <section class="report-request">
+
+        <div class="container">
+
+            <div class="request-box">
+
+                <div class="text-center">
+
+                    <h3>
+                        Request a Report or Publication
+                    </h3>
+
+                    <p class="lead-text">
+                        Can't find the information you need?
+                        Send us a request and our team can review it.
+                    </p>
+
+                </div>
+
+
+                <form onsubmit="submitReportRequest(event)">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+
+                            <label class="form-label">
+                                Full Name
+                            </label>
+
+                            <input type="text"
+                                class="form-control"
+                                placeholder="Your full name"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="form-label">
+                                Organization
+                            </label>
+
+                            <input type="text"
+                                class="form-control"
+                                placeholder="Organization name">
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="form-label">
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                class="form-control"
+                                placeholder="Your email address"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label class="form-label">
+                                Resource Type
+                            </label>
+
+                            <select class="form-select">
+
+                                <option selected>
+                                    Select resource type
+                                </option>
+
+                                <option>
+                                    Market Report
+                                </option>
+
+                                <option>
+                                    Project Report
+                                </option>
+
+                                <option>
+                                    MRV Resource
+                                </option>
+
+                                <option>
+                                    Climate Publication
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <label class="form-label">
+                                Request Details
+                            </label>
+
+                            <textarea class="form-control"
+                                placeholder="Describe the report or information you are looking for"></textarea>
+
+                        </div>
+
+
+                        <div class="col-12 text-center pt-3">
+
+                            <button type="submit"
+                                class="btn btn-primary px-5 py-3 rounded-pill">
+
+                                Submit Request
+                                <i class="fa fa-paper-plane ms-2"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="reports-cta">
+
+        <div class="container">
+
+            <h2>
+                Looking for More Information?
+            </h2>
+
+            <p>
+                Explore Eco-Carbon services, projects and market resources
+                or contact our team for specific information.
+            </p>
+
+            <a href="contact.html"
+                class="btn btn-light rounded-pill px-5 py-3">
+
+                Contact Us
+                <i class="fa fa-arrow-right ms-2"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Eco-Carbon
+                    </h4>
+
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Sukrabad,Meem Tower,Dhaka
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +8801339863939
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        info@eco-carbon.com
+                    </p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="Twitter">
+
+                            <i class="fab fa-twitter"></i>
+
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="Facebook">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="YouTube">
+
+                            <i class="fab fa-youtube"></i>
+
+                        </a>
+
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="#"
+                            aria-label="LinkedIn">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Services
+                    </h4>
+
+                    <a class="btn btn-link" href="projects.html">
+                        Carbon Projects
+                    </a>
+
+                    <a class="btn btn-link" href="marketplace.html">
+                        Carbon Marketplace
+                    </a>
+
+                    <a class="btn btn-link" href="mrv.html">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a class="btn btn-link" href="calculator.html">
+                        Carbon Calculator
+                    </a>
+
+                    <a class="btn btn-link" href="technology.html">
+                        Technology &amp; IoT
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Quick Links
+                    </h4>
+
+                    <a class="btn btn-link" href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="btn btn-link" href="contact.html">
+                        Contact Us
+                    </a>
+
+                    <a class="btn btn-link" href="buyer.html">
+                        Buyers
+                    </a>
+
+                    <a class="btn btn-link" href="seller.html">
+                        Sellers / Producers
+                    </a>
+
+                    <a class="btn btn-link" href="career.html">
+                        Career
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="text-white mb-4">
+                        Newsletter
+                    </h4>
+
+                    <p>
+                        Subscribe for Eco-Carbon news, market information,
+                        project updates and training.
+                    </p>
+
+                    <div class="position-relative w-100">
+
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                            type="email"
+                            placeholder="Your email address"
+                            aria-label="Email address">
+
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    &copy;
+
+                    <a class="border-bottom" href="#">
+                        Safetaka.com Ltd
+                    </a>,
+
+                    All Right Reserved.
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    Designed By
+
+                    <a class="border-bottom"
+                        href="https://safetaka.com">
+
+                        Safetaka.com Ltd
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Back To Top -->
+    <a href="#"
+        class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script>
+
+        new WOW().init();
+
+
+        /* ==========================================
+           REPORT CATEGORY FILTER
+        ========================================== */
+
+        function filterReports(category, button) {
+
+            const rows = document.querySelectorAll(".report-row");
+            const buttons = document.querySelectorAll(".category-filter button");
+
+            buttons.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            rows.forEach(function(row) {
+
+                if (
+                    category === "all" ||
+                    row.getAttribute("data-category") === category
+                ) {
+
+                    row.style.display = "flex";
+
+                } else {
+
+                    row.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        /* ==========================================
+           REPORT SEARCH
+        ========================================== */
+
+        function searchReports() {
+
+            const search =
+                document.getElementById("reportSearch")
+                .value
+                .toLowerCase();
+
+            const rows =
+                document.querySelectorAll(".report-row");
+
+            rows.forEach(function(row) {
+
+                const title =
+                    row.getAttribute("data-title").toLowerCase();
+
+                const text =
+                    row.innerText.toLowerCase();
+
+                if (
+                    title.includes(search) ||
+                    text.includes(search)
+                ) {
+
+                    row.style.display = "flex";
+
+                } else {
+
+                    row.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        /* ==========================================
+           REQUEST FORM
+        ========================================== */
+
+        function submitReportRequest(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you. Your report request has been submitted."
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

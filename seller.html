@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eco-Carbon | Seller / Producer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Eco-Carbon, carbon credit seller, carbon project developer, carbon producer, carbon marketplace, MRV, verification" name="keywords">
+    <meta content="Eco-Carbon platform for carbon project developers and producers to develop, verify, list and connect carbon credits with potential buyers." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* =========================================
+           SELLER / PRODUCER PAGE
+        ========================================= */
+
+        .seller-hero {
+            min-height: 560px;
+            background:
+                linear-gradient(rgba(4, 187, 126, 0.78), rgba(250, 252, 251, 0.72)),
+                url('img/services-3.jpg') center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .seller-hero-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #fff;
+        }
+
+        .seller-hero-content .small-title {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 1px solid rgba(255,255,255,.45);
+            border-radius: 30px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .seller-hero-content h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 22px;
+        }
+
+        .seller-hero-content p {
+            font-size: 19px;
+            line-height: 1.8;
+            max-width: 720px;
+            margin: 0 auto 32px;
+        }
+
+        .seller-btn {
+            padding: 14px 28px;
+            font-weight: 600;
+            margin: 5px;
+            border-radius: 4px;
+        }
+
+        .seller-btn-outline {
+            color: #fff;
+            border: 1px solid rgba(255,255,255,.7);
+            background: transparent;
+        }
+
+        .seller-btn-outline:hover {
+            background: #fff;
+            color: #198754;
+        }
+
+        .seller-section-title {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 50px;
+        }
+
+        .seller-section-title .subtitle {
+            color: #198754;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .seller-section-title h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #173b2b;
+            margin-bottom: 15px;
+        }
+
+        .seller-section-title p {
+            color: #666;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Intro */
+        .seller-intro {
+            padding: 90px 0;
+        }
+
+        .seller-intro-image {
+            min-height: 430px;
+            background:
+                linear-gradient(rgba(25,135,84,.12), rgba(25,135,84,.12)),
+                url('img/PIC.jpg') center center/cover no-repeat;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .seller-intro-card {
+            position: absolute;
+            bottom: 25px;
+            right: -20px;
+            background: #fff;
+            padding: 22px 25px;
+            border-radius: 8px;
+            box-shadow: 0 12px 35px rgba(0,0,0,.12);
+            max-width: 260px;
+        }
+
+        .seller-intro-card i {
+            font-size: 30px;
+            color: #198754;
+            margin-bottom: 10px;
+        }
+
+        .seller-intro-card h5 {
+            font-weight: 700;
+            color: #173b2b;
+            margin-bottom: 5px;
+        }
+
+        .seller-intro-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .seller-intro-text h3 {
+            font-size: 35px;
+            font-weight: 700;
+            color: #173b2b;
+            margin-bottom: 20px;
+        }
+
+        .seller-intro-text p {
+            color: #666;
+            line-height: 1.9;
+        }
+
+        .seller-check-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0;
+        }
+
+        .seller-check-list li {
+            margin-bottom: 13px;
+            color: #444;
+        }
+
+        .seller-check-list i {
+            color: #198754;
+            margin-right: 10px;
+        }
+
+        /* Project Types */
+        .seller-project-types {
+            background: #f6faf7;
+            padding: 90px 0;
+        }
+
+        .seller-card {
+            height: 100%;
+            background: #fff;
+            border: 1px solid #e6eee9;
+            border-radius: 8px;
+            padding: 32px 28px;
+            transition: all .3s ease;
+        }
+
+        .seller-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.09);
+            border-color: #198754;
+        }
+
+        .seller-icon {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: #e9f7ef;
+            color: #198754;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .seller-card h4 {
+            font-size: 21px;
+            color: #173b2b;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .seller-card p {
+            color: #777;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Process */
+        .seller-process {
+            padding: 90px 0;
+        }
+
+        .process-box {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        .process-number {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #198754;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+            font-weight: 700;
+            margin: 0 auto 22px;
+            box-shadow: 0 8px 20px rgba(25,135,84,.2);
+        }
+
+        .process-box h4 {
+            font-size: 20px;
+            color: #173b2b;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .process-box p {
+            color: #777;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        /* Benefits */
+        .seller-benefits {
+            background: #173b2b;
+            padding: 90px 0;
+            color: #fff;
+        }
+
+        .seller-benefits .seller-section-title h2,
+        .seller-benefits .seller-section-title p {
+            color: #fff;
+        }
+
+        .seller-benefits .subtitle {
+            color: #7be2a8;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .benefit-icon {
+            min-width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7be2a8;
+            font-size: 20px;
+            margin-right: 18px;
+        }
+
+        .benefit-item h5 {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .benefit-item p {
+            color: rgba(255,255,255,.72);
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        /* Requirements */
+        .seller-requirements {
+            padding: 90px 0;
+        }
+
+        .requirement-box {
+            border: 1px solid #e5ece7;
+            border-radius: 8px;
+            padding: 30px;
+            height: 100%;
+            background: #fff;
+        }
+
+        .requirement-box h4 {
+            color: #173b2b;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .requirement-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .requirement-list li {
+            padding: 11px 0;
+            border-bottom: 1px solid #edf1ee;
+            color: #666;
+        }
+
+        .requirement-list li:last-child {
+            border-bottom: none;
+        }
+
+        .requirement-list i {
+            color: #198754;
+            margin-right: 9px;
+        }
+
+        /* CTA */
+        .seller-cta {
+            padding: 85px 0;
+            background:
+                linear-gradient(rgba(25,135,84,.92), rgba(25,135,84,.92)),
+                url('img/PIC-1.jpg') center/cover;
+        }
+
+        .seller-cta-content {
+            text-align: center;
+            color: #fff;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .seller-cta-content h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .seller-cta-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 28px;
+            color: rgba(255,255,255,.9);
+        }
+
+        /* Seller Form */
+        .seller-form-section {
+            padding: 90px 0;
+            background: #f7faf8;
+        }
+
+        .seller-form-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 45px;
+            box-shadow: 0 12px 40px rgba(0,0,0,.07);
+        }
+
+        .seller-form-box h3 {
+            color: #173b2b;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .seller-form-box .form-label {
+            font-weight: 600;
+            color: #444;
+        }
+
+        .seller-form-box .form-control,
+        .seller-form-box .form-select {
+            min-height: 50px;
+            border: 1px solid #dce5df;
+            border-radius: 5px;
+        }
+
+        .seller-form-box .form-control:focus,
+        .seller-form-box .form-select:focus {
+            border-color: #198754;
+            box-shadow: 0 0 0 .15rem rgba(25,135,84,.1);
+        }
+
+        .seller-submit {
+            background: #198754;
+            color: #fff;
+            border: none;
+            padding: 14px 30px;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        .seller-submit:hover {
+            background: #146c43;
+            color: #fff;
+        }
+
+        @media (max-width: 991px) {
+            .seller-hero-content h1 {
+                font-size: 44px;
+            }
+
+            .seller-intro-card {
+                right: 15px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .seller-hero {
+                min-height: 500px;
+            }
+
+            .seller-hero-content h1 {
+                font-size: 35px;
+            }
+
+            .seller-hero-content p {
+                font-size: 16px;
+            }
+
+            .seller-section-title h2 {
+                font-size: 31px;
+            }
+
+            .seller-intro {
+                padding: 65px 0;
+            }
+
+            .seller-intro-image {
+                min-height: 330px;
+                margin-bottom: 45px;
+            }
+
+            .seller-intro-card {
+                right: 15px;
+                bottom: -25px;
+            }
+
+            .seller-intro-text h3 {
+                font-size: 28px;
+            }
+
+            .seller-form-box {
+                padding: 25px;
+            }
+
+            .seller-cta-content h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h1 class="m-0">Eco-Carbon</h1>
+    </a>
+
+    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+            <a href="index.html" class="nav-item nav-link">Home</a>
+
+            <a href="about.html" class="nav-item nav-link">About</a>
+
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+
+                <div class="dropdown-menu bg-light m-0">
+                    <a href="buyer.html" class="dropdown-item">Buyer</a>
+
+                    <a href="seller.html" class="dropdown-item active">
+                        Seller / Producer
+                    </a>
+
+                    <a href="supplier.html" class="dropdown-item">
+                        Supplier
+                    </a>
+
+                    <a href="mrv.html" class="dropdown-item">
+                        MRV &amp; Verification
+                    </a>
+
+                    <a href="certification.html" class="dropdown-item">
+                        Credit Certification
+                    </a>
+
+                    <a href="consultation.html" class="dropdown-item">
+                        Consultation
+                    </a>
+                </div>
+            </div>
+
+            <a href="projects.html" class="nav-item nav-link">Projects</a>
+
+            <a href="marketplace.html" class="nav-item nav-link">
+                Marketplace
+            </a>
+
+            <a href="calculator.html" class="nav-item nav-link">
+                Calculator
+            </a>
+
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    Resources
+                </a>
+
+                <div class="dropdown-menu bg-light m-0">
+                    <a href="training.html" class="dropdown-item">Training</a>
+                    <a href="news.html" class="dropdown-item">News &amp; Media</a>
+                    <a href="gallery.html" class="dropdown-item">Photo Gallery</a>
+                    <a href="reports.html" class="dropdown-item">Reports</a>
+                    <a href="links.html" class="dropdown-item">Related Links</a>
+                </div>
+            </div>
+
+            <a href="career.html" class="nav-item nav-link">Career</a>
+
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+
+        <a href="signup.html"
+           class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">
+            Get Started <i class="fa fa-arrow-right ms-3"></i>
+        </a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- Seller Hero Start -->
+<section class="seller-hero">
+    <div class="container">
+        <div class="seller-hero-content">
+
+            <span class="small-title">
+                Carbon Project Developers &amp; Producers
+            </span>
+
+            <h1>
+                Turn Climate Action Into Verified Carbon Opportunities
+            </h1>
+
+            <p>
+                Develop, document and connect your carbon projects with potential
+                buyers through the Eco-Carbon ecosystem.
+            </p>
+
+            <a href="#seller-request" class="btn btn-primary seller-btn">
+                Submit Your Project
+                <i class="fa fa-arrow-right ms-2"></i>
+            </a>
+
+            <a href="marketplace.html" class="btn seller-btn seller-btn-outline">
+                Explore Marketplace
+            </a>
+
+        </div>
+    </div>
+</section>
+<!-- Seller Hero End -->
+
+
+<!-- Introduction Start -->
+<section class="seller-intro">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <div class="seller-intro-image">
+
+                    <div class="seller-intro-card">
+                        <i class="fa fa-leaf"></i>
+                        <h5>Build With Confidence</h5>
+                        <p>
+                            Connect project development, carbon information,
+                            verification and market access.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 seller-intro-text">
+
+                <div class="seller-section-title text-start mb-4">
+                    <div class="subtitle">For Sellers &amp; Producers</div>
+                    <h2>Bring Your Carbon Project to the Market</h2>
+                </div>
+
+                <p>
+                    Eco-Carbon supports organizations, project developers,
+                    landowners and other eligible project participants in
+                    presenting carbon projects and potential carbon credits
+                    to the market.
+                </p>
+
+                <p>
+                    From project information and documentation to MRV,
+                    verification and buyer connection, our ecosystem is
+                    designed to help organize the journey from project
+                    development to market opportunity.
+                </p>
+
+                <ul class="seller-check-list">
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Present your carbon project
+                    </li>
+
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Organize project and credit information
+                    </li>
+
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Access MRV &amp; verification support
+                    </li>
+
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Connect with potential buyers
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Introduction End -->
+
+
+<!-- Project Types Start -->
+<section class="seller-project-types">
+    <div class="container">
+
+        <div class="seller-section-title">
+            <div class="subtitle">Project Opportunities</div>
+            <h2>What Can You Bring to Eco-Carbon?</h2>
+            <p>
+                Carbon projects can come from different sectors and technologies.
+                Each project can be assessed based on its characteristics,
+                methodology, documentation and verification requirements.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="seller-card">
+                    <div class="seller-icon">
+                        <i class="fa fa-tree"></i>
+                    </div>
+                    <h4>Nature-Based Projects</h4>
+                    <p>
+                        Forestry, reforestation, restoration, conservation
+                        and other nature-focused climate projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="seller-card">
+                    <div class="seller-icon">
+                        <i class="fa fa-solar-panel"></i>
+                    </div>
+                    <h4>Renewable Energy</h4>
+                    <p>
+                        Renewable energy and clean-energy initiatives that
+                        contribute to emission reduction.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="seller-card">
+                    <div class="seller-icon">
+                        <i class="fa fa-industry"></i>
+                    </div>
+                    <h4>Emission Reduction</h4>
+                    <p>
+                        Projects designed to reduce greenhouse gas emissions
+                        through improved processes and technologies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="seller-card">
+                    <div class="seller-icon">
+                        <i class="fa fa-recycle"></i>
+                    </div>
+                    <h4>Waste Management</h4>
+                    <p>
+                        Waste reduction, recycling, methane avoidance and
+                        resource-efficiency related initiatives.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="seller-card">
+                    <div class="seller-icon">
+                        <i class="fa fa-tint"></i>
+                    </div>
+                    <h4>Clean Water &amp; Community</h4>
+                    <p>
+                        Projects combining climate action with environmental
+                        and community development benefits.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="seller-card">
+                    <div class="seller-icon">
+                        <i class="fa fa-microchip"></i>
+                    </div>
+                    <h4>Technology &amp; Innovation</h4>
+                    <p>
+                        Technology-driven solutions that support measurable
+                        emission reduction or carbon removal activities.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Project Types End -->
+
+
+<!-- Process Start -->
+<section class="seller-process">
+    <div class="container">
+
+        <div class="seller-section-title">
+            <div class="subtitle">Seller Journey</div>
+            <h2>How the Process Works</h2>
+            <p>
+                A structured pathway helps project developers organize
+                information and move toward market participation.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg col-md-6">
+                <div class="process-box">
+                    <div class="process-number">01</div>
+                    <h4>Project Registration</h4>
+                    <p>
+                        Submit basic information about your organization
+                        and carbon project.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg col-md-6">
+                <div class="process-box">
+                    <div class="process-number">02</div>
+                    <h4>Project Assessment</h4>
+                    <p>
+                        Review project characteristics, documentation,
+                        methodology and available data.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg col-md-6">
+                <div class="process-box">
+                    <div class="process-number">03</div>
+                    <h4>MRV &amp; Verification</h4>
+                    <p>
+                        Support measurement, reporting and verification
+                        processes where applicable.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg col-md-6">
+                <div class="process-box">
+                    <div class="process-number">04</div>
+                    <h4>Market Listing</h4>
+                    <p>
+                        Organize project and credit information for
+                        presentation to potential buyers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg col-md-6">
+                <div class="process-box">
+                    <div class="process-number">05</div>
+                    <h4>Buyer Connection</h4>
+                    <p>
+                        Connect project opportunities with interested
+                        organizations and procurement requirements.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Process End -->
+
+
+<!-- Benefits Start -->
+<section class="seller-benefits">
+    <div class="container">
+
+        <div class="seller-section-title">
+            <div class="subtitle">Why Eco-Carbon</div>
+            <h2>Support Across the Carbon Project Journey</h2>
+            <p>
+                Build a stronger project profile with structured information,
+                technical support and market connectivity.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa fa-project-diagram"></i>
+                    </div>
+
+                    <div>
+                        <h5>Project Visibility</h5>
+                        <p>
+                            Present your project information in a structured
+                            format for potential market participants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa fa-file-alt"></i>
+                    </div>
+
+                    <div>
+                        <h5>Documentation Support</h5>
+                        <p>
+                            Organize important project, monitoring and
+                            supporting documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa fa-chart-line"></i>
+                    </div>
+
+                    <div>
+                        <h5>Market Access</h5>
+                        <p>
+                            Improve access to potential buyers looking for
+                            suitable carbon project opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa fa-shield-alt"></i>
+                    </div>
+
+                    <div>
+                        <h5>MRV &amp; Verification Support</h5>
+                        <p>
+                            Access technical pathways for measurement,
+                            reporting and verification requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa fa-handshake"></i>
+                    </div>
+
+                    <div>
+                        <h5>Buyer-Producer Connection</h5>
+                        <p>
+                            Facilitate communication between project
+                            producers and interested buyers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+
+                    <div>
+                        <h5>Technology Support</h5>
+                        <p>
+                            Explore digital tools, data systems and technology
+                            solutions for project management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Benefits End -->
+
+
+<!-- Requirements Start -->
+<section class="seller-requirements">
+    <div class="container">
+
+        <div class="seller-section-title">
+            <div class="subtitle">Get Ready</div>
+            <h2>Information You May Need</h2>
+            <p>
+                Having clear project information helps make the assessment
+                and market onboarding process more efficient.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <div class="requirement-box">
+
+                    <h4>
+                        <i class="fa fa-folder-open text-success me-2"></i>
+                        Project Information
+                    </h4>
+
+                    <ul class="requirement-list">
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Project name and location
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Project type and sector
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Project description and objectives
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Project implementation details
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Expected emission reduction or removal information
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="requirement-box">
+
+                    <h4>
+                        <i class="fa fa-file-signature text-success me-2"></i>
+                        Credit Information
+                    </h4>
+
+                    <ul class="requirement-list">
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Applicable methodology or standard
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Verification and issuance information
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Credit vintage and available volume
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Project monitoring information
+                        </li>
+
+                        <li>
+                            <i class="fa fa-check"></i>
+                            Supporting records and documentation
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Requirements End -->
+
+
+<!-- CTA Start -->
+<section class="seller-cta">
+    <div class="container">
+
+        <div class="seller-cta-content">
+
+            <h2>Have a Carbon Project?</h2>
+
+            <p>
+                Start a conversation with Eco-Carbon and explore how your
+                project can be prepared for assessment, verification and
+                potential market participation.
+            </p>
+
+            <a href="#seller-request" class="btn btn-light seller-btn">
+                Register Your Project
+                <i class="fa fa-arrow-right ms-2"></i>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+<!-- CTA End -->
+
+
+<!-- Seller Request Form Start -->
+<section class="seller-form-section" id="seller-request">
+    <div class="container">
+
+        <div class="seller-section-title">
+            <div class="subtitle">Project Registration</div>
+            <h2>Submit Your Seller / Producer Request</h2>
+            <p>
+                Share your basic project information. Our team can review
+                your request and guide you through the next steps.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <div class="seller-form-box">
+
+                    <form action="#" method="post">
+
+                        <div class="row g-4">
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Contact Name
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Organization / Company
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Organization name"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Email Address
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Enter email address"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Mobile Number
+                                </label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       placeholder="Enter mobile number"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Project Type
+                                </label>
+
+                                <select class="form-select" required>
+                                    <option value="">Select project type</option>
+                                    <option>Nature-Based Project</option>
+                                    <option>Renewable Energy</option>
+                                    <option>Emission Reduction</option>
+                                    <option>Waste Management</option>
+                                    <option>Clean Water / Community</option>
+                                    <option>Technology / Innovation</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Project Location
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Country / Region"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Estimated Credit Volume
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="e.g. Annual estimated volume">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Project Status
+                                </label>
+
+                                <select class="form-select">
+                                    <option value="">Select current status</option>
+                                    <option>Concept / Early Stage</option>
+                                    <option>Under Development</option>
+                                    <option>Operational</option>
+                                    <option>Under Verification</option>
+                                    <option>Credits Already Issued</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">
+                                    Project Details / Message
+                                </label>
+
+                                <textarea class="form-control"
+                                          rows="5"
+                                          placeholder="Briefly describe your project, carbon activity and requirements"></textarea>
+                            </div>
+
+                            <div class="col-12 text-center pt-2">
+                                <button type="submit" class="seller-submit">
+                                    Submit Seller Request
+                                    <i class="fa fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seller Request Form End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Eco-Carbon</h4>
+
+                <p class="mb-2">
+                    <i class="fa fa-map-marker-alt me-3"></i>
+                    Sukrabad,Meem Tower,Dhaka
+                </p>
+
+                <p class="mb-2">
+                    <i class="fa fa-phone-alt me-3"></i>
+                    +8801339863939
+                </p>
+
+                <p class="mb-2">
+                    <i class="fa fa-envelope me-3"></i>
+                    info@eco-carbon.com
+                </p>
+
+                <div class="d-flex pt-2">
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                       href="#"
+                       aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Services</h4>
+
+                <a class="btn btn-link" href="projects.html">
+                    Carbon Projects
+                </a>
+
+                <a class="btn btn-link" href="marketplace.html">
+                    Carbon Marketplace
+                </a>
+
+                <a class="btn btn-link" href="mrv.html">
+                    MRV &amp; Verification
+                </a>
+
+                <a class="btn btn-link" href="calculator.html">
+                    Carbon Calculator
+                </a>
+
+                <a class="btn btn-link" href="technology.html">
+                    Technology &amp; IoT
+                </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Quick Links</h4>
+
+                <a class="btn btn-link" href="about.html">
+                    About Us
+                </a>
+
+                <a class="btn btn-link" href="contact.html">
+                    Contact Us
+                </a>
+
+                <a class="btn btn-link" href="buyer.html">
+                    Buyers
+                </a>
+
+                <a class="btn btn-link" href="seller.html">
+                    Sellers / Producers
+                </a>
+
+                <a class="btn btn-link" href="career.html">
+                    Career
+                </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Newsletter</h4>
+
+                <p>
+                    Subscribe for Eco-Carbon news, market information,
+                    project updates and training.
+                </p>
+
+                <div class="position-relative w-100">
+
+                    <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
+                           type="email"
+                           placeholder="Your email address"
+                           aria-label="Email address">
+
+                    <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                        Subscribe
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                &copy;
+                <a class="border-bottom" href="#">
+                    Safetaka.com Ltd
+                </a>,
+                All Right Reserved.
+
+            </div>
+
+            <div class="col-md-6 text-center text-md-end">
+
+                Designed By
+                <a class="border-bottom" href="https://safetaka.com">
+                    Safetaka.com Ltd
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+<!-- Back to Top -->
+<a href="#"
+   class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+    <i class="bi bi-arrow-up"></i>
+</a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/parallax/parallax.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
